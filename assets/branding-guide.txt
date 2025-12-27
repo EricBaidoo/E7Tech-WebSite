@@ -1,0 +1,21 @@
+E7 Technology Solutions Branding Guide
+
+Primary Color: #0a2540 (Deep Blue)
+Accent Color: #00b4d8 (Bright Cyan)
+Secondary Accent: #48cae4 (Light Cyan)
+Background: #f7f9fa (Light Gray)
+Text: #222 (Dark Gray)
+
+Font: 'Segoe UI', Arial, sans-serif
+
+Logo: (Add your logo file to the assets folder as logo.png or logo.svg)
+
+Usage:
+- Use the primary color for headers, navigation, and footer backgrounds.
+- Use the accent color for highlights, buttons, and links.
+- Use the background color for page backgrounds.
+- Use the text color for all main content.
+- Maintain a clean, modern, and professional look.
+- Ensure all pages are responsive and mobile-friendly.
+
+If you have a logo, place it in the assets folder and update the HTML to include it in the header.
