@@ -2,281 +2,288 @@
 $page_title = "Services - E7 Technology Solutions";
 include('header.php');
 ?>
-<link rel="stylesheet" href="assets/index.css">
+<link rel="stylesheet" href="assets/services.css">
 
 <!-- Hero Section -->
-<section class="hero-section" style="min-height: 60vh; padding: 6rem 0 4rem;">
-    <div class="hero-particles"></div>
+<section class="services-hero">
     <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-8 mx-auto text-center" data-aos="fade-up">
-                <h1 class="hero-title mb-4">
-                    Our <span class="gradient-text">Services</span>
-                </h1>
-                <p class="hero-subtitle mb-4 mx-auto" style="max-width: 700px;">
-                    Comprehensive technology services designed to transform your business operations, enhance security, and unlock the power of your data.
-                </p>
-            </div>
+        <div class="hero-content">
+            <span class="hero-badge">OUR SERVICES</span>
+            <h1 class="hero-title">Comprehensive Technology Solutions for Your Business</h1>
+            <p class="hero-subtitle">From AI and data analytics to cybersecurity and cloud infrastructure, we deliver end-to-end technology services that drive digital transformation across Africa.</p>
         </div>
+    </div>
+    <div class="hero-wave">
+        <svg viewBox="0 0 1440 100" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#ffffff" d="M0,50L60,45C120,40,240,30,360,35C480,40,600,60,720,65C840,70,960,60,1080,55C1200,50,1320,50,1380,50L1440,50L1440,100L1380,100C1320,100,1200,100,1080,100C960,100,840,100,720,100C600,100,480,100,360,100C240,100,120,100,60,100L0,100Z"></path>
+        </svg>
     </div>
 </section>
 
-<!-- Services Grid -->
-<section class="py-5" style="background: #ffffff;">
+<!-- Main Services -->
+<section class="main-services">
     <div class="container">
-        <div class="row g-4">
-            <!-- AI & Machine Learning -->
-            <div class="col-lg-4 col-md-6">
-                <div class="service-card h-100">
-                    <i class="fas fa-robot"></i>
-                    <h3>Artificial Intelligence & Machine Learning</h3>
-                    <p>Build intelligent systems that automate processes, predict outcomes, and deliver actionable insights.</p>
-                    <ul class="list-unstyled small text-muted mt-3">
-                        <li class="mb-2">• Custom AI model development</li>
-                        <li class="mb-2">• Natural language processing</li>
-                        <li class="mb-2">• Computer vision solutions</li>
-                        <li class="mb-2">• Predictive analytics</li>
-                    </ul>
+        <div class="section-header">
+            <span class="section-badge">CORE EXPERTISE</span>
+            <h2 class="section-title">Our Service Portfolio</h2>
+            <p class="section-subtitle">World-class technology services tailored for African enterprises</p>
+        </div>
+        
+        <div class="services-grid">
+            <!-- AI & ML -->
+            <div class="service-item" id="ai">
+                <div class="service-icon-wrapper">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <div class="service-content">
+                    <h3 class="service-name">Artificial Intelligence & Machine Learning</h3>
+                    <p class="service-description">Build intelligent systems that automate processes, predict outcomes, and deliver actionable insights powered by cutting-edge AI and ML technologies.</p>
+                    <div class="service-details">
+                        <h4>Key Offerings:</h4>
+                        <ul class="service-features-list">
+                            <li><i class="fas fa-check-circle"></i> Custom AI model development & training</li>
+                            <li><i class="fas fa-check-circle"></i> Natural language processing (NLP)</li>
+                            <li><i class="fas fa-check-circle"></i> Computer vision & image recognition</li>
+                            <li><i class="fas fa-check-circle"></i> Predictive analytics & forecasting</li>
+                            <li><i class="fas fa-check-circle"></i> Recommendation systems</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
             <!-- Data Engineering -->
-            <div class="col-lg-4 col-md-6">
-                <div class="service-card h-100">
+            <div class="service-item" id="data">
+                <div class="service-icon-wrapper">
                     <i class="fas fa-database"></i>
-                    <h3>Data Engineering & Analytics</h3>
-                    <p>Transform raw data into strategic assets with robust data pipelines and advanced analytics.</p>
-                    <ul class="list-unstyled small text-muted mt-3">
-                        <li class="mb-2">• Data warehouse design</li>
-                        <li class="mb-2">• ETL pipeline development</li>
-                        <li class="mb-2">• Business intelligence dashboards</li>
-                        <li class="mb-2">• Real-time analytics</li>
-                    </ul>
+                </div>
+                <div class="service-content">
+                    <h3 class="service-name">Data Engineering & Analytics</h3>
+                    <p class="service-description">Transform raw data into strategic assets with robust data pipelines, warehousing solutions, and advanced analytics platforms that drive informed decision-making.</p>
+                    <div class="service-details">
+                        <h4>Key Offerings:</h4>
+                        <ul class="service-features-list">
+                            <li><i class="fas fa-check-circle"></i> Data warehouse design & implementation</li>
+                            <li><i class="fas fa-check-circle"></i> ETL/ELT pipeline development</li>
+                            <li><i class="fas fa-check-circle"></i> Business intelligence dashboards</li>
+                            <li><i class="fas fa-check-circle"></i> Real-time analytics & streaming</li>
+                            <li><i class="fas fa-check-circle"></i> Data governance & quality management</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
             <!-- Cybersecurity -->
-            <div class="col-lg-4 col-md-6">
-                <div class="service-card h-100">
+            <div class="service-item" id="security">
+                <div class="service-icon-wrapper">
                     <i class="fas fa-shield-alt"></i>
-                    <h3>Cybersecurity Services</h3>
-                    <p>Protect your digital assets with comprehensive security solutions and proactive threat management.</p>
-                    <ul class="list-unstyled small text-muted mt-3">
-                        <li class="mb-2">• Security audits & assessments</li>
-                        <li class="mb-2">• Penetration testing</li>
-                        <li class="mb-2">• Security operations center (SOC)</li>
-                        <li class="mb-2">• Compliance management</li>
-                    </ul>
+                </div>
+                <div class="service-content">
+                    <h3 class="service-name">Cybersecurity & Compliance</h3>
+                    <p class="service-description">Protect your digital assets with comprehensive security solutions, proactive threat management, and compliance frameworks designed for African regulatory environments.</p>
+                    <div class="service-details">
+                        <h4>Key Offerings:</h4>
+                        <ul class="service-features-list">
+                            <li><i class="fas fa-check-circle"></i> Security audits & risk assessments</li>
+                            <li><i class="fas fa-check-circle"></i> Penetration testing & vulnerability scanning</li>
+                            <li><i class="fas fa-check-circle"></i> Security Operations Center (SOC) setup</li>
+                            <li><i class="fas fa-check-circle"></i> Compliance management (ISO, GDPR, NDPR)</li>
+                            <li><i class="fas fa-check-circle"></i> Incident response & forensics</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
-            <!-- Intelligent Automation -->
-            <div class="col-lg-4 col-md-6">
-                <div class="service-card h-100">
-                    <i class="fas fa-cogs"></i>
-                    <h3>Intelligent Automation</h3>
-                    <p>Streamline operations and reduce costs with smart automation powered by AI and RPA.</p>
-                    <ul class="list-unstyled small text-muted mt-3">
-                        <li class="mb-2">• Robotic process automation</li>
-                        <li class="mb-2">• Workflow optimization</li>
-                        <li class="mb-2">• Business process automation</li>
-                        <li class="mb-2">• Integration services</li>
-                    </ul>
+            <!-- Software Development -->
+            <div class="service-item" id="software">
+                <div class="service-icon-wrapper">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <div class="service-content">
+                    <h3 class="service-name">Custom Software Development</h3>
+                    <p class="service-description">Build secure, scalable, and user-centric software solutions that perfectly align with your business requirements and drive operational excellence.</p>
+                    <div class="service-details">
+                        <h4>Key Offerings:</h4>
+                        <ul class="service-features-list">
+                            <li><i class="fas fa-check-circle"></i> Enterprise web applications</li>
+                            <li><i class="fas fa-check-circle"></i> Mobile app development (iOS & Android)</li>
+                            <li><i class="fas fa-check-circle"></i> API development & integration</li>
+                            <li><i class="fas fa-check-circle"></i> Legacy system modernization</li>
+                            <li><i class="fas fa-check-circle"></i> Microservices architecture</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
             <!-- IT Infrastructure -->
-            <div class="col-lg-4 col-md-6">
-                <div class="service-card h-100">
-                    <i class="fas fa-network-wired"></i>
-                    <h3>IT Infrastructure Management</h3>
-                    <p>Ensure reliable, scalable, and secure IT environments with expert infrastructure services.</p>
-                    <ul class="list-unstyled small text-muted mt-3">
-                        <li class="mb-2">• Cloud infrastructure setup</li>
-                        <li class="mb-2">• System monitoring & maintenance</li>
-                        <li class="mb-2">• Disaster recovery planning</li>
-                        <li class="mb-2">• Network optimization</li>
-                    </ul>
+            <div class="service-item" id="infrastructure">
+                <div class="service-icon-wrapper">
+                    <i class="fas fa-server"></i>
                 </div>
-            </div>
-
-            <!-- Custom Software -->
-            <div class="col-lg-4 col-md-6">
-                <div class="service-card h-100">
-                    <i class="fas fa-code"></i>
-                    <h3>Custom Software Development</h3>
-                    <p>Build tailored software solutions that perfectly align with your unique business requirements.</p>
-                    <ul class="list-unstyled small text-muted mt-3">
-                        <li class="mb-2">• Web application development</li>
-                        <li class="mb-2">• Mobile app development</li>
-                        <li class="mb-2">• API development & integration</li>
-                        <li class="mb-2">• Legacy system modernization</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Cloud Services -->
-            <div class="col-lg-4 col-md-6">
-                <div class="service-card h-100">
-                    <i class="fas fa-cloud"></i>
-                    <h3>Cloud Solutions</h3>
-                    <p>Migrate, optimize, and manage your cloud infrastructure for maximum efficiency and cost savings.</p>
-                    <ul class="list-unstyled small text-muted mt-3">
-                        <li class="mb-2">• Cloud migration services</li>
-                        <li class="mb-2">• Multi-cloud management</li>
-                        <li class="mb-2">• Cloud cost optimization</li>
-                        <li class="mb-2">• Serverless architectures</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Consulting -->
-            <div class="col-lg-4 col-md-6">
-                <div class="service-card h-100">
-                    <i class="fas fa-lightbulb"></i>
-                    <h3>Technology Consulting</h3>
-                    <p>Strategic guidance to navigate digital transformation and technology adoption challenges.</p>
-                    <ul class="list-unstyled small text-muted mt-3">
-                        <li class="mb-2">• Digital transformation strategy</li>
-                        <li class="mb-2">• Technology roadmapping</li>
-                        <li class="mb-2">• Architecture design</li>
-                        <li class="mb-2">• Vendor selection</li>
-                    </ul>
+                <div class="service-content">
+                    <h3 class="service-name">IT Infrastructure & Cloud Services</h3>
+                    <p class="service-description">Ensure reliable, scalable, and secure IT environments with expert infrastructure management, cloud migration, and 24/7 monitoring services.</p>
+                    <div class="service-details">
+                        <h4>Key Offerings:</h4>
+                        <ul class="service-features-list">
+                            <li><i class="fas fa-check-circle"></i> Cloud infrastructure setup (AWS, Azure, GCP)</li>
+                            <li><i class="fas fa-check-circle"></i> Cloud migration & optimization</li>
+                            <li><i class="fas fa-check-circle"></i> System monitoring & maintenance</li>
+                            <li><i class="fas fa-check-circle"></i> Disaster recovery planning</li>
+                            <li><i class="fas fa-check-circle"></i> Network design & optimization</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
             <!-- Training -->
-            <div class="col-lg-4 col-md-6">
-                <div class="service-card h-100">
-                    <i class="fas fa-chalkboard-teacher"></i>
-                    <h3>Training & Capacity Building</h3>
-                    <p>Empower your team with cutting-edge skills through our comprehensive training programs.</p>
-                    <ul class="list-unstyled small text-muted mt-3">
-                        <li class="mb-2">• Corporate training programs</li>
-                        <li class="mb-2">• Technology workshops</li>
-                        <li class="mb-2">• Certification preparation</li>
-                        <li class="mb-2">• Knowledge transfer sessions</li>
-                    </ul>
+            <div class="service-item" id="training">
+                <div class="service-icon-wrapper">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="service-content">
+                    <h3 class="service-name">E7 Academy - Corporate Training</h3>
+                    <p class="service-description">Upskill your workforce with hands-on training programs in AI, cybersecurity, data analytics, and digital transformation led by industry experts.</p>
+                    <div class="service-details">
+                        <h4>Key Offerings:</h4>
+                        <ul class="service-features-list">
+                            <li><i class="fas fa-check-circle"></i> AI & Machine Learning training</li>
+                            <li><i class="fas fa-check-circle"></i> Cybersecurity certification prep</li>
+                            <li><i class="fas fa-check-circle"></i> Data analytics workshops</li>
+                            <li><i class="fas fa-check-circle"></i> Cloud technology training</li>
+                            <li><i class="fas fa-check-circle"></i> Custom corporate programs</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- How We Work -->
-<section class="py-5" style="background: #f7f9fc;">
+<!-- Process Section -->
+<section class="process-section">
     <div class="container">
-        <div class="text-center mb-5">
-            <h2 class="mb-3">Our Process</h2>
-            <p class="lead text-muted">A proven approach to delivering successful projects</p>
+        <div class="section-header">
+            <span class="section-badge">OUR METHODOLOGY</span>
+            <h2 class="section-title">How We Deliver Success</h2>
+            <p class="section-subtitle">A proven approach that ensures project success from discovery to deployment</p>
         </div>
-        <div class="row g-4">
-            <div class="col-lg-3 col-md-6 text-center">
-                <div class="p-4">
-                    <div class="mb-3">
-                        <span class="badge bg-primary" style="font-size: 2rem; width: 4rem; height: 4rem; display: inline-flex; align-items: center; justify-content: center; border-radius: 50%;">1</span>
-                    </div>
-                    <h5>Discovery</h5>
-                    <p class="text-muted small">Understand your challenges, goals, and technical landscape</p>
+        <div class="process-steps">
+            <div class="process-step">
+                <div class="step-number">01</div>
+                <div class="step-icon">
+                    <i class="fas fa-search"></i>
                 </div>
+                <h3 class="step-title">Discovery & Assessment</h3>
+                <p class="step-description">Comprehensive analysis of your business challenges, technical landscape, and strategic objectives.</p>
             </div>
-            <div class="col-lg-3 col-md-6 text-center">
-                <div class="p-4">
-                    <div class="mb-3">
-                        <span class="badge bg-primary" style="font-size: 2rem; width: 4rem; height: 4rem; display: inline-flex; align-items: center; justify-content: center; border-radius: 50%;">2</span>
-                    </div>
-                    <h5>Strategy</h5>
-                    <p class="text-muted small">Design tailored solutions aligned with business objectives</p>
+            <div class="process-step">
+                <div class="step-number">02</div>
+                <div class="step-icon">
+                    <i class="fas fa-lightbulb"></i>
                 </div>
+                <h3 class="step-title">Strategy & Planning</h3>
+                <p class="step-description">Tailored solution design aligned with your goals, budget, and timeline requirements.</p>
             </div>
-            <div class="col-lg-3 col-md-6 text-center">
-                <div class="p-4">
-                    <div class="mb-3">
-                        <span class="badge bg-primary" style="font-size: 2rem; width: 4rem; height: 4rem; display: inline-flex; align-items: center; justify-content: center; border-radius: 50%;">3</span>
-                    </div>
-                    <h5>Execution</h5>
-                    <p class="text-muted small">Implement solutions with agile methodologies and best practices</p>
+            <div class="process-step">
+                <div class="step-number">03</div>
+                <div class="step-icon">
+                    <i class="fas fa-code"></i>
                 </div>
+                <h3 class="step-title">Development & Implementation</h3>
+                <p class="step-description">Agile execution with regular updates, quality assurance, and stakeholder collaboration.</p>
             </div>
-            <div class="col-lg-3 col-md-6 text-center">
-                <div class="p-4">
-                    <div class="mb-3">
-                        <span class="badge bg-primary" style="font-size: 2rem; width: 4rem; height: 4rem; display: inline-flex; align-items: center; justify-content: center; border-radius: 50%;">4</span>
-                    </div>
-                    <h5>Support</h5>
-                    <p class="text-muted small">Provide ongoing support and continuous improvement</p>
+            <div class="process-step">
+                <div class="step-number">04</div>
+                <div class="step-icon">
+                    <i class="fas fa-headset"></i>
                 </div>
+                <h3 class="step-title">Support & Optimization</h3>
+                <p class="step-description">Ongoing support, performance monitoring, and continuous improvement initiatives.</p>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Industries We Serve -->
-<section class="py-5" style="background: #ffffff;">
+<!-- Industries Section -->
+<section class="industries-served">
     <div class="container">
-        <div class="text-center mb-5">
-            <h2 class="mb-3">Industries We Serve</h2>
-            <p class="lead text-muted">Delivering specialized solutions across key sectors</p>
+        <div class="section-header">
+            <span class="section-badge">SPECIALIZED EXPERTISE</span>
+            <h2 class="section-title">Industries We Serve</h2>
+            <p class="section-subtitle">Delivering sector-specific solutions across Africa's key industries</p>
         </div>
-        <div class="row g-3">
-            <div class="col-lg-3 col-md-4 col-6">
-                <div class="text-center p-3 border rounded">
-                    <i class="fas fa-university fa-2x text-primary mb-2"></i>
-                    <h6 class="mb-0">Financial Services</h6>
+        <div class="industries-grid">
+            <div class="industry-item">
+                <div class="industry-icon">
+                    <i class="fas fa-university"></i>
                 </div>
+                <h4>Banking & Finance</h4>
+                <p>Fintech solutions, fraud detection, regulatory compliance</p>
             </div>
-            <div class="col-lg-3 col-md-4 col-6">
-                <div class="text-center p-3 border rounded">
-                    <i class="fas fa-heartbeat fa-2x text-primary mb-2"></i>
-                    <h6 class="mb-0">Healthcare</h6>
+            <div class="industry-item">
+                <div class="industry-icon">
+                    <i class="fas fa-heartbeat"></i>
                 </div>
+                <h4>Healthcare</h4>
+                <p>Health analytics, patient systems, HIPAA compliance</p>
             </div>
-            <div class="col-lg-3 col-md-4 col-6">
-                <div class="text-center p-3 border rounded">
-                    <i class="fas fa-graduation-cap fa-2x text-primary mb-2"></i>
-                    <h6 class="mb-0">Education</h6>
+            <div class="industry-item">
+                <div class="industry-icon">
+                    <i class="fas fa-landmark"></i>
                 </div>
+                <h4>Government</h4>
+                <p>E-governance, citizen services, secure infrastructure</p>
             </div>
-            <div class="col-lg-3 col-md-4 col-6">
-                <div class="text-center p-3 border rounded">
-                    <i class="fas fa-shopping-cart fa-2x text-primary mb-2"></i>
-                    <h6 class="mb-0">Retail</h6>
+            <div class="industry-item">
+                <div class="industry-icon">
+                    <i class="fas fa-graduation-cap"></i>
                 </div>
+                <h4>Education</h4>
+                <p>Learning platforms, student analytics, digital education</p>
             </div>
-            <div class="col-lg-3 col-md-4 col-6">
-                <div class="text-center p-3 border rounded">
-                    <i class="fas fa-industry fa-2x text-primary mb-2"></i>
-                    <h6 class="mb-0">Manufacturing</h6>
+            <div class="industry-item">
+                <div class="industry-icon">
+                    <i class="fas fa-shopping-cart"></i>
                 </div>
+                <h4>Retail & E-Commerce</h4>
+                <p>Customer analytics, payment systems, inventory management</p>
             </div>
-            <div class="col-lg-3 col-md-4 col-6">
-                <div class="text-center p-3 border rounded">
-                    <i class="fas fa-bolt fa-2x text-primary mb-2"></i>
-                    <h6 class="mb-0">Energy & Utilities</h6>
+            <div class="industry-item">
+                <div class="industry-icon">
+                    <i class="fas fa-industry"></i>
                 </div>
+                <h4>Manufacturing</h4>
+                <p>Supply chain optimization, predictive maintenance</p>
             </div>
-            <div class="col-lg-3 col-md-4 col-6">
-                <div class="text-center p-3 border rounded">
-                    <i class="fas fa-landmark fa-2x text-primary mb-2"></i>
-                    <h6 class="mb-0">Government</h6>
+            <div class="industry-item">
+                <div class="industry-icon">
+                    <i class="fas fa-broadcast-tower"></i>
                 </div>
+                <h4>Telecommunications</h4>
+                <p>Network analytics, customer intelligence platforms</p>
             </div>
-            <div class="col-lg-3 col-md-4 col-6">
-                <div class="text-center p-3 border rounded">
-                    <i class="fas fa-mobile-alt fa-2x text-primary mb-2"></i>
-                    <h6 class="mb-0">Telecommunications</h6>
+            <div class="industry-item">
+                <div class="industry-icon">
+                    <i class="fas fa-gas-pump"></i>
                 </div>
+                <h4>Energy & Utilities</h4>
+                <p>Smart grids, asset management, efficiency optimization</p>
             </div>
         </div>
     </div>
 </section>
 
 <!-- CTA Section -->
-<section class="py-5" style="background: linear-gradient(135deg, #5a3fc0 0%, #7b6fd9 100%);">
-    <div class="container text-center text-white">
-        <h2 class="mb-4">Let's Build Something Great Together</h2>
-        <p class="lead mb-4" style="max-width: 600px; margin: 0 auto;">Ready to transform your business with innovative technology solutions?</p>
-        <a href="contact.php" class="btn btn-light btn-lg px-5">Get Started Today</a>
+<section class="services-cta">
+    <div class="container">
+        <div class="cta-content">
+            <h2 class="cta-title">Ready to Elevate Your Technology Capabilities?</h2>
+            <p class="cta-subtitle">Let's discuss how our services can help you achieve your digital transformation goals.</p>
+            <div class="cta-actions">
+                <a href="contact.php" class="btn-cta-primary">Schedule a Consultation</a>
+                <a href="about.php" class="btn-cta-secondary">Learn About E7</a>
+            </div>
+        </div>
     </div>
 </section>
 

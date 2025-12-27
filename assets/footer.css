@@ -33,8 +33,9 @@
 }
 
 .footer-logo {
-    height: 4rem;
+    height: 8rem;
     width: auto;
+    max-width: 280px;
     display: block !important;
     visibility: visible !important;
     opacity: 1 !important;
@@ -275,6 +276,8 @@
     }
     
     .footer-logo {
+        height: 6.5rem;
+        max-width: 230px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -349,7 +352,8 @@
     }
     
     .footer-logo {
-        height: 3.5rem;
+        height: 5.5rem;
+        max-width: 200px;
         display: block !important;
         visibility: visible !important;
         opacity: 1 !important;

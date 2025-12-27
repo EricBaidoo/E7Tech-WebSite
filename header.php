@@ -11,107 +11,85 @@
     <link rel="stylesheet" href="assets/mobile.css?v=<?php echo time(); ?>">
 </head>
 <body>
-    <!-- Main Header -->
-    <header class="header-main">
+    <!-- Header -->
+    <header class="site-header">
         <div class="container">
-            <div class="header-wrapper">
-                <div class="header-logo">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="site-logo">
                     <a href="index.php">
-                        <img src="assets/images/E7-logo1.png" alt="E7 Technology Solutions" class="logo-img">
+                        <img src="assets/images/E7-logo1.png" alt="E7 Technology Solutions">
                     </a>
                 </div>
                 
-                <nav class="header-nav" id="headerNav">
-                    <ul class="nav-menu">
-                        <li><a href="index.php" class="nav-link">Home</a></li>
-                        <li class="nav-dropdown">
-                            <a href="about.php" class="nav-link dropdown-toggle">
-                                About Us <i class="fas fa-chevron-down"></i>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="about.php#about-e7">About E7</a></li>
-                                <li><a href="about.php#leadership">Leadership</a></li>
-                                <li><a href="about.php#gallery">Gallery</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="services.php" class="nav-link">Services</a></li>
-                        <li><a href="solutions.php" class="nav-link">Solutions</a></li>
-                        <li><a href="academy.php" class="nav-link">E7 Academy</a></li>
-                        <li><a href="news.php" class="nav-link">News</a></li>
-                        <li><a href="contact.php" class="nav-link nav-link-primary">Contact Us</a></li>
-                    </ul>
+                <!-- Desktop Navigation -->
+                <nav class="main-nav">
+                    <a href="index.php">Home</a>
+                    <div class="dropdown">
+                        <a href="about.php" class="dropdown-btn">About Us <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="about.php#about-e7">About E7</a>
+                            <a href="about.php#leadership">Leadership</a>
+                            <a href="about.php#gallery">Gallery</a>
+                        </div>
+                    </div>
+                    <a href="services.php">Services</a>
+                    <a href="solutions.php">Solutions</a>
+                    <a href="academy.php">E7 Academy</a>
+                    <a href="news.php">News</a>
+                    <a href="contact.php" class="btn-contact">Contact Us</a>
                 </nav>
                 
-                <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Menu">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
+                <!-- Mobile Toggle -->
+                <button class="nav-toggle" onclick="toggleMobileMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </button>
             </div>
         </div>
+        
+        <!-- Mobile Navigation -->
+        <div class="mobile-nav" id="mobileNav">
+            <a href="index.php">Home</a>
+            <div class="mobile-dropdown">
+                <a href="#" onclick="toggleDropdown(event)">About Us <i class="fas fa-chevron-down"></i></a>
+                <div class="mobile-dropdown-content">
+                    <a href="about.php#about-e7">About E7</a>
+                    <a href="about.php#leadership">Leadership</a>
+                    <a href="about.php#gallery">Gallery</a>
+                </div>
+            </div>
+            <a href="services.php">Services</a>
+            <a href="solutions.php">Solutions</a>
+            <a href="academy.php">E7 Academy</a>
+            <a href="news.php">News</a>
+            <a href="contact.php" class="btn-contact">Contact Us</a>
+        </div>
     </header>
+
     <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const mobileToggle = document.getElementById('mobileToggle');
-        const headerNav = document.getElementById('headerNav');
-        const body = document.body;
-        
-        // Mobile menu toggle
-        if (mobileToggle) {
-            mobileToggle.addEventListener('click', function() {
-                this.classList.toggle('active');
-                headerNav.classList.toggle('active');
-                body.classList.toggle('menu-open');
-            });
+    function toggleMobileMenu() {
+        const mobileNav = document.getElementById('mobileNav');
+        const toggle = document.querySelector('.nav-toggle');
+        mobileNav.classList.toggle('active');
+        toggle.classList.toggle('active');
+        document.body.classList.toggle('nav-open');
+    }
+    
+    function toggleDropdown(e) {
+        e.preventDefault();
+        e.target.parentElement.classList.toggle('active');
+    }
+    
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', function(e) {
+        const mobileNav = document.getElementById('mobileNav');
+        const toggle = document.querySelector('.nav-toggle');
+        if (!e.target.closest('.site-header') && mobileNav.classList.contains('active')) {
+            mobileNav.classList.remove('active');
+            toggle.classList.remove('active');
+            document.body.classList.remove('nav-open');
         }
-        
-        // Dropdown functionality
-        const dropdowns = document.querySelectorAll('.nav-dropdown');
-        dropdowns.forEach(dropdown => {
-            const toggle = dropdown.querySelector('.dropdown-toggle');
-            
-            // Desktop hover
-            dropdown.addEventListener('mouseenter', function() {
-                if (window.innerWidth > 991) {
-                    this.classList.add('active');
-                }
-            });
-            
-            dropdown.addEventListener('mouseleave', function() {
-                if (window.innerWidth > 991) {
-                    this.classList.remove('active');
-                }
-            });
-            
-            // Mobile click
-            if (toggle) {
-                toggle.addEventListener('click', function(e) {
-                    if (window.innerWidth <= 991) {
-                        e.preventDefault();
-                        dropdown.classList.toggle('active');
-                    }
-                });
-            }
-        });
-        
-        // Close mobile menu when clicking outside
-        document.addEventListener('click', function(e) {
-            if (!e.target.closest('.header-main') && headerNav.classList.contains('active')) {
-                mobileToggle.classList.remove('active');
-                headerNav.classList.remove('active');
-                body.classList.remove('menu-open');
-            }
-        });
-        
-        // Close mobile menu when clicking nav link
-        document.querySelectorAll('.nav-link').forEach(link => {
-            link.addEventListener('click', function() {
-                if (window.innerWidth <= 991) {
-                    mobileToggle.classList.remove('active');
-                    headerNav.classList.remove('active');
-                    body.classList.remove('menu-open');
-                }
-            });
-        });
     });
     </script>
