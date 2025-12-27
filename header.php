@@ -11,32 +11,6 @@
     <link rel="stylesheet" href="assets/mobile.css?v=<?php echo time(); ?>">
 </head>
 <body>
-    <!-- Top Bar -->
-    <div class="top-bar">
-        <div class="container">
-            <div class="top-bar-content">
-                <div class="top-bar-left">
-                    <a href="mailto:info@e7tech.com" class="top-bar-link">
-                        <i class="fas fa-envelope"></i> info@e7tech.com
-                    </a>
-                    <a href="tel:+15551234567" class="top-bar-link">
-                        <i class="fas fa-phone"></i> +1 (555) 123-4567
-                    </a>
-                </div>
-                <div class="top-bar-right">
-                    <span class="top-bar-text">
-                        <i class="fas fa-clock"></i> Mon - Fri: 7AM - 5PM CT
-                    </span>
-                    <div class="top-bar-social">
-                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <!-- Main Header -->
     <header class="header-main">
         <div class="container">

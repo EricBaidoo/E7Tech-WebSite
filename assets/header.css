@@ -3,87 +3,6 @@
    Modern Professional Design
    =================================== */
 
-/* ===== TOP BAR ===== */
-.top-bar {
-    background: linear-gradient(135deg, #1a237e 0%, #3949ab 100%);
-    color: #ffffff;
-    padding: 0.65rem 0;
-    font-size: 0.875rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.top-bar-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-}
-
-.top-bar-left,
-.top-bar-right {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-}
-
-.top-bar-link,
-.top-bar-text {
-    color: rgba(255, 255, 255, 0.95);
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-weight: 500;
-    letter-spacing: 0.2px;
-    transition: all 0.3s ease;
-    position: relative;
-}
-
-.top-bar-link i,
-.top-bar-text i {
-    font-size: 0.9rem;
-    opacity: 0.9;
-}
-
-.top-bar-link:hover {
-    color: #ffffff;
-    transform: translateX(2px);
-}
-
-.top-bar-link:hover i {
-    opacity: 1;
-}
-
-.top-bar-social {
-    display: flex;
-    gap: 0.5rem;
-    margin-left: 1.5rem;
-    padding-left: 1.5rem;
-    border-left: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.top-bar-social a {
-    color: #ffffff;
-    width: 32px;
-    height: 32px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 6px;
-    background: rgba(255, 255, 255, 0.12);
-    backdrop-filter: blur(10px);
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    font-size: 0.85rem;
-}
-
-.top-bar-social a:hover {
-    background: rgba(255, 255, 255, 0.25);
-    transform: translateY(-3px) scale(1.05);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-}
-
 /* ===== MAIN HEADER ===== */
 .header-main {
     background: #ffffff;
@@ -114,6 +33,9 @@
 .logo-img {
     height: 3.5rem;
     width: auto;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
     transition: transform 0.3s ease;
 }
 
@@ -287,36 +209,8 @@ body.menu-open::before {
 }
 
 /* ===== RESPONSIVE DESIGN ===== */
-@media (max-width: 991px) {
-    /* Top Bar - Stack on mobile */
-    .top-bar {
-        padding: 0.75rem 0;
-    }
-    
-    .top-bar-content {
-        justify-content: center;
-        text-align: center;
-        gap: 1rem;
-    }
-    
-    .top-bar-left,
-    .top-bar-right {
-        flex-direction: column;
-        gap: 0.75rem;
-        width: 100%;
-    }
-    
-    .top-bar-social {
-        margin-left: 0;
-        margin-top: 0.25rem;
-        padding-left: 0;
-        border-left: none;
-        justify-content: center;
-    }
-    
-    .top-bar-social a {
-        width: 36px;
-        height: 36px;
+@media (max-width: 768px) {
+    .nav-link {
         font-size: 0.9rem;
     }
     
@@ -391,7 +285,7 @@ body.menu-open::before {
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 47.9375rem) {
     .top-bar {
         font-size: 0.8rem;
         padding: 0.6rem 0;
@@ -411,7 +305,7 @@ body.menu-open::before {
         height: 2.8rem;
     }
     
-    .header- {
+    .header-wrapper {
         padding: 0.5rem 0;
     }
     
@@ -421,18 +315,22 @@ body.menu-open::before {
         gap: 0.35rem;
     }
     
-    .top-bar-left,
-    .top-bar-right {
-        gap: 0.5rem;
+        .top-bar-left,
+        .top-bar-right {
+            gap: 0.5rem;
+        }
     }
     
-    .top-bar-social {
-        gap: 0.4rem;
+    @media (max-width: 767px) {
+        .logo-img {
+            height: 2.8rem;
+        display: block !important;
+        visibility: visible !important;
     }
     
-    .top-bar-social a {
-        width: 32px;
-        height: 32px
+    .header-wrapper {
+        padding: 0.75rem 0;
+    }
     
     .header-nav {
         width: 280px;
@@ -440,17 +338,9 @@ body.menu-open::before {
 }
 
 @media (max-width: 575px) {
-    .top-bar-link,
-    .top-bar-text {
-        font-size: 0.75rem;
-    }
-    
     .logo-img {
         height: 2.5rem;
-    }
-    
-    .header-nav {
-        width: 100%;
-        max-width: 100%;
+        display: block !important;
+        visibility: visible !important;
     }
 }
