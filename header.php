@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="assets/header.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="assets/mobile.css?v=<?php echo time(); ?>">
     
 </head>
 <body>
@@ -39,22 +40,54 @@
         </div>
     </header>
     <script>
-    // Mobile nav toggle with icon switch
+    // Mobile nav toggle with icon switch and overlay
     document.addEventListener('DOMContentLoaded', function() {
         const toggle = document.querySelector('.header-toggle');
         const nav = document.querySelector('.header-nav');
         const bars = document.querySelector('.toggle-icon');
         const close = document.querySelector('.close-icon');
+        const body = document.body;
+        
+        // Create overlay for mobile menu
+        const overlay = document.createElement('div');
+        overlay.className = 'nav-overlay';
+        overlay.style.cssText = 'position:fixed;top:0;left:0;width:100%;height:100vh;background:rgba(0,0,0,0.5);z-index:998;display:none;';
+        body.appendChild(overlay);
+        
+        function openNav() {
+            nav.classList.add('nav-open', 'active');
+            overlay.style.display = 'block';
+            bars.style.display = 'none';
+            close.style.display = 'inline';
+            body.style.overflow = 'hidden';
+        }
+        
+        function closeNav() {
+            nav.classList.remove('nav-open', 'active');
+            overlay.style.display = 'none';
+            bars.style.display = 'inline';
+            close.style.display = 'none';
+            body.style.overflow = '';
+        }
+        
         if (toggle && nav && bars && close) {
             toggle.addEventListener('click', function() {
-                nav.classList.toggle('nav-open');
                 if (nav.classList.contains('nav-open')) {
-                    bars.style.display = 'none';
-                    close.style.display = 'inline';
+                    closeNav();
                 } else {
-                    bars.style.display = 'inline';
-                    close.style.display = 'none';
+                    openNav();
                 }
+            });
+            
+            overlay.addEventListener('click', closeNav);
+            
+            // Close nav when clicking a link (except dropdown toggle)
+            nav.querySelectorAll('a:not(.dropdown-toggle)').forEach(link => {
+                link.addEventListener('click', function() {
+                    if (window.innerWidth <= 768) {
+                        closeNav();
+                    }
+                });
             });
         }
         
