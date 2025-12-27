@@ -30,55 +30,54 @@ include 'header.php';
 </section>
 
 <!-- About E7 Section -->
-<section id="about-e7" class="py-5" style="background: #ffffff;">
+<section id="about-e7" class="py-4" style="background: #ffffff;">
     <div class="container">
-        <div class="row align-items-center mb-5 g-5">
-            <div class="col-lg-6 mb-4 mb-lg-0">
-                <div class="mb-4">
-                    <span class="badge bg-primary mb-3" style="font-size: 0.85rem; padding: 0.5rem 1rem;">WHO WE ARE</span>
-                    <h2 class="display-5 mb-4 fw-bold">Pioneering Technology Excellence in Africa</h2>
+        <div class="row align-items-center mb-4 g-4">
+            <div class="col-lg-6 mb-3 mb-lg-0">
+                <div class="mb-3">
+                    <span class="badge bg-primary mb-2" style="font-size: 0.75rem; padding: 0.4rem 0.8rem;">ABOUT US</span>
+                    <h2 class="h3 mb-3 fw-bold">Pioneering Technology Excellence in Africa</h2>
                 </div>
-                <p class="lead mb-4" style="color: #2c3e50;">E7 Technology Solutions is Africa's trusted partner for enterprise-grade digital transformation, combining cutting-edge AI, advanced data analytics, and robust cybersecurity.</p>
-                <div class="mb-4">
-                    <p style="line-height: 1.8; color: #4a5568;">Founded in 2024 with a bold vision to accelerate Africa's digital revolution, we empower organizations to harness the power of intelligent technologies, make data-driven decisions, and protect their digital assets against evolving threats.</p>
-                    <p style="line-height: 1.8; color: #4a5568;">Our team of certified experts delivers world-class solutions tailored to the unique challenges and opportunities of the African market, ensuring scalability, security, and alignment with global standards.</p>
+                <p class="mb-3" style="color: #2c3e50; font-size: 0.95rem;">E7 Technology Solutions is Africa's trusted partner for enterprise-grade digital transformation, combining AI, data analytics, and cybersecurity.</p>
+                <div class="mb-3">
+                    <p style="line-height: 1.6; color: #4a5568; font-size: 0.9rem;">Founded in 2024, we empower organizations to harness intelligent technologies, make data-driven decisions, and protect digital assets against evolving threats.</p>
                 </div>
-                <div class="row g-3">
+                <div class="row g-2">
                     <div class="col-6">
                         <div class="d-flex align-items-center">
-                            <i class="fas fa-check-circle text-success fa-lg me-2"></i>
-                            <span class="fw-semibold">ISO Certified</span>
+                            <i class="fas fa-check-circle text-success me-2" style="font-size: 0.9rem;"></i>
+                            <span class="fw-semibold" style="font-size: 0.85rem;">ISO Certified</span>
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="d-flex align-items-center">
-                            <i class="fas fa-check-circle text-success fa-lg me-2"></i>
-                            <span class="fw-semibold">15+ Countries</span>
+                            <i class="fas fa-check-circle text-success me-2" style="font-size: 0.9rem;"></i>
+                            <span class="fw-semibold" style="font-size: 0.85rem;">15+ Countries</span>
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="d-flex align-items-center">
-                            <i class="fas fa-check-circle text-success fa-lg me-2"></i>
-                            <span class="fw-semibold">200+ Clients</span>
+                            <i class="fas fa-check-circle text-success me-2" style="font-size: 0.9rem;"></i>
+                            <span class="fw-semibold" style="font-size: 0.85rem;">200+ Clients</span>
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="d-flex align-items-center">
-                            <i class="fas fa-check-circle text-success fa-lg me-2"></i>
-                            <span class="fw-semibold">24/7 Support</span>
+                            <i class="fas fa-check-circle text-success me-2" style="font-size: 0.9rem;"></i>
+                            <span class="fw-semibold" style="font-size: 0.85rem;">24/7 Support</span>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-6">
                 <div class="position-relative">
-                    <img src="assets/images/solution-digital-transformation.png" alt="E7 Technology" class="img-fluid rounded shadow-lg">
-                    <div class="position-absolute top-0 end-0 m-4 bg-white rounded p-3 shadow" style="max-width: 200px;">
-                        <div class="d-flex align-items-center mb-2">
-                            <i class="fas fa-award text-warning fa-2x me-2"></i>
+                    <img src="assets/images/solution-digital-transformation.png" alt="E7 Technology" class="img-fluid rounded shadow">
+                    <div class="position-absolute top-0 end-0 m-3 bg-white rounded p-2 shadow" style="max-width: 160px;">
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-award text-warning fa-lg me-2"></i>
                             <div>
-                                <div class="fw-bold">Excellence Award</div>
-                                <small class="text-muted">Best Tech Solution 2024</small>
+                                <div class="fw-bold" style="font-size: 0.85rem;">Excellence Award</div>
+                                <small class="text-muted" style="font-size: 0.7rem;">Best Tech 2024</small>
                             </div>
                         </div>
                     </div>
@@ -86,31 +85,37 @@ include 'header.php';
             </div>
         </div>
 
-        <div class="row g-4 mt-5">
+        <div class="row g-3 mt-4">
             <div class="col-lg-4">
-                <div class="service-card text-center p-4 h-100" style="background: linear-gradient(135deg, #1a237e 0%, #5a3fc0 100%); color: white; border: none;">
-                    <i class="fas fa-bullseye fa-3x mb-3" style="color: white; opacity: 0.95;"></i>
-                    <h5 class="mb-3" style="color: white;">Our Mission</h5>
-                    <p class="small" style="color: rgba(255,255,255,0.95); line-height: 1.7;">To empower organizations with intelligent, secure technologies that drive digital transformation, economic growth, and innovation—while safeguarding their digital future.</p>
+                <div class="card text-center border-0 shadow-sm h-100" style="background: linear-gradient(135deg, #1a237e 0%, #5a3fc0 100%); color: white;">
+                    <div class="card-body p-3">
+                        <i class="fas fa-bullseye fa-2x mb-2" style="color: white; opacity: 0.95;"></i>
+                        <h6 class="mb-2 fw-bold" style="color: white;">Our Mission</h6>
+                        <p class="mb-0" style="font-size: 0.85rem; color: rgba(255,255,255,0.95); line-height: 1.5;">Empowering organizations with intelligent, secure technologies for digital transformation.</p>
+                    </div>
                 </div>
             </div>
             <div class="col-lg-4">
-                <div class="service-card text-center p-4 h-100" style="background: linear-gradient(135deg, #1a237e 0%, #5a3fc0 100%); color: white; border: none;">
-                    <i class="fas fa-eye fa-3x mb-3" style="color: white; opacity: 0.95;"></i>
-                    <h5 class="mb-3" style="color: white;">Our Vision</h5>
-                    <p class="small" style="color: rgba(255,255,255,0.95); line-height: 1.7;">To be Africa's most trusted partner for secure, data-driven digital solutions, enabling institutions to become more efficient, resilient, and future-ready.</p>
+                <div class="card text-center border-0 shadow-sm h-100" style="background: linear-gradient(135deg, #1a237e 0%, #5a3fc0 100%); color: white;">
+                    <div class="card-body p-3">
+                        <i class="fas fa-eye fa-2x mb-2" style="color: white; opacity: 0.95;"></i>
+                        <h6 class="mb-2 fw-bold" style="color: white;">Our Vision</h6>
+                        <p class="mb-0" style="font-size: 0.85rem; color: rgba(255,255,255,0.95); line-height: 1.5;">Africa's most trusted partner for secure, data-driven digital solutions.</p>
+                    </div>
                 </div>
             </div>
             <div class="col-lg-4">
-                <div class="service-card text-center p-4 h-100" style="background: linear-gradient(135deg, #1a237e 0%, #5a3fc0 100%); color: white; border: none;">
-                    <i class="fas fa-gem fa-3x mb-3" style="color: white; opacity: 0.95;"></i>
-                    <h5 class="mb-3" style="color: white;">Our Values</h5>
-                    <ul class="list-unstyled mt-3 text-start small" style="color: rgba(255,255,255,0.95);">
-                        <li class="mb-2"><i class="fas fa-shield-alt me-2"></i>Security & Trust</li>
-                        <li class="mb-2"><i class="fas fa-lightbulb me-2"></i>Innovation</li>
-                        <li class="mb-2"><i class="fas fa-star me-2"></i>Excellence</li>
-                        <li class="mb-2"><i class="fas fa-handshake me-2"></i>Integrity</li>
-                    </ul>
+                <div class="card text-center border-0 shadow-sm h-100" style="background: linear-gradient(135deg, #1a237e 0%, #5a3fc0 100%); color: white;">
+                    <div class="card-body p-3">
+                        <i class="fas fa-gem fa-2x mb-2" style="color: white; opacity: 0.95;"></i>
+                        <h6 class="mb-2 fw-bold" style="color: white;">Our Values</h6>
+                        <div class="d-flex flex-wrap justify-content-center gap-2" style="font-size: 0.75rem;">
+                            <span class="badge bg-white bg-opacity-25">Security</span>
+                            <span class="badge bg-white bg-opacity-25">Innovation</span>
+                            <span class="badge bg-white bg-opacity-25">Excellence</span>
+                            <span class="badge bg-white bg-opacity-25">Integrity</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -118,209 +123,153 @@ include 'header.php';
 </section>
 
 <!-- Leadership Section -->
-<section id="leadership" class="py-5" style="background: #f7f9fc;">
+<section id="leadership" class="py-5" style="background: #f8f9fa;">
     <div class="container">
         <div class="text-center mb-5">
-            <span class="badge bg-primary mb-3" style="font-size: 0.85rem; padding: 0.5rem 1rem;">OUR TEAM</span>
-            <h2 class="display-5 fw-bold mb-3">Leadership Excellence</h2>
-            <p class="lead text-muted" style="max-width: 700px; margin: 0 auto;">Meet the visionary leaders and technical experts driving E7's mission to transform Africa's digital landscape</p>
+            <span class="badge bg-primary mb-2" style="font-size: 0.75rem; padding: 0.4rem 0.8rem;">LEADERSHIP</span>
+            <h2 class="h3 fw-bold mb-2">Our Leadership Team</h2>
+            <p class="text-muted mb-0" style="font-size: 0.95rem;">Expert leaders driving digital transformation across Africa</p>
         </div>
         <div class="row g-4">
+            <!-- CEO -->
             <div class="col-lg-4 col-md-6">
-                <div class="card border-0 shadow-sm h-100" style="transition: all 0.3s ease;">
-                    <div class="position-relative" style="background: linear-gradient(135deg, #1a237e 0%, #5a3fc0 100%); padding: 2rem 1.5rem;">
-                        <div class="text-center">
-                            <div class="bg-white rounded-circle d-inline-flex align-items-center justify-content-center shadow" style="width: 80px; height: 80px;">
-                                <i class="fas fa-user-tie fa-2x" style="color: #1a237e;"></i>
+                <div class="card border-0 shadow-sm h-100 hover-lift" style="transition: all 0.3s ease;">
+                    <div class="card-body p-4 text-center">
+                        <div class="mb-3">
+                            <div class="rounded-circle d-inline-flex align-items-center justify-content-center shadow-sm" style="width: 120px; height: 120px; background: linear-gradient(135deg, #1a237e 0%, #5a3fc0 100%);">
+                                <i class="fas fa-user-tie fa-3x text-white"></i>
                             </div>
                         </div>
-                    </div>
-                    <div class="card-body p-3 text-center">
-                        <h6 class="card-title fw-bold mb-1">Dr. Kwame Mensah</h6>
-                        <p class="text-primary mb-2 small fw-semibold">Chief Executive Officer</p>
-                        <p class="small text-muted mb-2">20+ years in technology leadership, specializing in AI and digital transformation across Africa.</p>
-                        <div class="mt-2">
-                            <a href="#" class="btn btn-outline-primary btn-sm me-1"><i class="fab fa-linkedin"></i></a>
-                            <a href="#" class="btn btn-outline-primary btn-sm"><i class="fab fa-twitter"></i></a>
+                        <h5 class="fw-bold mb-1">Dr. Kwame Mensah</h5>
+                        <p class="text-muted small mb-3">Chief Executive Officer</p>
+                        <p class="small text-secondary mb-3" style="line-height: 1.6;">20+ years in technology leadership, specializing in AI and digital transformation. Former executive at leading global tech firms.</p>
+                        <div class="d-flex gap-2 justify-content-center flex-wrap mb-2">
+                            <span class="badge bg-primary bg-opacity-10 text-primary">AI Strategy</span>
+                            <span class="badge bg-primary bg-opacity-10 text-primary">Leadership</span>
+                        </div>
+                        <div class="mt-3">
+                            <a href="#" class="btn btn-sm btn-outline-primary me-1"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="btn btn-sm btn-outline-primary"><i class="fab fa-twitter"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
+            
+            <!-- CTO -->
             <div class="col-lg-4 col-md-6">
-                <div class="card border-0 shadow-sm h-100" style="transition: all 0.3s ease;">
-                    <div class="position-relative" style="background: linear-gradient(135deg, #1a237e 0%, #5a3fc0 100%); padding: 2rem 1.5rem;">
-                        <div class="text-center">
-                            <div class="bg-white rounded-circle d-inline-flex align-items-center justify-content-center shadow" style="width: 80px; height: 80px;">
-                                <i class="fas fa-user-tie fa-2x" style="color: #1a237e;"></i>
+                <div class="card border-0 shadow-sm h-100 hover-lift" style="transition: all 0.3s ease;">
+                    <div class="card-body p-4 text-center">
+                        <div class="mb-3">
+                            <div class="rounded-circle d-inline-flex align-items-center justify-content-center shadow-sm" style="width: 120px; height: 120px; background: linear-gradient(135deg, #1a237e 0%, #5a3fc0 100%);">
+                                <i class="fas fa-user-tie fa-3x text-white"></i>
                             </div>
                         </div>
-                    </div>
-                    <div class="card-body p-3 text-center">
-                        <h6 class="card-title fw-bold mb-1">Amina Osei</h6>
-                        <p class="text-primary mb-2 small fw-semibold">Chief Technology Officer</p>
-                        <p class="small text-muted mb-2">Expert in cloud architecture and cybersecurity with 15+ years building enterprise systems.</p>
-                        <div class="mt-2">
-                            <a href="#" class="btn btn-outline-primary btn-sm me-1"><i class="fab fa-linkedin"></i></a>
-                            <a href="#" class="btn btn-outline-primary btn-sm"><i class="fab fa-twitter"></i></a>
+                        <h5 class="fw-bold mb-1">Amina Osei</h5>
+                        <p class="text-muted small mb-3">Chief Technology Officer</p>
+                        <p class="small text-secondary mb-3" style="line-height: 1.6;">Expert in cloud architecture and cybersecurity with 15+ years building enterprise systems. AWS & Azure certified architect.</p>
+                        <div class="d-flex gap-2 justify-content-center flex-wrap mb-2">
+                            <span class="badge bg-primary bg-opacity-10 text-primary">Cloud</span>
+                            <span class="badge bg-primary bg-opacity-10 text-primary">Security</span>
+                        </div>
+                        <div class="mt-3">
+                            <a href="#" class="btn btn-sm btn-outline-primary me-1"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="btn btn-sm btn-outline-primary"><i class="fab fa-twitter"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
+            
+            <!-- CDO -->
             <div class="col-lg-4 col-md-6">
-                <div class="card border-0 shadow-sm h-100" style="transition: all 0.3s ease;">
-                    <div class="position-relative" style="background: linear-gradient(135deg, #1a237e 0%, #5a3fc0 100%); padding: 2rem 1.5rem;">
-                        <div class="text-center">
-                            <div class="bg-white rounded-circle d-inline-flex align-items-center justify-content-center shadow" style="width: 80px; height: 80px;">
-                                <i class="fas fa-user-tie fa-2x" style="color: #1a237e;"></i>
+                <div class="card border-0 shadow-sm h-100 hover-lift" style="transition: all 0.3s ease;">
+                    <div class="card-body p-4 text-center">
+                        <div class="mb-3">
+                            <div class="rounded-circle d-inline-flex align-items-center justify-content-center shadow-sm" style="width: 120px; height: 120px; background: linear-gradient(135deg, #1a237e 0%, #5a3fc0 100%);">
+                                <i class="fas fa-user-tie fa-3x text-white"></i>
                             </div>
                         </div>
-                    </div>
-                    <div class="card-body p-3 text-center">
-                        <h6 class="card-title fw-bold mb-1">Emmanuel Addo</h6>
-                        <p class="text-primary mb-2 small fw-semibold">Chief Data Officer</p>
-                        <p class="small text-muted mb-2">Data science pioneer with expertise in machine learning and predictive analytics.</p>
-                        <div class="mt-2">
-                            <a href="#" class="btn btn-outline-primary btn-sm me-1"><i class="fab fa-linkedin"></i></a>
-                            <a href="#" class="btn btn-outline-primary btn-sm"><i class="fab fa-twitter"></i></a>
+                        <h5 class="fw-bold mb-1">Emmanuel Addo</h5>
+                        <p class="text-muted small mb-3">Chief Data Officer</p>
+                        <p class="small text-secondary mb-3" style="line-height: 1.6;">Data science pioneer with expertise in machine learning and predictive analytics. PhD in Computer Science.</p>
+                        <div class="d-flex gap-2 justify-content-center flex-wrap mb-2">
+                            <span class="badge bg-primary bg-opacity-10 text-primary">Data Science</span>
+                            <span class="badge bg-primary bg-opacity-10 text-primary">ML/AI</span>
+                        </div>
+                        <div class="mt-3">
+                            <a href="#" class="btn btn-sm btn-outline-primary me-1"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="btn btn-sm btn-outline-primary"><i class="fab fa-twitter"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
+            
+            <!-- VP Cybersecurity -->
             <div class="col-lg-4 col-md-6">
-                <div class="card border-0 shadow-sm h-100" style="transition: all 0.3s ease;">
-                    <div class="position-relative" style="background: linear-gradient(135deg, #1a237e 0%, #5a3fc0 100%); padding: 2rem 1.5rem;">
-                        <div class="text-center">
-                            <div class="bg-white rounded-circle d-inline-flex align-items-center justify-content-center shadow" style="width: 80px; height: 80px;">
-                                <i class="fas fa-user-tie fa-2x" style="color: #1a237e;"></i>
+                <div class="card border-0 shadow-sm h-100 hover-lift" style="transition: all 0.3s ease;">
+                    <div class="card-body p-4 text-center">
+                        <div class="mb-3">
+                            <div class="rounded-circle d-inline-flex align-items-center justify-content-center shadow-sm" style="width: 120px; height: 120px; background: linear-gradient(135deg, #1a237e 0%, #5a3fc0 100%);">
+                                <i class="fas fa-user-tie fa-3x text-white"></i>
                             </div>
                         </div>
-                    </div>
-                    <div class="card-body p-3 text-center">
-                        <h6 class="card-title fw-bold mb-1">Sarah Owusu</h6>
-                        <p class="text-primary mb-2 small fw-semibold">VP of Cybersecurity</p>
-                        <p class="small text-muted mb-2">Certified security expert protecting critical infrastructure. CISSP & CEH certified.</p>
-                        <div class="mt-2">
-                            <a href="#" class="btn btn-outline-primary btn-sm me-1"><i class="fab fa-linkedin"></i></a>
-                            <a href="#" class="btn btn-outline-primary btn-sm"><i class="fab fa-twitter"></i></a>
+                        <h5 class="fw-bold mb-1">Sarah Owusu</h5>
+                        <p class="text-muted small mb-3">VP of Cybersecurity</p>
+                        <p class="small text-secondary mb-3" style="line-height: 1.6;">Certified security expert protecting critical infrastructure. CISSP & CEH certified with global experience.</p>
+                        <div class="d-flex gap-2 justify-content-center flex-wrap mb-2">
+                            <span class="badge bg-primary bg-opacity-10 text-primary">Security</span>
+                            <span class="badge bg-primary bg-opacity-10 text-primary">Compliance</span>
+                        </div>
+                        <div class="mt-3">
+                            <a href="#" class="btn btn-sm btn-outline-primary me-1"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="btn btn-sm btn-outline-primary"><i class="fab fa-twitter"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
+            
+            <!-- Director Innovation -->
             <div class="col-lg-4 col-md-6">
-                <div class="card border-0 shadow-sm h-100" style="transition: all 0.3s ease;">
-                    <div class="position-relative" style="background: linear-gradient(135deg, #1a237e 0%, #5a3fc0 100%); padding: 2rem 1.5rem;">
-                        <div class="text-center">
-                            <div class="bg-white rounded-circle d-inline-flex align-items-center justify-content-center shadow" style="width: 80px; height: 80px;">
-                                <i class="fas fa-user-tie fa-2x" style="color: #1a237e;"></i>
+                <div class="card border-0 shadow-sm h-100 hover-lift" style="transition: all 0.3s ease;">
+                    <div class="card-body p-4 text-center">
+                        <div class="mb-3">
+                            <div class="rounded-circle d-inline-flex align-items-center justify-content-center shadow-sm" style="width: 120px; height: 120px; background: linear-gradient(135deg, #1a237e 0%, #5a3fc0 100%);">
+                                <i class="fas fa-user-tie fa-3x text-white"></i>
                             </div>
                         </div>
-                    </div>
-                    <div class="card-body p-3 text-center">
-                        <h6 class="card-title fw-bold mb-1">Michael Boateng</h6>
-                        <p class="text-primary mb-2 small fw-semibold">Director of Innovation</p>
-                        <p class="small text-muted mb-2">Leading R&D initiatives in AI, IoT, and emerging technologies for African markets.</p>
-                        <div class="mt-2">
-                            <a href="#" class="btn btn-outline-primary btn-sm me-1"><i class="fab fa-linkedin"></i></a>
-                            <a href="#" class="btn btn-outline-primary btn-sm"><i class="fab fa-twitter"></i></a>
+                        <h5 class="fw-bold mb-1">Michael Boateng</h5>
+                        <p class="text-muted small mb-3">Director of Innovation</p>
+                        <p class="small text-secondary mb-3" style="line-height: 1.6;">Leading R&D initiatives in AI, IoT, and emerging technologies for African markets. Patent holder in ML algorithms.</p>
+                        <div class="d-flex gap-2 justify-content-center flex-wrap mb-2">
+                            <span class="badge bg-primary bg-opacity-10 text-primary">R&D</span>
+                            <span class="badge bg-primary bg-opacity-10 text-primary">Innovation</span>
+                        </div>
+                        <div class="mt-3">
+                            <a href="#" class="btn btn-sm btn-outline-primary me-1"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="btn btn-sm btn-outline-primary"><i class="fab fa-twitter"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
+            
+            <!-- Head Client Solutions -->
             <div class="col-lg-4 col-md-6">
-                <div class="card border-0 shadow-sm h-100" style="transition: all 0.3s ease;">
-                    <div class="position-relative" style="background: linear-gradient(135deg, #1a237e 0%, #5a3fc0 100%); padding: 2rem 1.5rem;">
-                        <div class="text-center">
-                            <div class="bg-white rounded-circle d-inline-flex align-items-center justify-content-center shadow" style="width: 80px; height: 80px;">
-                                <i class="fas fa-user-tie fa-2x" style="color: #1a237e;"></i>
+                <div class="card border-0 shadow-sm h-100 hover-lift" style="transition: all 0.3s ease;">
+                    <div class="card-body p-4 text-center">
+                        <div class="mb-3">
+                            <div class="rounded-circle d-inline-flex align-items-center justify-content-center shadow-sm" style="width: 120px; height: 120px; background: linear-gradient(135deg, #1a237e 0%, #5a3fc0 100%);">
+                                <i class="fas fa-user-tie fa-3x text-white"></i>
                             </div>
                         </div>
-                    </div>
-                    <div class="card-body p-3 text-center">
-                        <h6 class="card-title fw-bold mb-1">Grace Ankrah</h6>
-                        <p class="text-primary mb-2 small fw-semibold">Head of Client Solutions</p>
-                        <p class="small text-muted mb-2">Driving client success through strategic partnerships and solution delivery excellence.</p>
-                        <div class="mt-2">
-                            <a href="#" class="btn btn-outline-primary btn-sm me-1"><i class="fab fa-linkedin"></i></a>
-                            <a href="#" class="btn btn-outline-primary btn-sm"><i class="fab fa-twitter"></i></a>
+                        <h5 class="fw-bold mb-1">Grace Ankrah</h5>
+                        <p class="text-muted small mb-3">Head of Client Solutions</p>
+                        <p class="small text-secondary mb-3" style="line-height: 1.6;">Driving client success through strategic partnerships and solution delivery excellence. MBA from INSEAD.</p>
+                        <div class="d-flex gap-2 justify-content-center flex-wrap mb-2">
+                            <span class="badge bg-primary bg-opacity-10 text-primary">Client Success</span>
+                            <span class="badge bg-primary bg-opacity-10 text-primary">Strategy</span>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Gallery Section -->
-<section id="gallery" class="py-5" style="background: #ffffff;">
-    <div class="container">
-        <div class="text-center mb-5">
-            <span class="badge bg-primary mb-3" style="font-size: 0.85rem; padding: 0.5rem 1rem;">GALLERY</span>
-            <h2 class="display-5 fw-bold mb-3">Our World</h2>
-            <p class="lead text-muted" style="max-width: 700px; margin: 0 auto;">Explore our state-of-the-art facilities, cutting-edge technology infrastructure, and the spaces where innovation happens</p>
-        </div>
-        <div class="row g-4">
-            <div class="col-lg-4 col-md-6">
-                <div class="card border-0 shadow-lg overflow-hidden h-100" style="transition: all 0.4s ease;">
-                    <div class="position-relative" style="overflow: hidden;">
-                        <img src="assets/images/solution-digital-transformation.png" class="card-img-top" alt="Office" style="height: 220px; object-fit: cover;">
-                        <div class="card-body">
-                            <h6 class="fw-bold mb-2">Accra Headquarters</h6>
-                            <p class="small text-muted mb-0">State-of-the-art innovation center</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="card border-0 shadow-lg overflow-hidden h-100" style="transition: all 0.4s ease;">
-                    <div class="position-relative" style="overflow: hidden;">
-                        <img src="assets/images/solution-analytics-server.png" class="card-img-top" alt="Team" style="height: 220px; object-fit: cover;">
-                        <div class="card-body">
-                            <h6 class="fw-bold mb-2">Data Center Operations</h6>
-                            <p class="small text-muted mb-0">Secure, scalable infrastructure</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="card border-0 shadow-lg overflow-hidden h-100" style="transition: all 0.4s ease;">
-                    <div class="position-relative" style="overflow: hidden;">
-                        <img src="assets/images/solution-cybersecurity-globe.png" class="card-img-top" alt="Training" style="height: 220px; object-fit: cover;">
-                        <div class="card-body">
-                            <h6 class="fw-bold mb-2">Security Operations Center</h6>
-                            <p class="small text-muted mb-0">24/7 threat monitoring</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="card border-0 shadow-lg overflow-hidden h-100" style="transition: all 0.4s ease;">
-                    <div class="position-relative" style="overflow: hidden;">
-                        <img src="assets/images/solution-data-visualization.png" class="card-img-top" alt="Event" style="height: 220px; object-fit: cover;">
-                        <div class="card-body">
-                            <h6 class="fw-bold mb-2">Analytics Lab</h6>
-                            <p class="small text-muted mb-0">Advanced data science workspace</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="card border-0 shadow-lg overflow-hidden h-100" style="transition: all 0.4s ease;">
-                    <div class="position-relative" style="overflow: hidden;">
-                        <img src="assets/images/solution-secure-ai.png" class="card-img-top" alt="Innovation" style="height: 220px; object-fit: cover;">
-                        <div class="card-body">
-                            <h6 class="fw-bold mb-2">AI Research Lab</h6>
-                            <p class="small text-muted mb-0">Developing next-gen solutions</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="card border-0 shadow-lg overflow-hidden h-100" style="transition: all 0.4s ease;">
-                    <div class="position-relative" style="overflow: hidden;">
-                        <img src="assets/images/solution-ai-security.png" class="card-img-top" alt="Partnership" style="height: 220px; object-fit: cover;">
-                        <div class="card-body">
-                            <h6 class="fw-bold mb-2">Training Center</h6>
-                            <p class="small text-muted mb-0">E7 Academy classrooms</p>
+                        <div class="mt-3">
+                            <a href="#" class="btn btn-sm btn-outline-primary me-1"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="btn btn-sm btn-outline-primary"><i class="fab fa-twitter"></i></a>
                         </div>
                     </div>
                 </div>
@@ -330,12 +279,77 @@ include 'header.php';
 </section>
 
 <style>
-.card:hover img {
-    transform: scale(1.1);
-}
-.card:hover {
-    transform: translateY(-0.5rem);
+.hover-lift:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
 }
 </style>
+
+<!-- Gallery Section -->
+<section id="gallery" class="py-4" style="background: #ffffff;">
+    <div class="container">
+        <div class="text-center mb-4">
+            <span class="badge bg-primary mb-2" style="font-size: 0.75rem; padding: 0.4rem 0.8rem;">GALLERY</span>
+            <h2 class="h3 fw-bold mb-2">Gallery</h2>
+            <p class="text-muted mb-0" style="font-size: 0.95rem;">Our facilities across Africa</p>
+        </div>
+        <div class="row g-3">
+            <div class="col-lg-4 col-md-6">
+                <div class="card border-0 shadow-sm h-100">
+                    <img src="assets/images/solution-digital-transformation.png" class="card-img-top" alt="Office" style="height: 140px; object-fit: cover;">
+                    <div class="card-body p-3">
+                        <h6 class="fw-bold mb-1" style="font-size: 0.9rem;">Accra Headquarters</h6>
+                        <p class="text-muted mb-0" style="font-size: 0.8rem;">Innovation center</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card border-0 shadow-sm h-100">
+                    <img src="assets/images/solution-analytics-server.png" class="card-img-top" alt="Team" style="height: 140px; object-fit: cover;">
+                    <div class="card-body p-3">
+                        <h6 class="fw-bold mb-1" style="font-size: 0.9rem;">Data Center</h6>
+                        <p class="text-muted mb-0" style="font-size: 0.8rem;">Scalable infrastructure</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card border-0 shadow-sm h-100">
+                    <img src="assets/images/solution-cybersecurity-globe.png" class="card-img-top" alt="Training" style="height: 140px; object-fit: cover;">
+                    <div class="card-body p-3">
+                        <h6 class="fw-bold mb-1" style="font-size: 0.9rem;">Security Operations</h6>
+                        <p class="text-muted mb-0" style="font-size: 0.8rem;">24/7 threat monitoring</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card border-0 shadow-sm h-100">
+                    <img src="assets/images/solution-data-visualization.png" class="card-img-top" alt="Event" style="height: 140px; object-fit: cover;">
+                    <div class="card-body p-3">
+                        <h6 class="fw-bold mb-1" style="font-size: 0.9rem;">Analytics Lab</h6>
+                        <p class="text-muted mb-0" style="font-size: 0.8rem;">Data science workspace</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card border-0 shadow-sm h-100">
+                    <img src="assets/images/solution-secure-ai.png" class="card-img-top" alt="Innovation" style="height: 140px; object-fit: cover;">
+                    <div class="card-body p-3">
+                        <h6 class="fw-bold mb-1" style="font-size: 0.9rem;">AI Research Lab</h6>
+                        <p class="text-muted mb-0" style="font-size: 0.8rem;">Next-gen AI solutions</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card border-0 shadow-sm h-100">
+                    <img src="assets/images/solution-ai-security.png" class="card-img-top" alt="Partnership" style="height: 140px; object-fit: cover;">
+                    <div class="card-body p-3">
+                        <h6 class="fw-bold mb-1" style="font-size: 0.9rem;">Training Center</h6>
+                        <p class="text-muted mb-0" style="font-size: 0.8rem;">E7 Academy programs</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 <?php include 'footer.php'; ?>
