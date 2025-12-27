@@ -316,78 +316,106 @@
     </section>
 
     <!-- Technology Stack & Partnerships Section -->
-    <section class="tech-stack-section py-5">
+    <section class="tech-stack-section py-5" style="background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);">
         <div class="container">
-            <h2 class="mb-3 text-center text-primary">Our Technology Partners & Certifications</h2>
-            <p class="text-center mb-5 text-muted">We work with industry-leading technologies and maintain world-class certifications</p>
+            <div class="text-center mb-5">
+                <span class="badge bg-primary mb-2" style="font-size: 0.75rem; padding: 0.4rem 0.8rem;">PARTNERSHIPS</span>
+                <h2 class="h3 fw-bold mb-2">Technology Partners & Certifications</h2>
+                <p class="text-muted mb-0">Industry-leading technologies and world-class certifications</p>
+            </div>
             
             <!-- Technology Partners -->
             <div class="mb-5">
-                <h4 class="text-center mb-4">Trusted Technology Partners</h4>
-                <div class="tech-logos-grid">
-                    <div class="tech-logo-item">
-                        <i class="fab fa-aws fa-4x"></i>
-                        <p>AWS Partner</p>
+                <h5 class="text-center mb-4 fw-semibold" style="color: #1a237e;">Trusted Technology Partners</h5>
+                <div class="row g-3 justify-content-center align-items-center">
+                    <div class="col-lg-2 col-md-3 col-4">
+                        <div class="tech-partner-card text-center p-3 bg-white rounded shadow-sm" style="transition: all 0.3s ease;">
+                            <i class="fab fa-aws fa-3x mb-2" style="color: #FF9900;"></i>
+                            <p class="mb-0 small fw-semibold" style="color: #232F3E;">AWS</p>
+                        </div>
                     </div>
-                    <div class="tech-logo-item">
-                        <i class="fab fa-microsoft fa-4x"></i>
-                        <p>Azure Certified</p>
+                    <div class="col-lg-2 col-md-3 col-4">
+                        <div class="tech-partner-card text-center p-3 bg-white rounded shadow-sm" style="transition: all 0.3s ease;">
+                            <i class="fab fa-microsoft fa-3x mb-2" style="color: #00A4EF;"></i>
+                            <p class="mb-0 small fw-semibold" style="color: #5E5E5E;">Azure</p>
+                        </div>
                     </div>
-                    <div class="tech-logo-item">
-                        <i class="fab fa-google fa-4x"></i>
-                        <p>Google Cloud</p>
+                    <div class="col-lg-2 col-md-3 col-4">
+                        <div class="tech-partner-card text-center p-3 bg-white rounded shadow-sm" style="transition: all 0.3s ease;">
+                            <i class="fab fa-google fa-3x mb-2" style="color: #4285F4;"></i>
+                            <p class="mb-0 small fw-semibold" style="color: #5F6368;">Google Cloud</p>
+                        </div>
                     </div>
-                    <div class="tech-logo-item">
-                        <i class="fab fa-python fa-4x"></i>
-                        <p>Python Expert</p>
+                    <div class="col-lg-2 col-md-3 col-4">
+                        <div class="tech-partner-card text-center p-3 bg-white rounded shadow-sm" style="transition: all 0.3s ease;">
+                            <i class="fab fa-python fa-3x mb-2" style="color: #3776AB;"></i>
+                            <p class="mb-0 small fw-semibold" style="color: #646464;">Python</p>
+                        </div>
                     </div>
-                    <div class="tech-logo-item">
-                        <i class="fab fa-docker fa-4x"></i>
-                        <p>Docker</p>
+                    <div class="col-lg-2 col-md-3 col-4">
+                        <div class="tech-partner-card text-center p-3 bg-white rounded shadow-sm" style="transition: all 0.3s ease;">
+                            <i class="fab fa-docker fa-3x mb-2" style="color: #2496ED;"></i>
+                            <p class="mb-0 small fw-semibold" style="color: #384D54;">Docker</p>
+                        </div>
                     </div>
-                    <div class="tech-logo-item">
-                        <i class="fab fa-linux fa-4x"></i>
-                        <p>Linux</p>
+                    <div class="col-lg-2 col-md-3 col-4">
+                        <div class="tech-partner-card text-center p-3 bg-white rounded shadow-sm" style="transition: all 0.3s ease;">
+                            <i class="fab fa-linux fa-3x mb-2" style="color: #FCC624;"></i>
+                            <p class="mb-0 small fw-semibold" style="color: #000000;">Linux</p>
+                        </div>
                     </div>
                 </div>
             </div>
             
             <!-- Certifications -->
             <div class="certifications-area">
-                <h4 class="text-center mb-4">Our Certifications & Compliance</h4>
+                <h5 class="text-center mb-4 fw-semibold" style="color: #1a237e;">Certifications & Compliance</h5>
                 <div class="row g-3 justify-content-center">
                     <div class="col-md-3 col-6">
-                        <div class="cert-badge text-center p-3 bg-light rounded">
-                            <i class="fas fa-certificate fa-3x text-warning mb-2"></i>
-                            <p class="mb-0 fw-bold text-dark">ISO 27001</p>
-                            <small class="text-muted">Information Security</small>
+                        <div class="cert-badge text-center p-3 bg-white rounded shadow-sm border border-light" style="transition: all 0.3s ease;">
+                            <i class="fas fa-certificate fa-2x text-warning mb-2"></i>
+                            <p class="mb-0 fw-bold small" style="color: #1a237e;">ISO 27001</p>
+                            <small class="text-muted" style="font-size: 0.75rem;">Security</small>
                         </div>
                     </div>
                     <div class="col-md-3 col-6">
-                        <div class="cert-badge text-center p-3 bg-light rounded">
-                            <i class="fas fa-shield-alt fa-3x text-success mb-2"></i>
-                            <p class="mb-0 fw-bold text-dark">GDPR Compliant</p>
-                            <small class="text-muted">Data Protection</small>
+                        <div class="cert-badge text-center p-3 bg-white rounded shadow-sm border border-light" style="transition: all 0.3s ease;">
+                            <i class="fas fa-shield-alt fa-2x text-success mb-2"></i>
+                            <p class="mb-0 fw-bold small" style="color: #1a237e;">GDPR</p>
+                            <small class="text-muted" style="font-size: 0.75rem;">Data Protection</small>
                         </div>
                     </div>
                     <div class="col-md-3 col-6">
-                        <div class="cert-badge text-center p-3 bg-light rounded">
-                            <i class="fas fa-award fa-3x text-primary mb-2"></i>
-                            <p class="mb-0 fw-bold text-dark">ISO 9001</p>
-                            <small class="text-muted">Quality Management</small>
+                        <div class="cert-badge text-center p-3 bg-white rounded shadow-sm border border-light" style="transition: all 0.3s ease;">
+                            <i class="fas fa-award fa-2x text-primary mb-2"></i>
+                            <p class="mb-0 fw-bold small" style="color: #1a237e;">ISO 9001</p>
+                            <small class="text-muted" style="font-size: 0.75rem;">Quality</small>
                         </div>
                     </div>
                     <div class="col-md-3 col-6">
-                        <div class="cert-badge text-center p-3 bg-light rounded">
-                            <i class="fas fa-lock fa-3x text-danger mb-2"></i>
-                            <p class="mb-0 fw-bold text-dark">SOC 2 Type II</p>
-                            <small class="text-muted">Security & Privacy</small>
+                        <div class="cert-badge text-center p-3 bg-white rounded shadow-sm border border-light" style="transition: all 0.3s ease;">
+                            <i class="fas fa-lock fa-2x text-danger mb-2"></i>
+                            <p class="mb-0 fw-bold small" style="color: #1a237e;">SOC 2 Type II</p>
+                            <small class="text-muted" style="font-size: 0.75rem;">Security</small>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+<style>
+.tech-partner-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(26, 35, 126, 0.15) !important;
+}
+
+.cert-badge:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(26, 35, 126, 0.15) !important;
+    border-color: #1a237e !important;
+}
+</style>
 
     <!-- Testimonials/Case Studies Section -->
     <section class="testimonials-section py-5">
