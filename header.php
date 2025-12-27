@@ -41,7 +41,7 @@
                 <!-- Logo -->
                 <div class="site-logo">
                     <a href="index.php">
-                        <img src="assets/images/E7-logo1.png" alt="E7 Technology Solutions">
+                        <img src="assets/images/e7-logo1.png" alt="E7 Technology Solutions">
                     </a>
                 </div>
                 
@@ -140,7 +140,7 @@
     <!-- Mobile Navigation -->
     <div class="mobile-nav" id="mobileNav">
         <div class="mobile-nav-header">
-            <img src="assets/images/E7-logo1.png" alt="E7 Tech">
+            <img src="assets/images/e7-logo1.png" alt="E7 Tech">
             <button class="mobile-close" id="mobileClose" aria-label="Close navigation">
                 <i class="fas fa-times"></i>
             </button>
