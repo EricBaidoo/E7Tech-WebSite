@@ -783,13 +783,22 @@ body {
 @media (max-width: 991px) {
     .hero-content {
         grid-template-columns: 1fr;
-        gap: 4rem;
+        gap: 3rem;
     }
     
     .hero-visual {
         order: -1;
-        max-width: 500px;
-        margin: 0 auto;
+        max-width: 550px;
+        margin: 0 auto 2rem;
+    }
+    
+    .visual-wrapper {
+        border-radius: 16px;
+    }
+    
+    .visual-wrapper img {
+        border-radius: 16px;
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
     }
     
     .hero-text {
@@ -811,11 +820,29 @@ body {
 
 @media (max-width: 767px) {
     .home-hero {
-        padding: 5rem 0 7rem;
+        padding: 4rem 0 6rem;
     }
     
     .hero-content {
-        gap: 3rem;
+        gap: 2.5rem;
+    }
+    
+    .hero-visual {
+        max-width: 100%;
+        margin: 0 0 1.5rem;
+    }
+    
+    .visual-wrapper {
+        border-radius: 12px;
+    }
+    
+    .visual-wrapper img {
+        border-radius: 12px;
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+    }
+    
+    .visual-decoration {
+        display: none;
     }
     
     .hero-badge {
@@ -860,6 +887,8 @@ body {
         padding: 1rem;
         background: rgba(255, 255, 255, 0.05);
         border-radius: 12px;
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
     }
     
     .hero-stats .stat-item i {
@@ -868,10 +897,6 @@ body {
     
     .stat-value {
         font-size: 1.75rem;
-    }
-    
-    .visual-wrapper img {
-        border-radius: 16px;
     }
     
     .services-grid {
@@ -904,11 +929,24 @@ body {
 
 @media (max-width: 575px) {
     .home-hero {
-        padding: 4rem 0 6rem;
+        padding: 3.5rem 0 5rem;
     }
     
     .hero-content {
-        gap: 2.5rem;
+        gap: 2rem;
+    }
+    
+    .hero-visual {
+        margin: 0 0 1rem;
+    }
+    
+    .visual-wrapper {
+        border-radius: 10px;
+    }
+    
+    .visual-wrapper img {
+        border-radius: 10px;
+        box-shadow: 0 10px 35px rgba(0, 0, 0, 0.5);
     }
     
     .hero-badge {
@@ -925,6 +963,7 @@ body {
     .hero-subtitle {
         font-size: 0.95rem;
         margin-bottom: 1.75rem;
+        line-height: 1.7;
     }
     
     .hero-actions {
@@ -935,10 +974,13 @@ body {
     .btn-secondary {
         padding: 0.85rem 1.25rem;
         font-size: 0.9375rem;
+        border-radius: 10px;
     }
     
     .hero-stats .stat-item {
         padding: 0.875rem;
+        max-width: 100%;
+        border-radius: 10px;
     }
     
     .hero-stats .stat-item i {
@@ -951,13 +993,6 @@ body {
     
     .stat-label {
         font-size: 0.8125rem;
-    }
-    
-    .visual-decoration {
-        width: 150px;
-        height: 150px;
-        top: -20px;
-        right: -20px;
     }
     
     .section-title {
