@@ -1,20 +1,43 @@
-<?php /* E7 Technology Solutions Header */ ?>
+<?php /* E7 Technology Solutions - Professional Header */ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E7 Technology Solutions</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title><?php echo isset($page_title) ? $page_title . ' | E7 Technology Solutions' : 'E7 Technology Solutions - Innovation Through Technology'; ?></title>
+    <meta name="description" content="E7 Technology Solutions provides cutting-edge cybersecurity, cloud computing, AI/ML, and technology consulting services across Africa.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="assets/header.css?v=<?php echo time(); ?>">
-    <link rel="stylesheet" href="assets/mobile.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="assets/header.css?v=5">
 </head>
 <body>
-    <!-- Header -->
-    <header class="site-header">
+    <!-- Top Bar -->
+    <div class="top-bar">
         <div class="container">
-            <div class="header-content">
+            <div class="top-bar-content">
+                <div class="top-bar-left">
+                    <a href="tel:+15551234567" class="top-bar-link">
+                        <i class="fas fa-phone"></i>
+                        <span>+1 (555) 123-4567</span>
+                    </a>
+                    <a href="mailto:info@e7tech.com" class="top-bar-link">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@e7tech.com</span>
+                    </a>
+                </div>
+                <div class="top-bar-right">
+                    <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <header class="site-header" id="siteHeader">
+        <div class="container">
+            <div class="header-wrapper">
                 <!-- Logo -->
                 <div class="site-logo">
                     <a href="index.php">
@@ -24,72 +47,245 @@
                 
                 <!-- Desktop Navigation -->
                 <nav class="main-nav">
-                    <a href="index.php">Home</a>
-                    <div class="dropdown">
-                        <a href="about.php" class="dropdown-btn">About Us <i class="fas fa-chevron-down"></i></a>
-                        <div class="dropdown-content">
-                            <a href="about.php#about-e7">About E7</a>
-                            <a href="about.php#leadership">Leadership</a>
-                            <a href="about.php#gallery">Gallery</a>
+                    <a href="index.php" class="nav-link">Home</a>
+                    
+                    <div class="nav-item has-dropdown">
+                        <a href="about.php" class="nav-link">
+                            About Us
+                            <i class="fas fa-chevron-down dropdown-icon"></i>
+                        </a>
+                        <div class="dropdown-menu">
+                            <a href="about.php" class="dropdown-item">
+                                <i class="fas fa-building"></i>
+                                <div class="dropdown-item-content">
+                                    <span class="dropdown-item-title">About E7</span>
+                                    <span class="dropdown-item-desc">Our story and mission</span>
+                                </div>
+                            </a>
+                            <a href="about.php#leadership" class="dropdown-item">
+                                <i class="fas fa-users"></i>
+                                <div class="dropdown-item-content">
+                                    <span class="dropdown-item-title">Leadership Team</span>
+                                    <span class="dropdown-item-desc">Meet our experts</span>
+                                </div>
+                            </a>
+                            <a href="about.php#gallery" class="dropdown-item">
+                                <i class="fas fa-images"></i>
+                                <div class="dropdown-item-content">
+                                    <span class="dropdown-item-title">Gallery</span>
+                                    <span class="dropdown-item-desc">Our workspace & events</span>
+                                </div>
+                            </a>
                         </div>
                     </div>
-                    <a href="services.php">Services</a>
-                    <a href="solutions.php">Solutions</a>
-                    <a href="academy.php">E7 Academy</a>
-                    <a href="news.php">News</a>
-                    <a href="contact.php" class="btn-contact">Contact Us</a>
+                    
+                    <div class="nav-item has-dropdown">
+                        <a href="services.php" class="nav-link">
+                            Services
+                            <i class="fas fa-chevron-down dropdown-icon"></i>
+                        </a>
+                        <div class="dropdown-menu mega-menu">
+                            <div class="mega-menu-grid">
+                                <a href="services.php#cybersecurity" class="dropdown-item">
+                                    <i class="fas fa-shield-alt"></i>
+                                    <div class="dropdown-item-content">
+                                        <span class="dropdown-item-title">Cybersecurity</span>
+                                        <span class="dropdown-item-desc">Advanced threat protection</span>
+                                    </div>
+                                </a>
+                                <a href="services.php#cloud" class="dropdown-item">
+                                    <i class="fas fa-cloud"></i>
+                                    <div class="dropdown-item-content">
+                                        <span class="dropdown-item-title">Cloud Solutions</span>
+                                        <span class="dropdown-item-desc">Scalable infrastructure</span>
+                                    </div>
+                                </a>
+                                <a href="services.php#analytics" class="dropdown-item">
+                                    <i class="fas fa-chart-line"></i>
+                                    <div class="dropdown-item-content">
+                                        <span class="dropdown-item-title">Data Analytics</span>
+                                        <span class="dropdown-item-desc">Actionable insights</span>
+                                    </div>
+                                </a>
+                                <a href="services.php#ai" class="dropdown-item">
+                                    <i class="fas fa-brain"></i>
+                                    <div class="dropdown-item-content">
+                                        <span class="dropdown-item-title">AI & Machine Learning</span>
+                                        <span class="dropdown-item-desc">Intelligent automation</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="solutions.php" class="nav-link">Solutions</a>
+                    <a href="academy.php" class="nav-link">E7 Academy</a>
+                    <a href="news.php" class="nav-link">News</a>
+                    <a href="contact.php" class="btn-contact">
+                        <span>Get Started</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
                 </nav>
                 
-                <!-- Mobile Toggle -->
-                <button class="nav-toggle" onclick="toggleMobileMenu()">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+                    <span class="toggle-line"></span>
+                    <span class="toggle-line"></span>
+                    <span class="toggle-line"></span>
                 </button>
             </div>
         </div>
-        
-        <!-- Mobile Navigation -->
-        <div class="mobile-nav" id="mobileNav">
-            <a href="index.php">Home</a>
-            <div class="mobile-dropdown">
-                <a href="#" onclick="toggleDropdown(event)">About Us <i class="fas fa-chevron-down"></i></a>
-                <div class="mobile-dropdown-content">
-                    <a href="about.php#about-e7">About E7</a>
-                    <a href="about.php#leadership">Leadership</a>
-                    <a href="about.php#gallery">Gallery</a>
-                </div>
-            </div>
-            <a href="services.php">Services</a>
-            <a href="solutions.php">Solutions</a>
-            <a href="academy.php">E7 Academy</a>
-            <a href="news.php">News</a>
-            <a href="contact.php" class="btn-contact">Contact Us</a>
-        </div>
     </header>
 
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobileNav">
+        <div class="mobile-nav-header">
+            <img src="assets/images/E7-logo1.png" alt="E7 Tech">
+            <button class="mobile-close" id="mobileClose" aria-label="Close navigation">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        
+        <div class="mobile-nav-content">
+            <a href="index.php" class="mobile-nav-link">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </a>
+            
+            <div class="mobile-nav-item">
+                <button class="mobile-nav-link mobile-dropdown-trigger">
+                    <div class="mobile-nav-link-content">
+                        <i class="fas fa-building"></i>
+                        <span>About Us</span>
+                    </div>
+                    <i class="fas fa-chevron-down mobile-dropdown-icon"></i>
+                </button>
+                <div class="mobile-dropdown-content">
+                    <a href="about.php" class="mobile-dropdown-link">About E7</a>
+                    <a href="about.php#leadership" class="mobile-dropdown-link">Leadership Team</a>
+                    <a href="about.php#gallery" class="mobile-dropdown-link">Gallery</a>
+                </div>
+            </div>
+            
+            <div class="mobile-nav-item">
+                <button class="mobile-nav-link mobile-dropdown-trigger">
+                    <div class="mobile-nav-link-content">
+                        <i class="fas fa-cog"></i>
+                        <span>Services</span>
+                    </div>
+                    <i class="fas fa-chevron-down mobile-dropdown-icon"></i>
+                </button>
+                <div class="mobile-dropdown-content">
+                    <a href="services.php#cybersecurity" class="mobile-dropdown-link">Cybersecurity</a>
+                    <a href="services.php#cloud" class="mobile-dropdown-link">Cloud Solutions</a>
+                    <a href="services.php#analytics" class="mobile-dropdown-link">Data Analytics</a>
+                    <a href="services.php#ai" class="mobile-dropdown-link">AI & Machine Learning</a>
+                </div>
+            </div>
+            
+            <a href="solutions.php" class="mobile-nav-link">
+                <i class="fas fa-lightbulb"></i>
+                <span>Solutions</span>
+            </a>
+            
+            <a href="academy.php" class="mobile-nav-link">
+                <i class="fas fa-graduation-cap"></i>
+                <span>E7 Academy</span>
+            </a>
+            
+            <a href="news.php" class="mobile-nav-link">
+                <i class="fas fa-newspaper"></i>
+                <span>News</span>
+            </a>
+            
+            <a href="contact.php" class="mobile-nav-link mobile-nav-cta">
+                <i class="fas fa-paper-plane"></i>
+                <span>Contact Us</span>
+            </a>
+        </div>
+        
+        <div class="mobile-nav-footer">
+            <div class="mobile-contact-info">
+                <a href="tel:+15551234567"><i class="fas fa-phone"></i> +1 (555) 123-4567</a>
+                <a href="mailto:info@e7tech.com"><i class="fas fa-envelope"></i> info@e7tech.com</a>
+            </div>
+            <div class="mobile-social">
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Overlay -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+
     <script>
-    function toggleMobileMenu() {
-        const mobileNav = document.getElementById('mobileNav');
-        const toggle = document.querySelector('.nav-toggle');
-        mobileNav.classList.toggle('active');
-        toggle.classList.toggle('active');
-        document.body.classList.toggle('nav-open');
-    }
+    // Header scroll effect
+    let lastScroll = 0;
+    const header = document.getElementById('siteHeader');
     
-    function toggleDropdown(e) {
-        e.preventDefault();
-        e.target.parentElement.classList.toggle('active');
+    window.addEventListener('scroll', () => {
+        const currentScroll = window.pageYOffset;
+        
+        if (currentScroll > 100) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+        
+        lastScroll = currentScroll;
+    });
+
+    // Mobile menu functionality
+    const mobileToggle = document.getElementById('mobileToggle');
+    const mobileClose = document.getElementById('mobileClose');
+    const mobileNav = document.getElementById('mobileNav');
+    const mobileOverlay = document.getElementById('mobileOverlay');
+    const body = document.body;
+
+    function openMobileMenu() {
+        mobileNav.classList.add('active');
+        mobileOverlay.classList.add('active');
+        body.style.overflow = 'hidden';
     }
+
+    function closeMobileMenu() {
+        mobileNav.classList.remove('active');
+        mobileOverlay.classList.remove('active');
+        body.style.overflow = '';
+    }
+
+    mobileToggle.addEventListener('click', openMobileMenu);
+    mobileClose.addEventListener('click', closeMobileMenu);
+    mobileOverlay.addEventListener('click', closeMobileMenu);
+
+    // Mobile dropdown toggles
+    const dropdownTriggers = document.querySelectorAll('.mobile-dropdown-trigger');
     
-    // Close mobile menu when clicking outside
-    document.addEventListener('click', function(e) {
-        const mobileNav = document.getElementById('mobileNav');
-        const toggle = document.querySelector('.nav-toggle');
-        if (!e.target.closest('.site-header') && mobileNav.classList.contains('active')) {
-            mobileNav.classList.remove('active');
-            toggle.classList.remove('active');
-            document.body.classList.remove('nav-open');
+    dropdownTriggers.forEach(trigger => {
+        trigger.addEventListener('click', function() {
+            const parent = this.parentElement;
+            const wasActive = parent.classList.contains('active');
+            
+            // Close all dropdowns
+            document.querySelectorAll('.mobile-nav-item').forEach(item => {
+                item.classList.remove('active');
+            });
+            
+            // Toggle current dropdown
+            if (!wasActive) {
+                parent.classList.add('active');
+            }
+        });
+    });
+
+    // Close mobile menu on link click
+    const mobileLinks = document.querySelectorAll('.mobile-dropdown-link, .mobile-nav-link:not(.mobile-dropdown-trigger)');
+    mobileLinks.forEach(link => {
+        if (!link.classList.contains('mobile-dropdown-trigger')) {
+            link.addEventListener('click', closeMobileMenu);
         }
     });
     </script>

@@ -2,7 +2,7 @@
 $page_title = "Services - E7 Technology Solutions";
 include('header.php');
 ?>
-<link rel="stylesheet" href="assets/services.css">
+<link rel="stylesheet" href="assets/services.css?v=3">
 
 <!-- Hero Section -->
 <section class="services-hero">

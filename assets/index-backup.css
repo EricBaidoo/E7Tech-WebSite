@@ -1,6 +1,7 @@
 /* ===================================
    E7 TECH - HOMEPAGE
    World-Class Modern Design
+   Updated: 2025-12-27 - Fixed Title Visibility
    =================================== */
 
 /* GLOBAL STYLES */
@@ -226,12 +227,18 @@ body {
     margin-bottom: 1rem;
 }
 
-.section-title {
+.section-title,
+h2.section-title,
+.section-header h2,
+.section-header .section-title {
     font-size: 2.75rem;
     font-weight: 800;
-    color: #0f172a;
+    color: #0f172a !important;
     margin-bottom: 1rem;
     letter-spacing: -0.02em;
+    display: block;
+    visibility: visible;
+    opacity: 1;
 }
 
 .section-subtitle {
@@ -274,11 +281,11 @@ body {
 }
 
 .service-card.featured .service-title {
-    color: #fff;
+    color: #fff !important;
 }
 
 .service-card.featured .service-description {
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(255, 255, 255, 0.9) !important;
 }
 
 .featured-badge {
@@ -317,17 +324,23 @@ body {
     color: #fbbf24;
 }
 
-.service-title {
+.service-title,
+h3.service-title,
+.service-card h3,
+.service-card .service-title {
     font-size: 1.4rem;
     font-weight: 700;
-    color: #0f172a;
+    color: #0f172a !important;
     margin-bottom: 1rem;
+    display: block;
+    visibility: visible;
+    opacity: 1;
 }
 
 .service-description {
     font-size: 0.95rem;
     line-height: 1.7;
-    color: #64748b;
+    color: #64748b !important;
     margin-bottom: 1.5rem;
 }
 
@@ -408,11 +421,11 @@ body {
 }
 
 .solution-item.highlighted .solution-name {
-    color: #fff;
+    color: #fff !important;
 }
 
 .solution-item.highlighted .solution-tagline {
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(255, 255, 255, 0.9) !important;
 }
 
 .solution-header {
@@ -439,23 +452,36 @@ body {
 .solution-icon-wrapper i {
     font-size: 2rem;
     color: #1a237e;
-}
-
-.solution-item.highlighted .solution-icon-wrapper i {
-    color: #fbbf24;
-}
-
-.solution-name {
+},
+h3.solution-name,
+.solution-header h3,
+.solution-item h3 {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #0f172a;
+    color: #0f172a !important;
     margin-bottom: 0.25rem;
+    display: block;
+    visibility: visible;
+    opacity: 1;
 }
 
-.solution-tagline {
+.solution-tagline,
+.solution-header p,
+p.solution-tagline {
     font-size: 0.9rem;
-    color: #64748b;
+    color: #64748b !important;
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    margin-bottom: !important;
     margin-bottom: 1.5rem;
+    display: block;
+    visibility: visible;
+    opacity: 1;
+}
+
+.solution-item.highlighted .solution-description {
+    color: rgba(255, 255, 255, 0.9) !important
 }
 
 .solution-description {

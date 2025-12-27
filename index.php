@@ -23,9 +23,9 @@
     
     <!-- Stylesheets -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="assets/header.css">
-    <link rel="stylesheet" href="assets/index.css">
-    <link rel="stylesheet" href="assets/footer.css">
+    <link rel="stylesheet" href="assets/header.css?v=3">
+    <link rel="stylesheet" href="assets/index.css?v=3">
+    <link rel="stylesheet" href="assets/footer.css?v=3">
     
     <!-- Structured Data -->
     <script type="application/ld+json">

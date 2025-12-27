@@ -2,7 +2,7 @@
 $page_title = "About Us - E7 Technology Solutions";
 include 'header.php'; 
 ?>
-<link rel="stylesheet" href="assets/about.css">
+<link rel="stylesheet" href="assets/about.css?v=3">
 
 <!-- Hero Banner -->
 <section class="about-hero">

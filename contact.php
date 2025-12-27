@@ -2,7 +2,7 @@
 $page_title = "Contact Us - E7 Technology Solutions";
 include('header.php');
 ?>
-<link rel="stylesheet" href="assets/contact.css">
+<link rel="stylesheet" href="assets/contact.css?v=3">
 
 <!-- Hero Section -->
 <section class="contact-hero">
