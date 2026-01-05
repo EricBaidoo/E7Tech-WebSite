@@ -16,13 +16,13 @@
         <div class="container">
             <div class="top-bar-content">
                 <div class="top-bar-left">
-                    <a href="tel:+15551234567" class="top-bar-link">
+                    <a href="tel:+233243838490" class="top-bar-link">
                         <i class="fas fa-phone"></i>
-                        <span>+1 (555) 123-4567</span>
+                        <span>+233 243 838 490</span>
                     </a>
-                    <a href="mailto:info@e7tech.com" class="top-bar-link">
+                    <a href="mailto:connect@e7world.tech" class="top-bar-link">
                         <i class="fas fa-envelope"></i>
-                        <span>info@e7tech.com</span>
+                        <span>connect@e7world.tech</span>
                     </a>
                 </div>
                 <div class="top-bar-right">
@@ -207,8 +207,8 @@
         
         <div class="mobile-nav-footer">
             <div class="mobile-contact-info">
-                <a href="tel:+15551234567"><i class="fas fa-phone"></i> +1 (555) 123-4567</a>
-                <a href="mailto:info@e7tech.com"><i class="fas fa-envelope"></i> info@e7tech.com</a>
+                <a href="tel:+233243838490"><i class="fas fa-phone"></i> +233 243 838 490</a>
+                <a href="mailto:connect@e7world.tech"><i class="fas fa-envelope"></i> connect@e7world.tech</a>
             </div>
             <div class="mobile-social">
                 <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>

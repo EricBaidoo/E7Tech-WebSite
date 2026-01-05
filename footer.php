@@ -73,28 +73,28 @@
                             <i class="fas fa-map-marker-alt"></i>
                             <div class="contact-content">
                                 <strong>Head Office</strong>
-                                <span>1234 Technology Drive<br>Suite 500, Tech City, TX 75001</span>
+                                <span>Accra, Ghana<br>West Africa</span>
                             </div>
                         </li>
                         <li>
                             <i class="fas fa-phone"></i>
                             <div class="contact-content">
                                 <strong>Phone</strong>
-                                <a href="tel:+15551234567">+1 (555) 123-4567</a>
+                                <a href="tel:+233243838490">+233 243 838 490</a>
                             </div>
                         </li>
                         <li>
                             <i class="fas fa-envelope"></i>
                             <div class="contact-content">
                                 <strong>Email</strong>
-                                <a href="mailto:info@e7tech.com">info@e7tech.com</a>
+                                <a href="mailto:connect@e7world.tech">connect@e7world.tech</a>
                             </div>
                         </li>
                         <li>
                             <i class="fas fa-clock"></i>
                             <div class="contact-content">
                                 <strong>Business Hours</strong>
-                                <span>Mon - Fri: 7:00 AM - 5:00 PM CT</span>
+                                <span>Mon - Fri: 8:00 AM - 6:00 PM GMT</span>
                             </div>
                         </li>
                     </ul>

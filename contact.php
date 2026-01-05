@@ -45,7 +45,7 @@ include('header.php');
                     <div class="form-row">
                         <div class="form-group">
                             <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" name="phone" placeholder="+233 XXX XXX XXX">
+                            <input type="tel" id="phone" name="phone" placeholder="+233 243 838 490">
                         </div>
                         <div class="form-group">
                             <label for="company">Company/Organization</label>
@@ -105,8 +105,8 @@ include('header.php');
                         <div class="info-content">
                             <h4>Email Us</h4>
                             <p>
-                                <a href="mailto:info@e7techsolutions.com">info@e7techsolutions.com</a><br>
-                                <a href="mailto:sales@e7techsolutions.com">sales@e7techsolutions.com</a>
+                                <a href="mailto:connect@e7world.tech">connect@e7world.tech</a><br>
+                                <a href="mailto:sales@e7world.tech">sales@e7world.tech</a>
                             </p>
                         </div>
                     </div>
@@ -117,7 +117,7 @@ include('header.php');
                         </div>
                         <div class="info-content">
                             <h4>Call Us</h4>
-                            <p>+233 XXX XXX XXX<br><small>Mon-Fri: 8:00 AM - 6:00 PM GMT</small></p>
+                            <p>+233 243 838 490<br><small>Mon-Fri: 8:00 AM - 6:00 PM GMT</small></p>
                         </div>
                     </div>
 

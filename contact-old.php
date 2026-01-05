@@ -105,8 +105,8 @@ include('header.php');
                         <div class="flex-grow-1 ms-3">
                             <h5>Email</h5>
                             <p class="text-muted mb-0">
-                                <a href="mailto:info@e7techsolutions.com" class="text-decoration-none">info@e7techsolutions.com</a><br>
-                                <a href="mailto:sales@e7techsolutions.com" class="text-decoration-none">sales@e7techsolutions.com</a>
+                                <a href="mailto:connect@e7world.tech" class="text-decoration-none">connect@e7world.tech</a><br>
+                                <a href="mailto:sales@e7world.tech" class="text-decoration-none">sales@e7world.tech</a>
                             </p>
                         </div>
                     </div>
@@ -120,7 +120,7 @@ include('header.php');
                         <div class="flex-grow-1 ms-3">
                             <h5>Phone</h5>
                             <p class="text-muted mb-0">
-                                +233 XXX XXX XXX<br>
+                                +233 243 838 490<br>
                                 <small>Mon-Fri: 8:00 AM - 6:00 PM GMT</small>
                             </p>
                         </div>
@@ -278,7 +278,7 @@ include('header.php');
     <div class="container text-center text-white">
         <h2 class="mb-4">Ready to Get Started?</h2>
         <p class="lead mb-4">Schedule a free consultation to discuss your technology needs</p>
-        <a href="mailto:info@e7techsolutions.com" class="btn btn-light btn-lg px-5">
+        <a href="mailto:connect@e7world.tech" class="btn btn-light btn-lg px-5">
             <i class="fas fa-calendar-alt me-2"></i>Book a Consultation
         </a>
     </div>
