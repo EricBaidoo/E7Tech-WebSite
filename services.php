@@ -1,8 +1,13 @@
 <?php
 $page_title = "Services - E7 Technology Solutions";
+$page_styles = '
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/services-redesign.css?v=2">
+';
 include('header.php');
 ?>
-<link rel="stylesheet" href="assets/services.css?v=3">
 
 <!-- Hero Section -->
 <section class="services-hero">

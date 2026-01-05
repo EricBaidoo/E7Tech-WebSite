@@ -8,6 +8,7 @@
     <meta name="description" content="E7 Technology Solutions provides cutting-edge cybersecurity, cloud computing, AI/ML, and technology consulting services across Africa.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="assets/header.css?v=5">
+    <?php if(isset($page_styles)) echo $page_styles; ?>
 </head>
 <body>
     <!-- Top Bar -->
