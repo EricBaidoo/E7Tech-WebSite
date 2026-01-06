@@ -8,7 +8,7 @@ if (!isset($navBasePath)) {
     $navBasePath = (strpos($_SERVER['PHP_SELF'], '/solutions/') !== false) ? '../' : '';
 }
 ?>
-<link rel="stylesheet" href="<?php echo $assetBasePath; ?>/footer.css?v=16">
+<link rel="stylesheet" href="<?php echo $assetBasePath; ?>/footer.css?v=17">
 
 <footer class="site-footer">
     <!-- Main Footer -->
@@ -153,6 +153,16 @@ backToTop.addEventListener('click', () => {
         behavior: 'smooth'
     });
 });
+
+// WhatsApp button delayed appearance
+const whatsappButton = document.querySelector('.whatsapp-float');
+if (whatsappButton) {
+    window.addEventListener('load', () => {
+        setTimeout(() => {
+            whatsappButton.classList.add('show');
+        }, 4000); // 4 seconds delay after page load
+    });
+}
 </script>
 
 <!-- WhatsApp Floating Button -->
