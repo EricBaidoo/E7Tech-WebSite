@@ -4,7 +4,7 @@ $assetBasePath = 'assets';
 $navBasePath = '';
 include('header.php');
 ?>
-<link rel="stylesheet" href="<?php echo $assetBasePath; ?>/contact.css?v=13">
+<link rel="stylesheet" href="<?php echo $assetBasePath; ?>/contact.css?v=14">
 
 <!-- Hero Section -->
 <section class="contact-hero">

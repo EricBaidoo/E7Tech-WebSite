@@ -8,7 +8,7 @@ if (!isset($navBasePath)) {
     $navBasePath = (strpos($_SERVER['PHP_SELF'], '/solutions/') !== false) ? '../' : '';
 }
 ?>
-<link rel="stylesheet" href="<?php echo $assetBasePath; ?>/footer.css?v=5">
+<link rel="stylesheet" href="<?php echo $assetBasePath; ?>/footer.css?v=16">
 
 <footer class="site-footer">
     <!-- Main Footer -->
@@ -106,23 +106,6 @@ if (!isset($navBasePath)) {
                     </ul>
                 </div>
             </div>
-            
-            <!-- Newsletter -->
-            <div class="footer-newsletter">
-                <div class="newsletter-content">
-                    <div class="newsletter-text">
-                        <h3 class="newsletter-title">Stay Updated</h3>
-                        <p class="newsletter-desc">Subscribe to our newsletter for the latest tech insights and updates</p>
-                    </div>
-                    <form class="newsletter-form" onsubmit="return false;">
-                        <input type="email" placeholder="Enter your email address" required>
-                        <button type="submit">
-                            <span>Subscribe</span>
-                            <i class="fas fa-paper-plane"></i>
-                        </button>
-                    </form>
-                </div>
-            </div>
         </div>
     </div>
     
@@ -170,18 +153,17 @@ backToTop.addEventListener('click', () => {
         behavior: 'smooth'
     });
 });
-
-// Newsletter form
-const newsletterForm = document.querySelector('.newsletter-form');
-if (newsletterForm) {
-    newsletterForm.addEventListener('submit', function(e) {
-        e.preventDefault();
-        const email = this.querySelector('input[type="email"]').value;
-        alert('Thank you for subscribing! We\'ll send updates to ' + email);
-        this.reset();
-    });
-}
 </script>
+
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/233243838490?text=Hello%20E7%20Tech!%20I%27d%20like%20to%20know%20more%20about%20your%20services." 
+   class="whatsapp-float" 
+   target="_blank" 
+   rel="noopener noreferrer"
+   aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span class="whatsapp-tooltip">Chat with us!</span>
+</a>
 
 </body>
 </html>
