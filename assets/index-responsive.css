@@ -879,6 +879,7 @@
     font-weight: 800;
     color: var(--white);
     margin-bottom: var(--space-md);
+    text-align: center;
 }
 
 @media (min-width: 48rem) {

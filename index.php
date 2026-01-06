@@ -17,7 +17,7 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="assets/header.css?v=4">
-    <link rel="stylesheet" href="assets/index-responsive.css?v=4">
+    <link rel="stylesheet" href="assets/index-responsive.css?v=5">
     <link rel="stylesheet" href="assets/footer.css?v=4">
 </head>
 <body>
