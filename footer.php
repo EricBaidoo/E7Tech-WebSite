@@ -17,7 +17,7 @@ if (!isset($navBasePath)) {
             <div class="footer-grid">
                 <!-- Company Info -->
                 <div class="footer-column footer-about">
-                    <img src="<?php echo $assetBasePath; ?>/images/e7-logo1.png" alt="E7 Technology Solutions" class="footer-logo">
+                    <img src="<?php echo $assetBasePath; ?>/images/footer_logo.png" alt="E7 Technology Solutions" class="footer-logo">
                     <p class="footer-description">Empowering organizations across Africa with innovative technology solutions, cybersecurity excellence, and transformative digital strategies. Building the future of technology, today.</p>
                     <div class="footer-social">
                         <a href="https://www.linkedin.com/company/93869752/" class="social-link" aria-label="LinkedIn">

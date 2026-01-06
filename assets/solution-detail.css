@@ -342,6 +342,7 @@ body {
     margin-bottom: 1.75rem;
     letter-spacing: -0.03em;
     line-height: 1.2;
+    text-align: center;
 }
 
 .overview-content p {
@@ -349,6 +350,7 @@ body {
     line-height: 1.85;
     color: var(--gray-700);
     margin-bottom: 2.5rem;
+    text-align: justify;
 }
 
 .feature-list {
@@ -427,12 +429,14 @@ body {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     margin-bottom: 0.75rem;
+    text-align: center;
 }
 
 .stat p {
     font-size: 1.05rem;
     color: var(--gray-700);
     font-weight: 600;
+    text-align: justify;
 }
 
 /* ===============================================
@@ -564,12 +568,14 @@ body {
     font-weight: 700;
     color: var(--gray-900);
     margin-bottom: 1rem;
+    text-align: center;
 }
 
 .feature-card p {
     font-size: 1rem;
     line-height: 1.7;
     color: var(--gray-700);
+    text-align: justify;
 }
 
 /* ===============================================
@@ -626,6 +632,8 @@ body {
     gap: 0.85rem;
     position: relative;
     z-index: 1;
+    text-align: center;
+    justify-content: center;
 }
 
 .usecase i {
@@ -645,6 +653,7 @@ body {
     color: var(--gray-700);
     position: relative;
     z-index: 1;
+    text-align: justify;
 }
 
 /* ===============================================
@@ -679,6 +688,7 @@ body {
     letter-spacing: -0.02em;
     position: relative;
     z-index: 2;
+    text-align: center;
 }
 
 .solution-cta p {
@@ -690,6 +700,7 @@ body {
     margin-right: auto;
     position: relative;
     z-index: 2;
+    text-align: justify;
 }
 
 /* ===============================================
@@ -733,12 +744,14 @@ body {
     font-weight: 700;
     color: var(--gray-900);
     margin-bottom: 0.75rem;
+    text-align: center;
 }
 
 .detail-card p {
     color: var(--gray-700);
     line-height: 1.65;
     font-size: 1rem;
+    text-align: justify;
 }
 
 .detail-list {

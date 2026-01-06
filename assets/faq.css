@@ -133,6 +133,7 @@
     color: #0f172a;
     margin: 0;
     line-height: 1.4;
+    text-align: center;
 }
 
 .faq-toggle {
@@ -177,6 +178,7 @@
     color: #64748b;
     font-size: 1rem;
     line-height: 1.8;
+    text-align: justify;
 }
 
 .faq-body strong {

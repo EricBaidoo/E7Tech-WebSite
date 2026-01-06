@@ -1,5 +1,7 @@
 <?php
 $page_title = "News & Insights - E7 Technology Solutions";
+$assetBasePath = 'assets';
+$navBasePath = '';
 include('header.php');
 ?>
 <link rel="stylesheet" href="<?php echo $assetBasePath; ?>/news.css?v=3">

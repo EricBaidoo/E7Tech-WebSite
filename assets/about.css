@@ -39,10 +39,10 @@
     backdrop-filter: blur(10px);
     color: #fff;
     padding: 0.6rem 1.5rem;
-    border-radius: 50px;
+    border-radius: 3.125rem;
     font-size: 0.75rem;
     font-weight: 600;
-    letter-spacing: 1.5px;
+    letter-spacing: 0.09375em;
     margin-bottom: 2rem;
     border: 1px solid rgba(255, 255, 255, 0.2);
 }
@@ -59,7 +59,7 @@
     color: rgba(255, 255, 255, 0.85);
     font-size: 1.25rem;
     line-height: 1.8;
-    max-width: 700px;
+    max-width: 43.75rem;
     margin: 0 auto;
 }
 
@@ -82,6 +82,7 @@
     font-weight: 700;
     letter-spacing: 1.5px;
     margin-bottom: 1rem;
+    text-align: center;
 }
 
 .section-title {
@@ -90,6 +91,7 @@
     color: #0f172a !important;
     margin-bottom: 1.5rem;
     line-height: 1.3;
+    text-align: center;
 }
 
 .section-text {
@@ -97,6 +99,7 @@
     line-height: 1.8;
     color: #475569;
     margin-bottom: 1.5rem;
+    text-align: justify;
 }
 
 .stats-row {
@@ -131,9 +134,9 @@
 
 .image-wrapper {
     position: relative;
-    border-radius: 20px;
+    border-radius: 1.25rem;
     overflow: hidden;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 1.25rem 3.75rem rgba(0, 0, 0, 0.15);
 }
 
 .image-wrapper img {
@@ -148,12 +151,12 @@
     right: 2rem;
     background: #fff;
     padding: 1.25rem;
-    border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 0.75rem;
+    box-shadow: 0 0.625rem 1.875rem rgba(0, 0, 0, 0.2);
     display: flex;
     align-items: center;
     gap: 1rem;
-    min-width: 200px;
+    min-width: 12.5rem;
 }
 
 .image-badge i {
@@ -187,25 +190,26 @@
 .mvv-card {
     background: #fff;
     padding: 3rem 2rem;
-    border-radius: 16px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 1rem;
+    box-shadow: 0 0.25rem 1.25rem rgba(0, 0, 0, 0.08);
     transition: all 0.3s ease;
+    text-align: center;
 }
 
 .mvv-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+    transform: translateY(-0.5rem);
+    box-shadow: 0 0.75rem 2.5rem rgba(0, 0, 0, 0.12);
 }
 
 .mvv-icon {
-    width: 70px;
-    height: 70px;
+    width: 4.375rem;
+    height: 4.375rem;
     background: linear-gradient(135deg, #1a237e, #5a3fc0);
-    border-radius: 16px;
+    border-radius: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 1.5rem;
+    margin: 0 auto 1.5rem;
 }
 
 .mvv-icon i {
@@ -218,12 +222,14 @@
     font-weight: 700;
     color: #0f172a !important;
     margin-bottom: 1rem;
+    text-align: center;
 }
 
 .mvv-text {
     font-size: 1rem;
     line-height: 1.7;
     color: #475569;
+    text-align: justify;
 }
 
 .values-tags {
@@ -231,13 +237,14 @@
     flex-wrap: wrap;
     gap: 0.75rem;
     margin-top: 1rem;
+    justify-content: center;
 }
 
 .value-tag {
     background: rgba(26, 35, 126, 0.1);
     color: #1a237e;
     padding: 0.5rem 1rem;
-    border-radius: 20px;
+    border-radius: 1.25rem;
     font-size: 0.875rem;
     font-weight: 600;
 }
@@ -258,10 +265,10 @@
     background: rgba(26, 35, 126, 0.1);
     color: #1a237e;
     padding: 0.5rem 1.2rem;
-    border-radius: 50px;
+    border-radius: 3.125rem;
     font-size: 0.75rem;
     font-weight: 700;
-    letter-spacing: 1.5px;
+    letter-spacing: 0.09375em;
     margin-bottom: 1rem;
 }
 
@@ -275,7 +282,7 @@
 .section-subtitle {
     font-size: 1.1rem;
     color: #64748b;
-    max-width: 600px;
+    max-width: 37.5rem;
     margin: 0 auto;
 }
 
@@ -287,15 +294,15 @@
 
 .leader-card {
     background: #fff;
-    border-radius: 16px;
+    border-radius: 1rem;
     overflow: hidden;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 0.25rem 1.25rem rgba(0, 0, 0, 0.08);
     transition: all 0.3s ease;
 }
 
 .leader-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+    transform: translateY(-0.5rem);
+    box-shadow: 0 0.75rem 2.5rem rgba(0, 0, 0, 0.15);
 }
 
 .leader-image {
@@ -305,14 +312,14 @@
 }
 
 .leader-avatar {
-    width: 120px;
-    height: 120px;
+    width: 7.5rem;
+    height: 7.5rem;
     background: linear-gradient(135deg, #1a237e, #5a3fc0);
     border-radius: 50%;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 8px 24px rgba(26, 35, 126, 0.3);
+    box-shadow: 0 0.5rem 1.5rem rgba(26, 35, 126, 0.3);
 }
 
 .leader-avatar i {
@@ -322,6 +329,7 @@
 
 .leader-info {
     padding: 2rem;
+    text-align: center;
 }
 
 .leader-name {
@@ -329,6 +337,7 @@
     font-weight: 700;
     color: #0f172a !important;
     margin-bottom: 0.5rem;
+    text-align: center;
 }
 
 .leader-role {
@@ -336,6 +345,7 @@
     color: #1a237e;
     font-weight: 600;
     margin-bottom: 1rem;
+    text-align: center;
 }
 
 .leader-bio {
@@ -343,6 +353,7 @@
     line-height: 1.7;
     color: #64748b;
     margin-bottom: 1.5rem;
+    text-align: justify;
 }
 
 .leader-tags {
@@ -350,13 +361,14 @@
     flex-wrap: wrap;
     gap: 0.5rem;
     margin-bottom: 1.5rem;
+    justify-content: center;
 }
 
 .tag {
     background: rgba(26, 35, 126, 0.08);
     color: #1a237e;
     padding: 0.4rem 0.9rem;
-    border-radius: 15px;
+    border-radius: 0.9375rem;
     font-size: 0.8rem;
     font-weight: 600;
 }
@@ -364,14 +376,15 @@
 .leader-social {
     display: flex;
     gap: 0.75rem;
+    justify-content: center;
 }
 
 .leader-social a {
-    width: 36px;
-    height: 36px;
+    width: 2.25rem;
+    height: 2.25rem;
     background: rgba(26, 35, 126, 0.08);
     color: #1a237e;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -382,7 +395,7 @@
 .leader-social a:hover {
     background: linear-gradient(135deg, #1a237e, #5a3fc0);
     color: #fff;
-    transform: translateY(-2px);
+    transform: translateY(-0.125rem);
 }
 
 /* GALLERY SECTION */
@@ -399,9 +412,9 @@
 
 .gallery-item {
     position: relative;
-    border-radius: 16px;
+    border-radius: 1rem;
     overflow: hidden;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 0.25rem 1.25rem rgba(0, 0, 0, 0.08);
 }
 
 /* WHY CHOOSE E7 SECTION */
@@ -423,16 +436,16 @@
 .feature-card {
     background: #fff;
     padding: 2.5rem 2rem;
-    border-radius: 12px;
+    border-radius: 0.75rem;
     text-align: center;
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0.125rem 0.75rem rgba(0, 0, 0, 0.05);
     transition: all 0.3s ease;
-    border-top: 3px solid #fbbf24;
+    border-top: 0.1875rem solid #fbbf24;
 }
 
 .feature-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+    transform: translateY(-0.5rem);
+    box-shadow: 0 0.5rem 1.5625rem rgba(0, 0, 0, 0.12);
 }
 
 .feature-icon {
@@ -447,27 +460,29 @@
     font-weight: 700;
     color: #1a237e;
     margin-bottom: 1rem;
+    text-align: center;
 }
 
 .feature-card p {
     color: #666;
     font-size: 0.95rem;
     line-height: 1.6;
+    text-align: justify;
 }
 
 /* LEADER CARDS - UPDATED */
 .leader-card {
     background: #fff;
-    border-radius: 12px;
+    border-radius: 0.75rem;
     overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 0.25rem 0.9375rem rgba(0, 0, 0, 0.08);
     transition: all 0.3s ease;
     padding: 0;
 }
 
 .leader-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    transform: translateY(-0.3125rem);
+    box-shadow: 0 0.625rem 1.875rem rgba(0, 0, 0, 0.15);
 }
 
 .leader-icon {
@@ -479,11 +494,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 180px;
+    min-height: 11.25rem;
 }
 
 .leader-info {
     padding: 2rem;
+    text-align: center;
 }
 
 .leader-name {
@@ -491,6 +507,7 @@
     font-weight: 700;
     color: #1a237e;
     margin-bottom: 0.5rem;
+    text-align: center;
 }
 
 .leader-role {
@@ -498,8 +515,9 @@
     font-size: 0.9rem;
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.03125em;
     margin-bottom: 1rem;
+    text-align: center;
 }
 
 .leader-bio {
@@ -507,6 +525,7 @@
     font-size: 0.95rem;
     line-height: 1.6;
     margin-bottom: 1.5rem;
+    text-align: justify;
 }
 
 .leader-tags {
@@ -514,13 +533,14 @@
     flex-wrap: wrap;
     gap: 0.5rem;
     margin-bottom: 1.5rem;
+    justify-content: center;
 }
 
 .tag {
     background: rgba(26, 35, 126, 0.1);
     color: #1a237e;
     padding: 0.4rem 0.8rem;
-    border-radius: 20px;
+    border-radius: 1.25rem;
     font-size: 0.8rem;
     font-weight: 600;
 }
@@ -548,7 +568,7 @@
 .cta-section .btn-primary {
     padding: 1rem 2.5rem;
     font-size: 1rem;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     background: #fbbf24;
     color: #1a237e;
     font-weight: 700;
@@ -557,8 +577,8 @@
 
 .cta-section .btn-primary:hover {
     background: #fcd34d;
-    transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(251, 191, 36, 0.3);
+    transform: translateY(-0.1875rem);
+    box-shadow: 0 0.5rem 1.25rem rgba(251, 191, 36, 0.3);
 }
 
 /* RESPONSIVE */
@@ -614,8 +634,13 @@
     }
     
     .stats-row {
-        flex-direction: column;
         gap: 1.5rem;
+        justify-content: space-between;
+    }
+    
+    .stat-item {
+        text-align: center;
+        flex: 1;
     }
     
     .leadership-grid {
@@ -665,5 +690,7 @@
         font-size: 1.5rem;
     }
     
-    .cta-section p {
-        font-size: 1rem;
+        .cta-section p {
+            font-size: 1rem;
+        }
+    }

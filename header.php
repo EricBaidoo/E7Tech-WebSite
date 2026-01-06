@@ -141,7 +141,7 @@ $navBasePath = (strpos($_SERVER['PHP_SELF'], '/solutions/') !== false) ? '../' :
     <!-- Mobile Navigation -->
     <div class="mobile-nav" id="mobileNav">
         <div class="mobile-nav-header">
-            <img src="<?php echo $assetBasePath; ?>assets/images/e7-logo1.png" alt="E7 Tech">
+            <img src="<?php echo $assetBasePath; ?>/images/toggle_logo.png" alt="E7 Tech">
             <button class="mobile-close" id="mobileClose" aria-label="Close navigation">
                 <i class="fas fa-times"></i>
             </button>

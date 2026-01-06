@@ -1,5 +1,7 @@
 <?php
 $page_title = "E7 Academy - Professional Tech Training & Upskilling";
+$assetBasePath = 'assets';
+$navBasePath = '';
 include('header.php');
 ?>
 <link rel="stylesheet" href="<?php echo $assetBasePath; ?>/academy.css?v=4">
