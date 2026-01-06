@@ -7,7 +7,7 @@
     <title><?php echo isset($page_title) ? $page_title . ' | E7 Technology Solutions' : 'E7 Technology Solutions - Innovation Through Technology'; ?></title>
     <meta name="description" content="E7 Technology Solutions provides cutting-edge cybersecurity, cloud computing, AI/ML, and technology consulting services across Africa.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="/E7 TECH/assets/header.css?v=5">
+    <link rel="stylesheet" href="assets/header.css?v=5">
     <?php if(isset($page_styles)) echo $page_styles; ?>
 </head>
 <body>
@@ -41,36 +41,36 @@
             <div class="header-wrapper">
                 <!-- Logo -->
                 <div class="site-logo">
-                    <a href="/E7 TECH/index.php">
-                        <img src="/E7 TECH/assets/images/e7-logo1.png" alt="E7 Technology Solutions">
+                    <a href="index.php">
+                        <img src="assets/images/e7-logo1.png" alt="E7 Technology Solutions">
                     </a>
                 </div>
                 
                 <!-- Desktop Navigation -->
                 <nav class="main-nav">
-                    <a href="/E7 TECH/index.php" class="nav-link">Home</a>
+                    <a href="index.php" class="nav-link">Home</a>
                     
                     <div class="nav-item has-dropdown">
-                        <a href="/E7 TECH/about.php" class="nav-link">
+                        <a href="about.php" class="nav-link">
                             About Us
                             <i class="fas fa-chevron-down dropdown-icon"></i>
                         </a>
                         <div class="dropdown-menu">
-                            <a href="/E7 TECH/about.php" class="dropdown-item">
+                            <a href="about.php" class="dropdown-item">
                                 <i class="fas fa-building"></i>
                                 <div class="dropdown-item-content">
                                     <span class="dropdown-item-title">About E7</span>
                                     <span class="dropdown-item-desc">Our story and mission</span>
                                 </div>
                             </a>
-                            <a href="/E7 TECH/about.php#leadership" class="dropdown-item">
+                            <a href="about.php#leadership" class="dropdown-item">
                                 <i class="fas fa-users"></i>
                                 <div class="dropdown-item-content">
                                     <span class="dropdown-item-title">Leadership Team</span>
                                     <span class="dropdown-item-desc">Meet our experts</span>
                                 </div>
                             </a>
-                            <a href="/E7 TECH/about.php#gallery" class="dropdown-item">
+                            <a href="about.php#gallery" class="dropdown-item">
                                 <i class="fas fa-images"></i>
                                 <div class="dropdown-item-content">
                                     <span class="dropdown-item-title">Gallery</span>
@@ -81,34 +81,34 @@
                     </div>
                     
                     <div class="nav-item has-dropdown">
-                        <a href="/E7 TECH/services.php" class="nav-link">
+                        <a href="services.php" class="nav-link">
                             Services
                             <i class="fas fa-chevron-down dropdown-icon"></i>
                         </a>
                         <div class="dropdown-menu mega-menu">
                             <div class="mega-menu-grid">
-                                <a href="/E7 TECH/services.php#cybersecurity" class="dropdown-item">
+                                <a href="services.php#cybersecurity" class="dropdown-item">
                                     <i class="fas fa-shield-alt"></i>
                                     <div class="dropdown-item-content">
                                         <span class="dropdown-item-title">Cybersecurity</span>
                                         <span class="dropdown-item-desc">Advanced threat protection</span>
                                     </div>
                                 </a>
-                                <a href="/E7 TECH/services.php#cloud" class="dropdown-item">
+                                <a href="services.php#cloud" class="dropdown-item">
                                     <i class="fas fa-cloud"></i>
                                     <div class="dropdown-item-content">
                                         <span class="dropdown-item-title">Cloud Solutions</span>
                                         <span class="dropdown-item-desc">Scalable infrastructure</span>
                                     </div>
                                 </a>
-                                <a href="/E7 TECH/services.php#analytics" class="dropdown-item">
+                                <a href="services.php#analytics" class="dropdown-item">
                                     <i class="fas fa-chart-line"></i>
                                     <div class="dropdown-item-content">
                                         <span class="dropdown-item-title">Data Analytics</span>
                                         <span class="dropdown-item-desc">Actionable insights</span>
                                     </div>
                                 </a>
-                                <a href="/E7 TECH/services.php#ai" class="dropdown-item">
+                                <a href="services.php#ai" class="dropdown-item">
                                     <i class="fas fa-brain"></i>
                                     <div class="dropdown-item-content">
                                         <span class="dropdown-item-title">AI & Machine Learning</span>
@@ -119,10 +119,10 @@
                         </div>
                     </div>
                     
-                    <a href="/E7 TECH/solutions.php" class="nav-link">Solutions</a>
-                    <a href="/E7 TECH/academy.php" class="nav-link">E7 Academy</a>
-                    <a href="/E7 TECH/news.php" class="nav-link">News</a>
-                    <a href="/E7 TECH/contact.php" class="btn-contact">
+                    <a href="solutions.php" class="nav-link">Solutions</a>
+                    <a href="academy.php" class="nav-link">E7 Academy</a>
+                    <a href="news.php" class="nav-link">News</a>
+                    <a href="contact.php" class="btn-contact">
                         <span>Get Started</span>
                         <i class="fas fa-arrow-right"></i>
                     </a>
@@ -141,14 +141,14 @@
     <!-- Mobile Navigation -->
     <div class="mobile-nav" id="mobileNav">
         <div class="mobile-nav-header">
-            <img src="/E7 TECH/assets/images/e7-logo1.png" alt="E7 Tech">
+            <img src="assets/images/e7-logo1.png" alt="E7 Tech">
             <button class="mobile-close" id="mobileClose" aria-label="Close navigation">
                 <i class="fas fa-times"></i>
             </button>
         </div>
         
         <div class="mobile-nav-content">
-            <a href="/E7 TECH/index.php" class="mobile-nav-link">
+            <a href="index.php" class="mobile-nav-link">
                 <i class="fas fa-home"></i>
                 <span>Home</span>
             </a>
@@ -162,9 +162,9 @@
                     <i class="fas fa-chevron-down mobile-dropdown-icon"></i>
                 </button>
                 <div class="mobile-dropdown-content">
-                    <a href="/E7 TECH/about.php" class="mobile-dropdown-link">About E7</a>
-                    <a href="/E7 TECH/about.php#leadership" class="mobile-dropdown-link">Leadership Team</a>
-                    <a href="/E7 TECH/about.php#gallery" class="mobile-dropdown-link">Gallery</a>
+                    <a href="about.php" class="mobile-dropdown-link">About E7</a>
+                    <a href="about.php#leadership" class="mobile-dropdown-link">Leadership Team</a>
+                    <a href="about.php#gallery" class="mobile-dropdown-link">Gallery</a>
                 </div>
             </div>
             
@@ -177,24 +177,24 @@
                     <i class="fas fa-chevron-down mobile-dropdown-icon"></i>
                 </button>
                 <div class="mobile-dropdown-content">
-                    <a href="/E7 TECH/services.php#cybersecurity" class="mobile-dropdown-link">Cybersecurity</a>
-                    <a href="/E7 TECH/services.php#cloud" class="mobile-dropdown-link">Cloud Solutions</a>
-                    <a href="/E7 TECH/services.php#analytics" class="mobile-dropdown-link">Data Analytics</a>
-                    <a href="/E7 TECH/services.php#ai" class="mobile-dropdown-link">AI & Machine Learning</a>
+                    <a href="services.php#cybersecurity" class="mobile-dropdown-link">Cybersecurity</a>
+                    <a href="services.php#cloud" class="mobile-dropdown-link">Cloud Solutions</a>
+                    <a href="services.php#analytics" class="mobile-dropdown-link">Data Analytics</a>
+                    <a href="services.php#ai" class="mobile-dropdown-link">AI & Machine Learning</a>
                 </div>
             </div>
             
-            <a href="/E7 TECH/solutions.php" class="mobile-nav-link">
+            <a href="solutions.php" class="mobile-nav-link">
                 <i class="fas fa-lightbulb"></i>
                 <span>Solutions</span>
             </a>
             
-            <a href="/E7 TECH/academy.php" class="mobile-nav-link">
+            <a href="academy.php" class="mobile-nav-link">
                 <i class="fas fa-graduation-cap"></i>
                 <span>E7 Academy</span>
             </a>
             
-            <a href="/E7 TECH/news.php" class="mobile-nav-link">
+            <a href="news.php" class="mobile-nav-link">
                 <i class="fas fa-newspaper"></i>
                 <span>News</span>
             </a>
