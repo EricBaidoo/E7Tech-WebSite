@@ -107,8 +107,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 16px 0;
+    padding: 0 2rem;
     position: relative;
+    max-width: 1400px;
+    margin: 0 auto;
+    gap: 4rem;
 }
 
 /* ===================================
@@ -117,21 +120,23 @@ body {
 .site-logo {
     flex-shrink: 0;
     z-index: 1001;
-}
-
-.site-logo a {
+    margin: 0;
+    padding: 0;
     display: block;
+    text-decoration: none;
 }
 
 .site-logo img {
-    height: 70px;
+    height: 6rem;
     width: auto;
     display: block;
     transition: all 0.3s ease;
+    margin: 0;
+    padding: 0;
 }
 
 .site-header.scrolled .site-logo img {
-    height: 60px;
+    height: 5rem;
 }
 
 /* ===================================
@@ -141,6 +146,9 @@ body {
     display: flex;
     align-items: center;
     gap: 8px;
+    flex: 1;
+    justify-content: center;
+    margin-left: 15rem;
 }
 
 .nav-link {

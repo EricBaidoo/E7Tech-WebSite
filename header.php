@@ -11,7 +11,7 @@ $navBasePath = (strpos($_SERVER['PHP_SELF'], '/solutions/') !== false) ? '../' :
     <title><?php echo isset($page_title) ? $page_title . ' | E7 Technology Solutions' : 'E7 Technology Solutions - Innovation Through Technology'; ?></title>
     <meta name="description" content="E7 Technology Solutions provides cutting-edge cybersecurity, cloud computing, AI/ML, and technology consulting services across Africa.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="<?php echo $assetBasePath; ?>/header.css?v=5">
+    <link rel="stylesheet" href="<?php echo $assetBasePath; ?>/header.css?v=6">
     <?php if(isset($page_styles)) echo $page_styles; ?>
 </head>
 <body>
@@ -41,17 +41,14 @@ $navBasePath = (strpos($_SERVER['PHP_SELF'], '/solutions/') !== false) ? '../' :
 
     <!-- Main Header -->
     <header class="site-header" id="siteHeader">
-        <div class="container">
-            <div class="header-wrapper">
-                <!-- Logo -->
-                <div class="site-logo">
-                    <a href="<?php echo $navBasePath; ?>index.php">
-                        <img src="<?php echo $assetBasePath; ?>/images/e7-logo1.png" alt="E7 Technology Solutions">
-                    </a>
-                </div>
-                
-                <!-- Desktop Navigation -->
-                <nav class="main-nav">
+        <div class="header-wrapper">
+            <!-- Logo -->
+            <a href="<?php echo $navBasePath; ?>index.php" class="site-logo">
+                <img src="<?php echo $assetBasePath; ?>/images/e7-logo1.png" alt="E7 Technology Solutions">
+            </a>
+            
+            <!-- Desktop Navigation -->
+            <nav class="main-nav">
                     <a href="<?php echo $navBasePath; ?>index.php" class="nav-link">Home</a>
                     
                     <div class="nav-item has-dropdown">
@@ -139,7 +136,6 @@ $navBasePath = (strpos($_SERVER['PHP_SELF'], '/solutions/') !== false) ? '../' :
                     <span class="toggle-line"></span>
                 </button>
             </div>
-        </div>
     </header>
 
     <!-- Mobile Navigation -->
