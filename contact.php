@@ -2,22 +2,19 @@
 $page_title = "Contact Us - E7 Technology Solutions";
 include('header.php');
 ?>
-<link rel="stylesheet" href="assets/contact.css?v=3">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-QDAkPOvsIkCsOtcLwin56lD1OnLTE04yWV0Z8o6MfMrJmXgpCc4nll/daVagKlKaHkTdMawGlVK6pBX4Lhe2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="assets/contact.css?v=4">
 
 <!-- Hero Section -->
 <section class="contact-hero">
     <div class="container">
-        <div class="hero-content">
-            <span class="hero-badge">GET IN TOUCH</span>
-            <h1 class="hero-title">Let's Build Something Great Together</h1>
-            <p class="hero-subtitle">Have a project in mind? Our team is ready to help you transform your vision into reality with cutting-edge technology solutions.</p>
+        <div class="contact-hero-content">
+            <span class="contact-badge">GET IN TOUCH</span>
+            <h1 class="contact-hero-title">Let's Build Something Great Together</h1>
+            <p class="contact-hero-subtitle">Have a project in mind? Our team is ready to help you transform your vision into reality with cutting-edge technology solutions</p>
         </div>
     </div>
-    <div class="hero-wave">
-        <svg viewBox="0 0 1440 100" xmlns="http://www.w3.org/2000/svg">
-            <path fill="#ffffff" d="M0,50L60,45C120,40,240,30,360,35C480,40,600,60,720,65C840,70,960,60,1080,55C1200,50,1320,50,1380,50L1440,50L1440,100L1380,100C1320,100,1200,100,1080,100C960,100,840,100,720,100C600,100,480,100,360,100C240,100,120,100,60,100L0,100Z"></path>
-        </svg>
-    </div>
+    <div class="hero-overlay"></div>
 </section>
 
 <!-- Contact Section -->
@@ -135,10 +132,10 @@ include('header.php');
                 <div class="social-section">
                     <h4>Follow Us</h4>
                     <div class="social-links">
-                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/93869752/" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://web.facebook.com/profile.php?id=61564106101270" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://x.com/E7Technologies" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/e7_technology_solutions/" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>

@@ -17,7 +17,7 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="assets/header.css?v=4">
-    <link rel="stylesheet" href="assets/home.css?v=1">
+    <link rel="stylesheet" href="assets/home.css?v=3">
     <link rel="stylesheet" href="assets/footer.css?v=4">
 </head>
 <body>
@@ -25,37 +25,339 @@
 
     <!-- Hero Section -->
     <section class="home-hero">
-        <div class="container">
-            <div class="hero-content">
-                <span class="hero-badge">E7 TECHNOLOGY SOLUTIONS</span>
-                <h1 class="hero-title">Trusted AI, Data & Security Solutions for Modern Organizations</h1>
-                <p class="hero-description">We help organizations use data and AI securely, responsibly, and effectively. E7 delivers solutions that enable better decisions, protect critical information, and build trusted digital systems.</p>
-                
-                <div class="hero-buttons">
-                    <a href="contact.php" class="btn-primary">
-                        <span>Request Consultation</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-                    <a href="solutions.php" class="btn-secondary">
-                        <span>Our Solutions</span>
-                        <i class="fas fa-th"></i>
-                    </a>
-                </div>
+        <div class="hero-slider">
+            <!-- Slide 1 -->
+            <div class="hero-slide active">
+                <div class="hero-slide-bg" style="background-image: url('assets/images/Slide 1 E7Overview.png'); background-size: cover; background-position: center;"></div>
+                <div class="container">
+                    <div class="hero-content">
+                        <span class="hero-badge">E7 TECHNOLOGY SOLUTIONS</span>
+                        <h1 class="hero-title">Trusted AI, Data & Security Solutions for Modern Organizations</h1>
+                        <p class="hero-description">Security-first, AI-enabled, and data-driven solutions for organizations across Africa.</p>
+                        
+                        <div class="hero-buttons">
+                            <a href="contact.php" class="btn-primary">
+                                <span>Request Consultation</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <a href="solutions.php" class="btn-secondary">
+                                <span>Our Solutions</span>
+                                <i class="fas fa-th"></i>
+                            </a>
+                        </div>
 
-                <div class="hero-stats">
-                    <div class="stat-box">
-                        <div class="stat-number">500+</div>
-                        <div class="stat-label">Projects Delivered</div>
-                    </div>
-                    <div class="stat-box">
-                        <div class="stat-number">15+</div>
-                        <div class="stat-label">Years Experience</div>
-                    </div>
-                    <div class="stat-box">
-                        <div class="stat-number">98%</div>
-                        <div class="stat-label">Client Satisfaction</div>
+                        <div class="hero-stats">
+                            <div class="stat-box">
+                                <div class="stat-number">500+</div>
+                                <div class="stat-label">Projects Delivered</div>
+                            </div>
+                            <div class="stat-box">
+                                <div class="stat-number">15+</div>
+                                <div class="stat-label">Years Experience</div>
+                            </div>
+                            <div class="stat-box">
+                                <div class="stat-number">98%</div>
+                                <div class="stat-label">Client Satisfaction</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="hero-slide">
+                <div class="hero-slide-bg" style="background-image: url('assets/images/Slide 2 SecureShield.png'); background-size: cover; background-position: center;"></div>
+                <div class="container">
+                    <div class="hero-content">
+                        <span class="hero-badge">SECURESHIELD™</span>
+                        <h1 class="hero-title">Understand, Manage, and Reduce Cybersecurity Risks</h1>
+                        <p class="hero-description">Comprehensive assessments that provide clear visibility into cybersecurity risks and data protection gaps.</p>
+                        
+                        <div class="hero-buttons">
+                            <a href="solutions/secureshield.php" class="btn-primary">
+                                <span>Explore SecureShield</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <a href="contact.php" class="btn-secondary">
+                                <span>Book Assessment</span>
+                                <i class="fas fa-shield-alt"></i>
+                            </a>
+                        </div>
+
+                        <div class="hero-stats">
+                            <div class="stat-box">
+                                <div class="stat-number">100%</div>
+                                <div class="stat-label">Risk Clarity</div>
+                            </div>
+                            <div class="stat-box">
+                                <div class="stat-number">Prioritized</div>
+                                <div class="stat-label">Action Plans</div>
+                            </div>
+                            <div class="stat-box">
+                                <div class="stat-number">Executive</div>
+                                <div class="stat-label">Reporting</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="hero-slide">
+                <div class="hero-slide-bg" style="background-image: url('assets/images/Slide 3 InsightAI.png'); background-size: cover; background-position: center;"></div>
+                <div class="container">
+                    <div class="hero-content">
+                        <span class="hero-badge">INSIGHTAI™</span>
+                        <h1 class="hero-title">Turn Data into Trusted Insights and Action</h1>
+                        <p class="hero-description">Data, analytics, and AI solutions with governance-first delivery and responsible AI enablement.</p>
+                        
+                        <div class="hero-buttons">
+                            <a href="solutions/insightai.php" class="btn-primary">
+                                <span>Explore InsightAI</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <a href="contact.php" class="btn-secondary">
+                                <span>Book Session</span>
+                                <i class="fas fa-brain"></i>
+                            </a>
+                        </div>
+
+                        <div class="hero-stats">
+                            <div class="stat-box">
+                                <div class="stat-number">Data</div>
+                                <div class="stat-label">Strategy & Clarity</div>
+                            </div>
+                            <div class="stat-box">
+                                <div class="stat-number">Governed</div>
+                                <div class="stat-label">AI Roadmap</div>
+                            </div>
+                            <div class="stat-box">
+                                <div class="stat-number">Trusted</div>
+                                <div class="stat-label">Analytics</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="hero-slide">
+                <div class="hero-slide-bg" style="background-image: url('assets/images/SecureCorePageHero.png'); background-size: cover; background-position: center;"></div>
+                <div class="container">
+                    <div class="hero-content">
+                        <span class="hero-badge">SECURECORE™</span>
+                        <h1 class="hero-title">Integrated Security & Compliance Infrastructure</h1>
+                        <p class="hero-description">Enterprise-grade infrastructure with integrated security, compliance automation, and governance-first architecture.</p>
+                        
+                        <div class="hero-buttons">
+                            <a href="solutions/securecore.php" class="btn-primary">
+                                <span>Explore SecureCore</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <a href="contact.php" class="btn-secondary">
+                                <span>Get Started</span>
+                                <i class="fas fa-cogs"></i>
+                            </a>
+                        </div>
+
+                        <div class="hero-stats">
+                            <div class="stat-box">
+                                <div class="stat-number">Zero</div>
+                                <div class="stat-label">Manual Processes</div>
+                            </div>
+                            <div class="stat-box">
+                                <div class="stat-number">24/7</div>
+                                <div class="stat-label">Monitoring</div>
+                            </div>
+                            <div class="stat-box">
+                                <div class="stat-number">99.9%</div>
+                                <div class="stat-label">Uptime SLA</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 5 -->
+            <div class="hero-slide">
+                <div class="hero-slide-bg" style="background-image: url('assets/images/solution-security-shield.png'); background-size: cover; background-position: center;"></div>
+                <div class="container">
+                    <div class="hero-content">
+                        <span class="hero-badge">OUR VISION</span>
+                        <h1 class="hero-title">Empower Organizations with Trustworthy Technology</h1>
+                        <p class="hero-description">We believe technology should be secure, transparent, and aligned with organizational values and responsibilities.</p>
+                        
+                        <div class="hero-buttons">
+                            <a href="about.php" class="btn-primary">
+                                <span>Learn Our Story</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <a href="contact.php" class="btn-secondary">
+                                <span>Partner With Us</span>
+                                <i class="fas fa-handshake"></i>
+                            </a>
+                        </div>
+
+                        <div class="hero-stats">
+                            <div class="stat-box">
+                                <div class="stat-number">100+</div>
+                                <div class="stat-label">Team Members</div>
+                            </div>
+                            <div class="stat-box">
+                                <div class="stat-number">5</div>
+                                <div class="stat-label">Countries</div>
+                            </div>
+                            <div class="stat-box">
+                                <div class="stat-number">2010</div>
+                                <div class="stat-label">Year Founded</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 6 -->
+            <div class="hero-slide">
+                <div class="hero-slide-bg" style="background-image: url('assets/images/training_removebg.png'); background-size: cover; background-position: center;"></div>
+                <div class="container">
+                    <div class="hero-content">
+                        <span class="hero-badge">E7 ACADEMY</span>
+                        <h1 class="hero-title">Build Security & AI Expertise for Your Team</h1>
+                        <p class="hero-description">Comprehensive training and certification programs to upskill your organization in cybersecurity, data, and AI governance.</p>
+                        
+                        <div class="hero-buttons">
+                            <a href="academy.php" class="btn-primary">
+                                <span>Explore Academy</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <a href="contact.php" class="btn-secondary">
+                                <span>Request Training</span>
+                                <i class="fas fa-graduation-cap"></i>
+                            </a>
+                        </div>
+
+                        <div class="hero-stats">
+                            <div class="stat-box">
+                                <div class="stat-number">50+</div>
+                                <div class="stat-label">Courses</div>
+                            </div>
+                            <div class="stat-box">
+                                <div class="stat-number">5000+</div>
+                                <div class="stat-label">Graduates</div>
+                            </div>
+                            <div class="stat-box">
+                                <div class="stat-number">99%</div>
+                                <div class="stat-label">Pass Rate</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slider Navigation -->
+        <button class="hero-prev" aria-label="Previous slide">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="hero-next" aria-label="Next slide">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+
+        <!-- Slider Indicators -->
+        <div class="hero-indicators">
+            <button class="indicator active" data-slide="0" aria-label="Go to slide 1"></button>
+            <button class="indicator" data-slide="1" aria-label="Go to slide 2"></button>
+            <button class="indicator" data-slide="2" aria-label="Go to slide 3"></button>
+            <button class="indicator" data-slide="3" aria-label="Go to slide 4"></button>
+            <button class="indicator" data-slide="4" aria-label="Go to slide 5"></button>
+            <button class="indicator" data-slide="5" aria-label="Go to slide 6"></button>
+        </div>
+    </section>
+
+    <script>
+    // Hero Slider
+    (function() {
+        const slider = document.querySelector('.hero-slider');
+        const slides = document.querySelectorAll('.hero-slide');
+        const prevBtn = document.querySelector('.hero-prev');
+        const nextBtn = document.querySelector('.hero-next');
+        const indicators = document.querySelectorAll('.indicator');
+        let currentSlide = 0;
+        let autoplayInterval;
+
+        function showSlide(index) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            indicators.forEach(ind => ind.classList.remove('active'));
+            
+            currentSlide = index;
+            if (currentSlide >= slides.length) currentSlide = 0;
+            if (currentSlide < 0) currentSlide = slides.length - 1;
+            
+            slides[currentSlide].classList.add('active');
+            indicators[currentSlide].classList.add('active');
+        }
+
+        function nextSlide() {
+            currentSlide++;
+            if (currentSlide >= slides.length) currentSlide = 0;
+            showSlide(currentSlide);
+        }
+
+        function prevSlide() {
+            currentSlide--;
+            if (currentSlide < 0) currentSlide = slides.length - 1;
+            showSlide(currentSlide);
+        }
+
+        function startAutoplay() {
+            autoplayInterval = setInterval(nextSlide, 6000);
+        }
+
+        function stopAutoplay() {
+            clearInterval(autoplayInterval);
+        }
+
+        // Event listeners
+        if (prevBtn) {
+            prevBtn.addEventListener('click', () => {
+                stopAutoplay();
+                prevSlide();
+                startAutoplay();
+            });
+        }
+
+        if (nextBtn) {
+            nextBtn.addEventListener('click', () => {
+                stopAutoplay();
+                nextSlide();
+                startAutoplay();
+            });
+        }
+
+        indicators.forEach((indicator, index) => {
+            indicator.addEventListener('click', () => {
+                stopAutoplay();
+                currentSlide = index;
+                showSlide(currentSlide);
+                startAutoplay();
+            });
+        });
+
+        // Pause on hover
+        slider.addEventListener('mouseenter', stopAutoplay);
+        slider.addEventListener('mouseleave', startAutoplay);
+
+        // Start autoplay
+        startAutoplay();
+    })();
+    </script>
+
+    <!-- Company Intro -->
+    <section class="home-intro">
+        <div class="container">
+            <div class="intro-card section-intro">
+                <h2 class="section-title">Who We Are</h2>
+                <p class="section-description">E7 Technology Solutions delivers secure, AI-enabled, and data-driven technology solutions that help organizations reduce risk, gain insight, and scale responsibly. Through cybersecurity, analytics, AI advisory, and secure system delivery, E7 partners with organizations across Ghana and Africa to build trusted digital foundations for growth.</p>
             </div>
         </div>
     </section>

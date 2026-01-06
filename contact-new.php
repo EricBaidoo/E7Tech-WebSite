@@ -148,16 +148,16 @@ include('header.php');
                     <div class="card-body p-4">
                         <h5 class="mb-3">Follow Us</h5>
                         <div class="d-flex gap-3">
-                            <a href="#" class="btn btn-outline-primary btn-lg">
+                            <a href="https://www.linkedin.com/company/93869752/" class="btn btn-outline-primary btn-lg">
                                 <i class="fab fa-linkedin"></i>
                             </a>
-                            <a href="#" class="btn btn-outline-primary btn-lg">
+                            <a href="https://x.com/E7Technologies" class="btn btn-outline-primary btn-lg">
                                 <i class="fab fa-twitter"></i>
                             </a>
-                            <a href="#" class="btn btn-outline-primary btn-lg">
+                            <a href="https://web.facebook.com/profile.php?id=61564106101270" class="btn btn-outline-primary btn-lg">
                                 <i class="fab fa-facebook"></i>
                             </a>
-                            <a href="#" class="btn btn-outline-primary btn-lg">
+                            <a href="https://www.instagram.com/e7_technology_solutions/" class="btn btn-outline-primary btn-lg">
                                 <i class="fab fa-instagram"></i>
                             </a>
                         </div>

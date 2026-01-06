@@ -6,41 +6,14 @@ include('header.php');
 
 <!-- Hero Section -->
 <section class="academy-hero">
-    <div class="hero-background"></div>
     <div class="container">
-        <div class="hero-content">
-            <span class="hero-badge">E7 ACADEMY</span>
-            <h1 class="hero-title">Transform Your Career with <br><span class="gradient-text">World-Class Tech Training</span></h1>
-            <p class="hero-subtitle">Africa's premier technology training institute empowering professionals and organizations with cutting-edge skills in AI, cybersecurity, data science, and cloud computing.</p>
-            <div class="hero-actions">
-                <a href="#programs" class="btn-primary">Explore Programs <i class="fas fa-arrow-down"></i></a>
-                <a href="#corporate" class="btn-secondary">Corporate Training</a>
-            </div>
-            <div class="hero-achievements">
-                <div class="achievement-item">
-                    <div class="achievement-value">5,000+</div>
-                    <div class="achievement-label">Professionals Trained</div>
-                </div>
-                <div class="achievement-item">
-                    <div class="achievement-value">92%</div>
-                    <div class="achievement-label">Job Placement Rate</div>
-                </div>
-                <div class="achievement-item">
-                    <div class="achievement-value">50+</div>
-                    <div class="achievement-label">Industry Partners</div>
-                </div>
-                <div class="achievement-item">
-                    <div class="achievement-value">15+</div>
-                    <div class="achievement-label">Countries</div>
-                </div>
-            </div>
+        <div class="academy-hero-content">
+            <span class="academy-badge">E7 ACADEMY</span>
+            <h1 class="academy-hero-title">Transform Your Career with World-Class Tech Training</h1>
+            <p class="academy-hero-subtitle">Africa's premier technology training institute empowering professionals and organizations with cutting-edge skills in AI, cybersecurity, data science, and cloud computing</p>
         </div>
     </div>
-    <div class="hero-wave">
-        <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 0L60 10C120 20 240 40 360 46.7C480 53 600 47 720 43.3C840 40 960 40 1080 46.7C1200 53 1320 67 1380 73.3L1440 80V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0V0Z" fill="#ffffff"/>
-        </svg>
-    </div>
+    <div class="hero-overlay"></div>
 </section>
 
 <!-- Mission & Vision -->

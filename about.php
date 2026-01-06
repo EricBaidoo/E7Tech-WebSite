@@ -2,7 +2,7 @@
 $page_title = "About Us - E7 Technology Solutions";
 include 'header.php'; 
 ?>
-<link rel="stylesheet" href="assets/about.css?v=3">
+<link rel="stylesheet" href="assets/about.css?v=4">
 
 <!-- Hero Banner -->
 <section class="about-hero">
@@ -16,13 +16,13 @@ include 'header.php';
     <div class="hero-overlay"></div>
 </section>
 
-<!-- Company Overview -->
+<!-- Company Overview with Split Content -->
 <section class="company-overview">
     <div class="container">
         <div class="overview-grid">
             <div class="overview-content">
                 <div class="section-label">WHO WE ARE</div>
-                <h2 class="section-title">Pioneering Technology Excellence Since 2024</h2>
+                <h2 class="section-title">Pioneering Technology Excellence</h2>
                 <p class="section-text">E7 Technology Solutions stands at the forefront of Africa's digital revolution. We deliver enterprise-grade solutions that combine artificial intelligence, advanced cybersecurity, and powerful data analytics to help organizations thrive in the digital age.</p>
                 <p class="section-text">Our team of world-class experts brings decades of global experience to solve Africa's most complex technology challenges, driving innovation and sustainable growth across industries.</p>
                 
@@ -44,14 +44,7 @@ include 'header.php';
             
             <div class="overview-image">
                 <div class="image-wrapper">
-                    <img src="assets/images/solution-digital-transformation.png" alt="E7 Technology">
-                    <div class="image-badge">
-                        <i class="fas fa-award"></i>
-                        <div>
-                            <div class="badge-title">Excellence Award</div>
-                            <div class="badge-subtitle">Best Tech Partner 2024</div>
-                        </div>
-                    </div>
+                    <img src="assets/images/ABOUT PAGE.png" alt="E7 Technology Innovation and Digital Solutions">
                 </div>
             </div>
         </div>
@@ -61,6 +54,11 @@ include 'header.php';
 <!-- Mission, Vision, Values -->
 <section class="mvv-section">
     <div class="container">
+        <div class="section-header">
+            <span class="section-badge">OUR FOUNDATION</span>
+            <h2 class="section-title-center">Mission • Vision • Values</h2>
+        </div>
+
         <div class="mvv-grid">
             <div class="mvv-card">
                 <div class="mvv-icon">
@@ -96,6 +94,66 @@ include 'header.php';
     </div>
 </section>
 
+<!-- Why Choose E7 -->
+<section class="why-choose-section">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge">WHY CHOOSE E7</span>
+            <h2 class="section-title-center">What Sets Us Apart</h2>
+        </div>
+
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <h3>AI-First Solutions</h3>
+                <p>Enterprise-grade artificial intelligence integrated into every solution we deliver</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>Security-Centric</h3>
+                <p>Cybersecurity embedded from design to deployment across all platforms</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3>Data-Driven Insights</h3>
+                <p>Transform raw data into actionable intelligence with governance-first analytics</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-globe"></i>
+                </div>
+                <h3>Africa-Focused</h3>
+                <p>Solutions designed specifically for African business contexts and challenges</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3>Expert Team</h3>
+                <p>World-class engineers, data scientists, and security specialists</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-headset"></i>
+                </div>
+                <h3>24/7 Support</h3>
+                <p>Round-the-clock technical support and partnership with your success</p>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- Leadership Team -->
 <section id="leadership" class="leadership-section">
     <div class="container">
@@ -108,10 +166,8 @@ include 'header.php';
         <div class="leadership-grid">
             <!-- CEO -->
             <div class="leader-card">
-                <div class="leader-image">
-                    <div class="leader-avatar">
-                        <i class="fas fa-user-tie"></i>
-                    </div>
+                <div class="leader-icon">
+                    <i class="fas fa-user-circle"></i>
                 </div>
                 <div class="leader-info">
                     <h4 class="leader-name">Dr. Kwame Mensah</h4>
@@ -122,19 +178,13 @@ include 'header.php';
                         <span class="tag">Leadership</span>
                         <span class="tag">Innovation</span>
                     </div>
-                    <div class="leader-social">
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                    </div>
                 </div>
             </div>
             
             <!-- CTO -->
             <div class="leader-card">
-                <div class="leader-image">
-                    <div class="leader-avatar">
-                        <i class="fas fa-user-tie"></i>
-                    </div>
+                <div class="leader-icon">
+                    <i class="fas fa-user-circle"></i>
                 </div>
                 <div class="leader-info">
                     <h4 class="leader-name">Amina Osei</h4>
@@ -144,19 +194,13 @@ include 'header.php';
                         <span class="tag">Cloud Architecture</span>
                         <span class="tag">Security</span>
                     </div>
-                    <div class="leader-social">
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                    </div>
                 </div>
             </div>
             
             <!-- CDO -->
             <div class="leader-card">
-                <div class="leader-image">
-                    <div class="leader-avatar">
-                        <i class="fas fa-user-tie"></i>
-                    </div>
+                <div class="leader-icon">
+                    <i class="fas fa-user-circle"></i>
                 </div>
                 <div class="leader-info">
                     <h4 class="leader-name">Emmanuel Addo</h4>
@@ -166,19 +210,13 @@ include 'header.php';
                         <span class="tag">Data Science</span>
                         <span class="tag">ML/AI</span>
                     </div>
-                    <div class="leader-social">
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                    </div>
                 </div>
             </div>
             
             <!-- VP Cybersecurity -->
             <div class="leader-card">
-                <div class="leader-image">
-                    <div class="leader-avatar">
-                        <i class="fas fa-user-tie"></i>
-                    </div>
+                <div class="leader-icon">
+                    <i class="fas fa-user-circle"></i>
                 </div>
                 <div class="leader-info">
                     <h4 class="leader-name">Sarah Owusu</h4>
@@ -188,130 +226,18 @@ include 'header.php';
                         <span class="tag">Cybersecurity</span>
                         <span class="tag">Compliance</span>
                     </div>
-                    <div class="leader-social">
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Director Innovation -->
-            <div class="leader-card">
-                <div class="leader-image">
-                    <div class="leader-avatar">
-                        <i class="fas fa-user-tie"></i>
-                    </div>
-                </div>
-                <div class="leader-info">
-                    <h4 class="leader-name">Michael Boateng</h4>
-                    <p class="leader-role">Director of Innovation</p>
-                    <p class="leader-bio">Leading R&D initiatives in AI, IoT, and emerging technologies for African markets. Patent holder in ML algorithms and innovation frameworks.</p>
-                    <div class="leader-tags">
-                        <span class="tag">R&D</span>
-                        <span class="tag">Innovation</span>
-                    </div>
-                    <div class="leader-social">
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Head Client Solutions -->
-            <div class="leader-card">
-                <div class="leader-image">
-                    <div class="leader-avatar">
-                        <i class="fas fa-user-tie"></i>
-                    </div>
-                </div>
-                <div class="leader-info">
-                    <h4 class="leader-name">Grace Ankrah</h4>
-                    <p class="leader-role">Head of Client Solutions</p>
-                    <p class="leader-bio">Driving client success through strategic partnerships and solution delivery excellence. MBA from INSEAD with expertise in digital transformation.</p>
-                    <div class="leader-tags">
-                        <span class="tag">Client Success</span>
-                        <span class="tag">Strategy</span>
-                    </div>
-                    <div class="leader-social">
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Gallery -->
-<section id="gallery" class="gallery-section">
+<!-- CTA Section -->
+<section class="cta-section">
     <div class="container">
-        <div class="section-header">
-            <span class="section-badge">OUR FACILITIES</span>
-            <h2 class="section-title-center">World-Class Infrastructure</h2>
-            <p class="section-subtitle">State-of-the-art facilities across Africa</p>
-        </div>
-        
-        <div class="gallery-grid">
-            <div class="gallery-item">
-                <div class="gallery-image">
-                    <img src="assets/images/solution-digital-transformation.png" alt="Headquarters">
-                    <div class="gallery-overlay">
-                        <h4>Accra Headquarters</h4>
-                        <p>Innovation Center</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="gallery-item">
-                <div class="gallery-image">
-                    <img src="assets/images/solution-analytics-server.png" alt="Data Center">
-                    <div class="gallery-overlay">
-                        <h4>Data Center</h4>
-                        <p>Scalable Infrastructure</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="gallery-item">
-                <div class="gallery-image">
-                    <img src="assets/images/solution-cybersecurity-globe.png" alt="SOC">
-                    <div class="gallery-overlay">
-                        <h4>Security Operations</h4>
-                        <p>24/7 Threat Monitoring</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="gallery-item">
-                <div class="gallery-image">
-                    <img src="assets/images/solution-data-visualization.png" alt="Analytics Lab">
-                    <div class="gallery-overlay">
-                        <h4>Analytics Lab</h4>
-                        <p>Data Science Workspace</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="gallery-item">
-                <div class="gallery-image">
-                    <img src="assets/images/solution-secure-ai.png" alt="AI Lab">
-                    <div class="gallery-overlay">
-                        <h4>AI Research Lab</h4>
-                        <p>Next-Gen AI Solutions</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="gallery-item">
-                <div class="gallery-image">
-                    <img src="assets/images/solution-ai-security.png" alt="Training">
-                    <div class="gallery-overlay">
-                        <h4>Training Center</h4>
-                        <p>E7 Academy Programs</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <h2>Ready to Transform Your Organization?</h2>
+        <p>Let's discuss how E7 Technology Solutions can drive your digital transformation</p>
+        <a href="/E7 TECH/contact.php" class="btn-primary">Get Started Today</a>
     </div>
 </section>
 
