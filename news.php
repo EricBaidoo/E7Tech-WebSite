@@ -2,7 +2,7 @@
 $page_title = "News & Insights - E7 Technology Solutions";
 include('header.php');
 ?>
-<link rel="stylesheet" href="assets/news.css?v=3">
+<link rel="stylesheet" href="<?php echo $assetBasePath; ?>/news.css?v=3">
 
 <!-- Hero Section -->
 <section class="news-hero">

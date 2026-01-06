@@ -1,27 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Solutions - E7 Technology Solutions</title>
-    <meta name="description" content="E7 Technology Solutions delivers secure, data-driven, and AI-enabled solutions that help organizations reduce risk, gain clarity, and scale with confidence across Ghana and Africa.">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="assets/images/e7-logo1.png">
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
-    
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="assets/header.css?v=4">
-    <link rel="stylesheet" href="assets/solutions-redesign.css?v=9">
-    <link rel="stylesheet" href="assets/footer.css?v=4">
-</head>
-<body>
-    <?php include('header.php'); ?>
+<?php
+$page_title = "Solutions - E7 Technology Solutions";
+include('header.php');
+?>
+<link rel="stylesheet" href="<?php echo $assetBasePath; ?>/solutions-redesign.css?v=4">
 
     <!-- Hero Section -->
     <section class="solutions-hero">
@@ -163,5 +144,3 @@
     </section>
 
     <?php include('footer.php'); ?>
-</body>
-</html>

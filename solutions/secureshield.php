@@ -1,16 +1,18 @@
 <?php
 $page_title = "SecureShield™ - Enterprise Cybersecurity | E7 Technology";
+$assetBasePath = '../assets';
+$navBasePath = '../';
 include('../header.php');
 ?>
-<link rel="stylesheet" href="../assets/solution-detail.css">
+<link rel="stylesheet" href="<?php echo $assetBasePath; ?>/solution-detail.css">
 
 <!-- Hero Section -->
-<section class="solution-hero secureshield-hero">
+<section class="solution-hero">
     <div class="container">
         <div class="solution-hero-content">
             <span class="solution-badge">CYBERSECURITY SOLUTION</span>
             <h1 class="solution-hero-title">SecureShield™</h1>
-            <p class="solution-hero-subtitle">E7 SecureShield™ helps organizations understand, manage, and reduce cybersecurity and data protection risks with a structured, practical approach</p>
+            <p class="solution-hero-subtitle">Understand, manage, and reduce cybersecurity and data protection risks with a structured, practical approach</p>
         </div>
     </div>
     <div class="hero-overlay"></div>

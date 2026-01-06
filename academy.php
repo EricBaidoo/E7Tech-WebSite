@@ -2,7 +2,7 @@
 $page_title = "E7 Academy - Professional Tech Training & Upskilling";
 include('header.php');
 ?>
-<link rel="stylesheet" href="assets/academy.css?v=4">
+<link rel="stylesheet" href="<?php echo $assetBasePath; ?>/academy.css?v=4">
 
 <!-- Hero Section -->
 <section class="academy-hero">

@@ -1,16 +1,18 @@
 <?php
 $page_title = "SecureCore™ - Enterprise Systems | E7 Technology";
+$assetBasePath = '../assets';
+$navBasePath = '../';
 include('../header.php');
 ?>
-<link rel="stylesheet" href="../assets/solution-detail.css">
+<link rel="stylesheet" href="<?php echo $assetBasePath; ?>/solution-detail.css">
 
 <!-- Hero Section -->
-<section class="solution-hero securecore-hero">
+<section class="solution-hero">
     <div class="container">
         <div class="solution-hero-content">
             <span class="solution-badge">ENTERPRISE PLATFORM SOLUTION</span>
             <h1 class="solution-hero-title">SecureCore™</h1>
-            <p class="solution-hero-subtitle">E7 SecureCore™ delivers secure, scalable software systems with security-first, data-centric design—built for long-term reliability</p>
+            <p class="solution-hero-subtitle">Secure, scalable software systems with security-first, data-centric design—built for long-term reliability</p>
         </div>
     </div>
     <div class="hero-overlay"></div>

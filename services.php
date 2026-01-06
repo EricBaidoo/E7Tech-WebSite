@@ -1,14 +1,14 @@
 <?php
 $page_title = "Services - E7 Technology Solutions";
-$page_styles = '
+$assetBasePath = 'assets';
+$navBasePath = '';
+include('header.php');
+?>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-<link rel="stylesheet" href="assets/services.css?v=5">
-';
-include('header.php');
-?>
+<link rel="stylesheet" href="<?php echo $assetBasePath; ?>/services.css?v=6">
 
 <!-- Hero Section -->
 <section class="services-hero">

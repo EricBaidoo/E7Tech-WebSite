@@ -200,15 +200,15 @@
 
                         <div class="hero-stats">
                             <div class="stat-box">
-                                <div class="stat-number">100+</div>
+                                <div class="stat-number">50+</div>
                                 <div class="stat-label">Team Members</div>
                             </div>
                             <div class="stat-box">
-                                <div class="stat-number">5</div>
+                                <div class="stat-number">2</div>
                                 <div class="stat-label">Countries</div>
                             </div>
                             <div class="stat-box">
-                                <div class="stat-number">2010</div>
+                                <div class="stat-number">2022</div>
                                 <div class="stat-label">Year Founded</div>
                             </div>
                         </div>
@@ -238,11 +238,11 @@
 
                         <div class="hero-stats">
                             <div class="stat-box">
-                                <div class="stat-number">50+</div>
+                                <div class="stat-number">10+</div>
                                 <div class="stat-label">Courses</div>
                             </div>
                             <div class="stat-box">
-                                <div class="stat-number">5000+</div>
+                                <div class="stat-number">5+</div>
                                 <div class="stat-label">Graduates</div>
                             </div>
                             <div class="stat-box">
@@ -357,7 +357,9 @@
         <div class="container">
             <div class="intro-card section-intro">
                 <h2 class="section-title">Who We Are</h2>
-                <p class="section-description">E7 Technology Solutions delivers secure, AI-enabled, and data-driven technology solutions that help organizations reduce risk, gain insight, and scale responsibly. Through cybersecurity, analytics, AI advisory, and secure system delivery, E7 partners with organizations across Ghana and Africa to build trusted digital foundations for growth.</p>
+                <p class="section-description">E7 Technology Solutions delivers secure, AI-enabled, and data-driven technology solutions that help organizations
+                     reduce risk, gain insight, and scale responsibly. Through cybersecurity, analytics, AI advisory, and secure system delivery, 
+                     E7 partners with organizations across Africa and the world to build trusted digital foundations for growth.</p>
             </div>
         </div>
     </section>
@@ -424,7 +426,8 @@
                     </div>
                     <div class="service-content">
                         <h3>Data Engineering & Analytics</h3>
-                        <p>Transform raw data into strategic assets with robust data pipelines, warehousing solutions, and advanced analytics platforms that drive informed decision-making.</p>
+                        <p>Transform raw data into strategic assets with robust data pipelines, warehousing solutions,
+                             and advanced analytics platforms that drive informed decision-making.</p>
                         <a href="services.php#data" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
@@ -435,7 +438,8 @@
                     </div>
                     <div class="service-content">
                         <h3>Cybersecurity & Compliance</h3>
-                        <p>Protect your digital assets with comprehensive security solutions, proactive threat management, and compliance frameworks designed for African regulatory environments.</p>
+                        <p>Protect your digital assets with comprehensive security solutions, proactive threat management, 
+                            and compliance frameworks designed for African regulatory environments.</p>
                         <a href="services.php#security" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
@@ -457,7 +461,8 @@
                     </div>
                     <div class="service-content">
                         <h3>IT Infrastructure & Cloud Services</h3>
-                        <p>Ensure reliable, scalable, and secure IT environments with expert infrastructure management, cloud migration, and 24/7 monitoring services.</p>
+                        <p>Ensure reliable, scalable, and secure IT environments with expert infrastructure management, cloud migration,
+                             and 24/7 monitoring services.</p>
                         <a href="services.php#infrastructure" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>

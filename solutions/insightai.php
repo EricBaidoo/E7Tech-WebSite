@@ -1,16 +1,18 @@
 <?php
 $page_title = "InsightAI™ - AI & Machine Learning | E7 Technology";
+$assetBasePath = '../assets';
+$navBasePath = '../';
 include('../header.php');
 ?>
-<link rel="stylesheet" href="../assets/solution-detail.css">
+<link rel="stylesheet" href="<?php echo $assetBasePath; ?>/solution-detail.css">
 
 <!-- Hero Section -->
-<section class="solution-hero insightai-hero">
+<section class="solution-hero">
     <div class="container">
         <div class="solution-hero-content">
-            <span class="solution-badge">ARTIFICIAL INTELLIGENCE SOLUTION</span>
+            <span class="solution-badge">AI & MACHINE LEARNING SOLUTION</span>
             <h1 class="solution-hero-title">InsightAI™</h1>
-            <p class="solution-hero-subtitle">E7 InsightAI™ helps organizations turn raw data into trusted insights and clear decisions—using AI only where it adds real value</p>
+            <p class="solution-hero-subtitle">Turn raw data into trusted insights and clear decisions—using AI only where it adds real value</p>
         </div>
     </div>
     <div class="hero-overlay"></div>

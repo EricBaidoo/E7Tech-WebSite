@@ -1,5 +1,14 @@
 <!-- Professional Footer -->
-<link rel="stylesheet" href="/E7 TECH/assets/footer.css?v=5">
+<?php
+// Use the same base path variable from header.php
+if (!isset($assetBasePath)) {
+    $assetBasePath = (strpos($_SERVER['PHP_SELF'], '/solutions/') !== false) ? '../assets' : 'assets';
+}
+if (!isset($navBasePath)) {
+    $navBasePath = (strpos($_SERVER['PHP_SELF'], '/solutions/') !== false) ? '../' : '';
+}
+?>
+<link rel="stylesheet" href="<?php echo $assetBasePath; ?>/footer.css?v=5">
 
 <footer class="site-footer">
     <!-- Main Footer -->
@@ -8,7 +17,7 @@
             <div class="footer-grid">
                 <!-- Company Info -->
                 <div class="footer-column footer-about">
-                    <img src="/E7 TECH/assets/images/e7-logo1.png" alt="E7 Technology Solutions" class="footer-logo">
+                    <img src="<?php echo $assetBasePath; ?>/images/e7-logo1.png" alt="E7 Technology Solutions" class="footer-logo">
                     <p class="footer-description">Empowering organizations across Africa with innovative technology solutions, cybersecurity excellence, and transformative digital strategies. Building the future of technology, today.</p>
                     <div class="footer-social">
                         <a href="https://www.linkedin.com/company/93869752/" class="social-link" aria-label="LinkedIn">
@@ -30,12 +39,12 @@
                 <div class="footer-column">
                     <h4 class="footer-title">Company</h4>
                     <ul class="footer-links">
-                        <li><a href="/E7 TECH/about.php"><i class="fas fa-chevron-right"></i> About E7</a></li>
-                        <li><a href="/E7 TECH/about.php#leadership"><i class="fas fa-chevron-right"></i> Leadership Team</a></li>
-                        <li><a href="/E7 TECH/news.php"><i class="fas fa-chevron-right"></i> News & Insights</a></li>
-                        <li><a href="/E7 TECH/academy.php"><i class="fas fa-chevron-right"></i> E7 Academy</a></li>
-                        <li><a href="/E7 TECH/about.php#gallery"><i class="fas fa-chevron-right"></i> Gallery</a></li>
-                        <li><a href="/E7 TECH/contact.php"><i class="fas fa-chevron-right"></i> Careers</a></li>
+                        <li><a href="<?php echo $navBasePath; ?>about.php"><i class="fas fa-chevron-right"></i> About E7</a></li>
+                        <li><a href="<?php echo $navBasePath; ?>about.php#leadership"><i class="fas fa-chevron-right"></i> Leadership Team</a></li>
+                        <li><a href="<?php echo $navBasePath; ?>news.php"><i class="fas fa-chevron-right"></i> News & Insights</a></li>
+                        <li><a href="<?php echo $navBasePath; ?>academy.php"><i class="fas fa-chevron-right"></i> E7 Academy</a></li>
+                        <li><a href="<?php echo $navBasePath; ?>about.php#gallery"><i class="fas fa-chevron-right"></i> Gallery</a></li>
+                        <li><a href="<?php echo $navBasePath; ?>contact.php"><i class="fas fa-chevron-right"></i> Careers</a></li>
                     </ul>
                 </div>
                 
@@ -43,12 +52,12 @@
                 <div class="footer-column">
                     <h4 class="footer-title">Services</h4>
                     <ul class="footer-links">
-                        <li><a href="/E7 TECH/services.php#cybersecurity"><i class="fas fa-chevron-right"></i> Cybersecurity</a></li>
-                        <li><a href="/E7 TECH/services.php#cloud"><i class="fas fa-chevron-right"></i> Cloud Solutions</a></li>
-                        <li><a href="/E7 TECH/services.php#analytics"><i class="fas fa-chevron-right"></i> Data Analytics</a></li>
-                        <li><a href="/E7 TECH/services.php#ai"><i class="fas fa-chevron-right"></i> AI & Machine Learning</a></li>
-                        <li><a href="/E7 TECH/services.php#consulting"><i class="fas fa-chevron-right"></i> IT Consulting</a></li>
-                        <li><a href="/E7 TECH/services.php#blockchain"><i class="fas fa-chevron-right"></i> Blockchain</a></li>
+                        <li><a href="<?php echo $navBasePath; ?>services.php#cybersecurity"><i class="fas fa-chevron-right"></i> Cybersecurity</a></li>
+                        <li><a href="<?php echo $navBasePath; ?>services.php#cloud"><i class="fas fa-chevron-right"></i> Cloud Solutions</a></li>
+                        <li><a href="<?php echo $navBasePath; ?>services.php#analytics"><i class="fas fa-chevron-right"></i> Data Analytics</a></li>
+                        <li><a href="<?php echo $navBasePath; ?>services.php#ai"><i class="fas fa-chevron-right"></i> AI & Machine Learning</a></li>
+                        <li><a href="<?php echo $navBasePath; ?>services.php#consulting"><i class="fas fa-chevron-right"></i> IT Consulting</a></li>
+                        <li><a href="<?php echo $navBasePath; ?>services.php#blockchain"><i class="fas fa-chevron-right"></i> Blockchain</a></li>
                     </ul>
                 </div>
                 
@@ -56,9 +65,9 @@
                 <div class="footer-column">
                     <h4 class="footer-title">Solutions</h4>
                     <ul class="footer-links">
-                        <li><a href="/E7 TECH/solutions/insightai.php"><i class="fas fa-chevron-right"></i> InsightAI™</a></li>
-                        <li><a href="/E7 TECH/solutions/secureshield.php"><i class="fas fa-chevron-right"></i> SecureShield™</a></li>
-                        <li><a href="/E7 TECH/solutions/securecore.php"><i class="fas fa-chevron-right"></i> SecureCore™</a></li>
+                        <li><a href="<?php echo $navBasePath; ?>solutions/insightai.php"><i class="fas fa-chevron-right"></i> InsightAI™</a></li>
+                        <li><a href="<?php echo $navBasePath; ?>solutions/secureshield.php"><i class="fas fa-chevron-right"></i> SecureShield™</a></li>
+                        <li><a href="<?php echo $navBasePath; ?>solutions/securecore.php"><i class="fas fa-chevron-right"></i> SecureCore™</a></li>
                     </ul>
                 </div>
                 
@@ -125,13 +134,13 @@
                     &copy; <?php echo date('Y'); ?> E7 Technology Solutions. All rights reserved.
                 </p>
                 <div class="footer-bottom-links">
-                    <a href="privacy.php">Privacy Policy</a>
+                    <a href="<?php echo $navBasePath; ?>privacy.php">Privacy Policy</a>
                     <span class="separator">|</span>
-                    <a href="terms.php">Terms of Service</a>
+                    <a href="<?php echo $navBasePath; ?>terms.php">Terms of Service</a>
                     <span class="separator">|</span>
-                    <a href="security.php">Security</a>
+                    <a href="<?php echo $navBasePath; ?>security.php">Security</a>
                     <span class="separator">|</span>
-                    <a href="sitemap.php">Sitemap</a>
+                    <a href="<?php echo $navBasePath; ?>sitemap.php">Sitemap</a>
                 </div>
             </div>
         </div>

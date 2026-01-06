@@ -1,9 +1,10 @@
 <?php
 $page_title = "Contact Us - E7 Technology Solutions";
+$assetBasePath = 'assets';
+$navBasePath = '';
 include('header.php');
 ?>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-QDAkPOvsIkCsOtcLwin56lD1OnLTE04yWV0Z8o6MfMrJmXgpCc4nll/daVagKlKaHkTdMawGlVK6pBX4Lhe2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link rel="stylesheet" href="assets/contact.css?v=4">
+<link rel="stylesheet" href="<?php echo $assetBasePath; ?>/contact.css?v=13">
 
 <!-- Hero Section -->
 <section class="contact-hero">
@@ -157,7 +158,7 @@ include('header.php');
                 </div>
                 <h3>Live Chat Support</h3>
                 <p>Chat with our technical experts in real-time</p>
-                <a href="#" class="card-link">Start Chat <i class="fas fa-arrow-right"></i></a>
+                <a href="javascript:void(0)" onclick="window.open('https://web.facebook.com/profile.php?id=61564106101270', '_blank')" class="card-link">Start Chat <i class="fas fa-arrow-right"></i></a>
             </div>
             <div class="quick-card">
                 <div class="card-icon">
@@ -165,7 +166,7 @@ include('header.php');
                 </div>
                 <h3>Schedule a Consultation</h3>
                 <p>Book a free 30-minute discovery call with our team</p>
-                <a href="#" class="card-link">Book Now <i class="fas fa-arrow-right"></i></a>
+                <a href="mailto:connect@e7world.tech?subject=Schedule%20Consultation&body=Hi%20E7%20Team,%0A%0AI'd%20like%20to%20schedule%20a%20free%20consultation%20call.%0A%0AThank%20you" class="card-link">Book Now <i class="fas fa-arrow-right"></i></a>
             </div>
             <div class="quick-card">
                 <div class="card-icon">
@@ -173,10 +174,13 @@ include('header.php');
                 </div>
                 <h3>Support Center</h3>
                 <p>Browse our knowledge base and FAQs</p>
-                <a href="#" class="card-link">Visit Support <i class="fas fa-arrow-right"></i></a>
+                <a href="faq.php" class="card-link">Visit FAQ <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
     </div>
 </section>
 
 <?php include('footer.php'); ?>
+    });
+});
+</script>
