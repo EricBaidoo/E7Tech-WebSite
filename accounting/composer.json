@@ -1,0 +1,19 @@
+{
+    "name": "e7tech/billing-system",
+    "description": "E7 Technology Solutions - Professional Billing & Receipts System",
+    "type": "project",
+    "require": {
+        "php": ">=7.4",
+        "phpmailer/phpmailer": "^6.9",
+        "setasign/fpdf": "^1.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "E7\\Billing\\": "includes/"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    }
+}
