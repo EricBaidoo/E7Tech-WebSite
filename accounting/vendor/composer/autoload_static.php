@@ -50,3 +50,5 @@ class ComposerStaticInite12729403de9cf0638808be2eb9ea4d1
         }, null, ClassLoader::class);
     }
 }
+
+

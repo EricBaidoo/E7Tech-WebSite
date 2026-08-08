@@ -487,3 +487,5 @@ function generateReceiptPDF($receiptId, $savePath = null, $output = 'D') {
         $pdf->Output($output, $receipt['receipt_no'] . '.pdf');
     }
 }
+
+

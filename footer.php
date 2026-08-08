@@ -15,7 +15,7 @@ if (!isset($navBasePath)) {
             
             <!-- Company Info -->
             <div class="lg:col-span-2 pr-0 lg:pr-8">
-                <img src="<?php echo $assetBasePath; ?>/images/E7_Technology_Solutions_logo2.jpeg" alt="E7 Technology Solutions" class="h-8 w-auto mb-6 object-contain" onerror="this.src='<?php echo $assetBasePath; ?>/images/E7_Technology_Solutions_logo1.jpeg'">
+                <img src="<?php echo $assetBasePath; ?>/images/logos/E7_Technology_Solutions_logo2.jpeg" alt="E7 Technology Solutions" class="h-8 w-auto mb-6 object-contain" onerror="this.src='<?php echo $assetBasePath; ?>/images/logos/E7_Technology_Solutions_logo1.jpeg'">
                 <p class="text-sm text-slate-500 leading-relaxed mb-6">
                     Empowering organizations across Africa with innovative technology solutions, cybersecurity excellence, and transformative digital strategies. Building the future of technology, today.
                 </p>
@@ -39,12 +39,12 @@ if (!isset($navBasePath)) {
             <div>
                 <h4 class="text-slate-900 font-semibold text-sm mb-4">Company</h4>
                 <ul class="space-y-3 text-sm">
-                    <li><a href="<?php echo $navBasePath; ?>about.php" class="hover:text-brand-blue transition-colors">About E7</a></li>
-                    <li><a href="<?php echo $navBasePath; ?>about.php#leadership" class="hover:text-brand-blue transition-colors">Leadership Team</a></li>
-                    <li><a href="<?php echo $navBasePath; ?>news.php" class="hover:text-brand-blue transition-colors">News & Insights</a></li>
-                    <li><a href="<?php echo $navBasePath; ?>academy.php" class="hover:text-brand-blue transition-colors">E7 Academy</a></li>
-                    <li><a href="<?php echo $navBasePath; ?>about.php#gallery" class="hover:text-brand-blue transition-colors">Gallery</a></li>
-                    <li><a href="<?php echo $navBasePath; ?>contact.php" class="hover:text-brand-blue transition-colors">Careers</a></li>
+                    <li><a href="<?php echo $navBasePath; ?>about" class="hover:text-brand-blue transition-colors">About E7</a></li>
+                    <li><a href="<?php echo $navBasePath; ?>about#leadership" class="hover:text-brand-blue transition-colors">Leadership Team</a></li>
+                    <li><a href="<?php echo $navBasePath; ?>news" class="hover:text-brand-blue transition-colors">News & Insights</a></li>
+                    <li><a href="<?php echo $navBasePath; ?>academy" class="hover:text-brand-blue transition-colors">E7 Academy</a></li>
+                    <li><a href="<?php echo $navBasePath; ?>about#gallery" class="hover:text-brand-blue transition-colors">Gallery</a></li>
+                    <li><a href="<?php echo $navBasePath; ?>contact" class="hover:text-brand-blue transition-colors">Careers</a></li>
                 </ul>
             </div>
             
@@ -52,10 +52,10 @@ if (!isset($navBasePath)) {
             <div>
                 <h4 class="text-slate-900 font-semibold text-sm mb-4">Solutions</h4>
                 <ul class="space-y-3 text-sm">
-                    <li><a href="<?php echo $navBasePath; ?>solutions/e7shield.php" class="hover:text-brand-blue transition-colors">E7Shield™</a></li>
-                    <li><a href="<?php echo $navBasePath; ?>solutions/e7insight.php" class="hover:text-brand-blue transition-colors">E7Insight™</a></li>
-                    <li><a href="<?php echo $navBasePath; ?>solutions/e7build.php" class="hover:text-brand-blue transition-colors">E7Build™</a></li>
-                    <li><a href="<?php echo $navBasePath; ?>solutions.php" class="hover:text-brand-blue transition-colors flex items-center gap-1 font-medium mt-2">View All <i class="fas fa-angle-right text-xs"></i></a></li>
+                    <li><a href="<?php echo $navBasePath; ?>solutions/e7shield" class="hover:text-brand-blue transition-colors">E7Shield™</a></li>
+                    <li><a href="<?php echo $navBasePath; ?>solutions/e7insight" class="hover:text-brand-blue transition-colors">E7Insight™</a></li>
+                    <li><a href="<?php echo $navBasePath; ?>solutions/e7build" class="hover:text-brand-blue transition-colors">E7Build™</a></li>
+                    <li><a href="<?php echo $navBasePath; ?>solutions" class="hover:text-brand-blue transition-colors flex items-center gap-1 font-medium mt-2">View All <i class="fas fa-angle-right text-xs"></i></a></li>
                 </ul>
             </div>
             
@@ -83,9 +83,9 @@ if (!isset($navBasePath)) {
         <div class="pt-8 border-t border-slate-200 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-400">
             <p>&copy; <?php echo date('Y'); ?> E7 Technology Solutions. All Rights Reserved.</p>
             <div class="flex gap-4">
-                <a href="<?php echo $navBasePath; ?>privacy-policy.php" class="hover:text-slate-700 transition-colors">Privacy Policy</a>
-                <a href="<?php echo $navBasePath; ?>terms.php" class="hover:text-slate-700 transition-colors">Terms of Service</a>
-                <a href="<?php echo $navBasePath; ?>cookie-policy.php" class="hover:text-slate-700 transition-colors">Cookie Policy</a>
+                <a href="<?php echo $navBasePath; ?>privacy-policy" class="hover:text-slate-700 transition-colors">Privacy Policy</a>
+                <a href="<?php echo $navBasePath; ?>terms" class="hover:text-slate-700 transition-colors">Terms of Service</a>
+                <a href="<?php echo $navBasePath; ?>cookie-policy" class="hover:text-slate-700 transition-colors">Cookie Policy</a>
             </div>
         </div>
     </div>
@@ -111,5 +111,17 @@ backToTopButton.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 </script>
+
+<!-- AOS JS for Micro-Animations -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 800,
+        once: true,
+        offset: 50,
+    });
+</script>
 </body>
 </html>
+
+

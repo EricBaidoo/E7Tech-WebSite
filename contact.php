@@ -1,59 +1,67 @@
 <?php
-$page_title = "Contact Us - E7 Technology Solutions";
+$page_title = "Contact Us";
+$meta_description = "Connect with the E7 Technology Solutions engineering team. Schedule an architecture review or discuss your enterprise technology requirements.";
 $assetBasePath = 'assets';
 $navBasePath = '';
 include('header.php');
 ?>
-<link rel="stylesheet" href="<?php echo $assetBasePath; ?>/contact.css?v=16">
 
-<!-- Hero Section -->
-<section class="contact-hero">
-    <div class="container">
-        <div class="contact-hero-content">
-            <span class="contact-badge">GET IN TOUCH</span>
-            <h1 class="contact-hero-title">Let's Build Something Great Together</h1>
-            <p class="contact-hero-subtitle">Have a project in mind? Our team is ready to help you transform your vision into reality with cutting-edge technology solutions</p>
+<!-- HERO SECTION -->
+<section class="pt-40 pb-24 bg-white border-b border-slate-100 text-center">
+    <div class="max-w-4xl mx-auto px-4">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-slate-100 border border-slate-200 mb-8">
+            <i class="fas fa-paper-plane text-brand-blue text-xs"></i>
+            <span class="text-slate-600 text-xs font-semibold uppercase tracking-wide">Get In Touch</span>
         </div>
+        
+        <h1 class="text-5xl md:text-7xl font-extrabold text-slate-900 tracking-tight mb-6">
+            Let's build something <span class="text-brand-blue">great.</span>
+        </h1>
+        
+        <p class="text-xl text-slate-500 leading-relaxed max-w-2xl mx-auto">
+            Have a project in mind? Our team is ready to help you transform your vision into reality with cutting-edge technology solutions.
+        </p>
     </div>
-    <div class="hero-overlay"></div>
 </section>
 
-<!-- Contact Section -->
-<section class="contact-section">
-    <div class="container">
-        <div class="contact-wrapper">
+<!-- CONTACT SECTION -->
+<section class="py-24 bg-slate-50 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+            
             <!-- Contact Form -->
-            <div class="form-container">
-                <div class="form-header">
-                    <h2>Send Us a Message</h2>
-                    <p>Fill out the form below and we'll get back to you within 24 hours</p>
+            <div class="bg-white p-8 md:p-12 rounded-2xl shadow-sm border border-slate-200">
+                <div class="mb-8">
+                    <h2 class="text-3xl font-extrabold text-slate-900 mb-2">Send Us a Message</h2>
+                    <p class="text-slate-500">Fill out the form below and we'll get back to you within 24 hours.</p>
                 </div>
-                <form class="contact-form" method="post" action="#">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="name">Full Name *</label>
-                            <input type="text" id="name" name="name" required placeholder="John Doe">
+                
+                <form class="space-y-6" method="post" action="#">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="name" class="block text-sm font-bold text-slate-700 mb-2">Full Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="John Doe" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-brand-blue focus:border-brand-blue outline-none transition-all">
                         </div>
-                        <div class="form-group">
-                            <label for="email">Email Address *</label>
-                            <input type="email" id="email" name="email" required placeholder="john@company.com">
+                        <div>
+                            <label for="email" class="block text-sm font-bold text-slate-700 mb-2">Email Address *</label>
+                            <input type="email" id="email" name="email" required placeholder="john@company.com" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-brand-blue focus:border-brand-blue outline-none transition-all">
                         </div>
                     </div>
                     
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" name="phone" placeholder="+233 243 838 490">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="phone" class="block text-sm font-bold text-slate-700 mb-2">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+233 243 838 490" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-brand-blue focus:border-brand-blue outline-none transition-all">
                         </div>
-                        <div class="form-group">
-                            <label for="company">Company/Organization</label>
-                            <input type="text" id="company" name="company" placeholder="Your Company">
+                        <div>
+                            <label for="company" class="block text-sm font-bold text-slate-700 mb-2">Company</label>
+                            <input type="text" id="company" name="company" placeholder="Your Company" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-brand-blue focus:border-brand-blue outline-none transition-all">
                         </div>
                     </div>
 
-                    <div class="form-group">
-                        <label for="service">Service of Interest</label>
-                        <select id="service" name="service">
+                    <div>
+                        <label for="service" class="block text-sm font-bold text-slate-700 mb-2">Service of Interest</label>
+                        <select id="service" name="service" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-brand-blue focus:border-brand-blue outline-none transition-all bg-white">
                             <option value="">Select a service...</option>
                             <option value="ai-ml">AI & Machine Learning</option>
                             <option value="data">Data Engineering & Analytics</option>
@@ -66,77 +74,66 @@ include('header.php');
                         </select>
                     </div>
 
-                    <div class="form-group">
-                        <label for="message">Your Message *</label>
-                        <textarea id="message" name="message" rows="6" required placeholder="Tell us about your project or inquiry..."></textarea>
+                    <div>
+                        <label for="message" class="block text-sm font-bold text-slate-700 mb-2">Your Message *</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Tell us about your project or inquiry..." class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-brand-blue focus:border-brand-blue outline-none transition-all"></textarea>
                     </div>
 
-                    <button type="submit" class="btn-submit">
+                    <button type="submit" class="w-full py-4 rounded-lg bg-brand-blue text-white font-bold text-lg hover:bg-blue-700 transition-colors shadow-sm flex items-center justify-center gap-2">
                         <span>Send Message</span>
                         <i class="fas fa-paper-plane"></i>
                     </button>
                 </form>
             </div>
 
-            <!-- Contact Info -->
-            <div class="info-container">
-                <div class="info-header">
-                    <h2>Contact Information</h2>
-                    <p>Get in touch with our team through any of these channels</p>
+            <!-- Contact Information -->
+            <div class="flex flex-col justify-center">
+                <div class="mb-10">
+                    <h2 class="text-3xl font-extrabold text-slate-900 mb-2">Contact Information</h2>
+                    <p class="text-slate-500">Get in touch with our team through any of these channels.</p>
                 </div>
 
-                <div class="contact-info-list">
-                    <div class="info-item">
-                        <div class="info-icon">
-                            <i class="fas fa-map-marker-alt"></i>
+                <div class="space-y-8 mb-12">
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 bg-white rounded-xl shadow-sm border border-slate-200 flex flex-shrink-0 items-center justify-center">
+                            <i class="fas fa-map-marker-alt text-brand-blue text-xl"></i>
                         </div>
-                        <div class="info-content">
-                            <h4>Our Location</h4>
-                            <p>Accra, Ghana<br>West Africa</p>
-                        </div>
-                    </div>
-
-                    <div class="info-item">
-                        <div class="info-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="info-content">
-                            <h4>Email Us</h4>
-                            <p>
-                                <a href="mailto:connect@e7world.tech">connect@e7world.tech</a><br>
-                                <a href="mailto:sales@e7world.tech">sales@e7world.tech</a>
-                            </p>
+                        <div>
+                            <h4 class="font-bold text-slate-900 mb-1">Our Location</h4>
+                            <p class="text-slate-600">Accra, Ghana<br>West Africa</p>
                         </div>
                     </div>
 
-                    <div class="info-item">
-                        <div class="info-icon">
-                            <i class="fas fa-phone"></i>
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 bg-white rounded-xl shadow-sm border border-slate-200 flex flex-shrink-0 items-center justify-center">
+                            <i class="fas fa-envelope text-brand-blue text-xl"></i>
                         </div>
-                        <div class="info-content">
-                            <h4>Call Us</h4>
-                            <p>+233 243 838 490<br><small>Mon-Fri: 8:00 AM - 6:00 PM GMT</small></p>
+                        <div>
+                            <h4 class="font-bold text-slate-900 mb-1">Email Us</h4>
+                            <a href="mailto:connect@e7world.tech" class="text-brand-blue hover:underline block">connect@e7world.tech</a>
+                            <a href="mailto:sales@e7world.tech" class="text-brand-blue hover:underline block">sales@e7world.tech</a>
                         </div>
                     </div>
 
-                    <div class="info-item">
-                        <div class="info-icon">
-                            <i class="fas fa-clock"></i>
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 bg-white rounded-xl shadow-sm border border-slate-200 flex flex-shrink-0 items-center justify-center">
+                            <i class="fas fa-phone text-brand-blue text-xl"></i>
                         </div>
-                        <div class="info-content">
-                            <h4>Business Hours</h4>
-                            <p>Monday - Friday: 8:00 AM - 6:00 PM<br>Saturday: 9:00 AM - 2:00 PM<br>Sunday: Closed</p>
+                        <div>
+                            <h4 class="font-bold text-slate-900 mb-1">Call Us</h4>
+                            <p class="text-slate-600">+233 243 838 490</p>
+                            <p class="text-sm text-slate-400 mt-1">Mon-Fri: 8:00 AM - 6:00 PM GMT</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="social-section">
-                    <h4>Follow Us</h4>
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com/company/93869752/" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://web.facebook.com/profile.php?id=61564106101270" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://x.com/E7Technologies" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.instagram.com/e7_technology_solutions/" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <div>
+                    <h4 class="font-bold text-slate-900 mb-4">Follow Us</h4>
+                    <div class="flex gap-4">
+                        <a href="https://www.linkedin.com/company/93869752/" class="w-10 h-10 rounded bg-white shadow-sm border border-slate-200 flex items-center justify-center text-slate-500 hover:text-brand-blue hover:border-brand-blue transition-colors"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://web.facebook.com/profile.php?id=61564106101270" class="w-10 h-10 rounded bg-white shadow-sm border border-slate-200 flex items-center justify-center text-slate-500 hover:text-brand-blue hover:border-brand-blue transition-colors"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://x.com/E7Technologies" class="w-10 h-10 rounded bg-white shadow-sm border border-slate-200 flex items-center justify-center text-slate-500 hover:text-brand-blue hover:border-brand-blue transition-colors"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/e7_technology_solutions/" class="w-10 h-10 rounded bg-white shadow-sm border border-slate-200 flex items-center justify-center text-slate-500 hover:text-brand-blue hover:border-brand-blue transition-colors"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
@@ -144,43 +141,45 @@ include('header.php');
     </div>
 </section>
 
-<!-- Quick Contact Cards -->
-<section class="quick-contact">
-    <div class="container">
-        <div class="section-header">
-            <h2 class="section-title">Need Immediate Assistance?</h2>
-            <p class="section-subtitle">Choose the best way to reach us based on your needs</p>
+<!-- QUICK ASSISTANCE -->
+<section class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 mb-6">Need Immediate Assistance?</h2>
+            <p class="text-xl text-slate-500">Choose the best way to reach us based on your needs.</p>
         </div>
-        <div class="quick-cards">
-            <div class="quick-card">
-                <div class="card-icon">
-                    <i class="fas fa-comments"></i>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200 text-center hover:shadow-md transition-shadow">
+                <div class="w-16 h-16 bg-white rounded-xl shadow-sm border border-slate-200 flex items-center justify-center mx-auto mb-6">
+                    <i class="fas fa-comments text-2xl text-brand-blue"></i>
                 </div>
-                <h3>Live Chat Support</h3>
-                <p>Chat with our technical experts in real-time</p>
-                <a href="javascript:void(0)" onclick="window.open('https://web.facebook.com/profile.php?id=61564106101270', '_blank')" class="card-link">Start Chat <i class="fas fa-arrow-right"></i></a>
+                <h3 class="text-xl font-bold text-slate-900 mb-3">Live Chat Support</h3>
+                <p class="text-slate-600 mb-6 text-sm">Chat with our technical experts in real-time via Facebook Messenger.</p>
+                <a href="https://web.facebook.com/profile.php?id=61564106101270" target="_blank" class="font-bold text-brand-blue hover:underline">Start Chat <i class="fas fa-arrow-right ml-1"></i></a>
             </div>
-            <div class="quick-card">
-                <div class="card-icon">
-                    <i class="fas fa-calendar-alt"></i>
+            
+            <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200 text-center hover:shadow-md transition-shadow">
+                <div class="w-16 h-16 bg-white rounded-xl shadow-sm border border-slate-200 flex items-center justify-center mx-auto mb-6">
+                    <i class="fas fa-calendar-alt text-2xl text-brand-blue"></i>
                 </div>
-                <h3>Schedule a Consultation</h3>
-                <p>Book a free 30-minute discovery call with our team</p>
-                <a href="mailto:connect@e7world.tech?subject=Schedule%20Consultation&body=Hi%20E7%20Team,%0A%0AI'd%20like%20to%20schedule%20a%20free%20consultation%20call.%0A%0AThank%20you" class="card-link">Book Now <i class="fas fa-arrow-right"></i></a>
+                <h3 class="text-xl font-bold text-slate-900 mb-3">Schedule a Consultation</h3>
+                <p class="text-slate-600 mb-6 text-sm">Book a free 30-minute technical discovery call with our architecture team.</p>
+                <a href="mailto:connect@e7world.tech?subject=Schedule%20Consultation" class="font-bold text-brand-blue hover:underline">Book Now <i class="fas fa-arrow-right ml-1"></i></a>
             </div>
-            <div class="quick-card">
-                <div class="card-icon">
-                    <i class="fas fa-question-circle"></i>
+            
+            <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200 text-center hover:shadow-md transition-shadow">
+                <div class="w-16 h-16 bg-white rounded-xl shadow-sm border border-slate-200 flex items-center justify-center mx-auto mb-6">
+                    <i class="fas fa-question-circle text-2xl text-brand-blue"></i>
                 </div>
-                <h3>Support Center</h3>
-                <p>Browse our knowledge base and FAQs</p>
-                <a href="faq.php" class="card-link">Visit FAQ <i class="fas fa-arrow-right"></i></a>
+                <h3 class="text-xl font-bold text-slate-900 mb-3">Support Center</h3>
+                <p class="text-slate-600 mb-6 text-sm">Browse our comprehensive knowledge base and technical FAQs.</p>
+                <a href="#" class="font-bold text-brand-blue hover:underline">Visit FAQ <i class="fas fa-arrow-right ml-1"></i></a>
             </div>
         </div>
     </div>
 </section>
 
 <?php include('footer.php'); ?>
-    });
-});
-</script>
+
+

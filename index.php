@@ -1,12 +1,13 @@
 <?php 
-$page_title = "Trusted AI, Data & Security Solutions";
+$page_title = "Trusted Technology, Intelligent Transformation";
+$meta_description = "E7 Technology Solutions helps organizations across Africa become smarter, safer, and highly efficient through Artificial Intelligence, Cybersecurity, and Cloud Solutions.";
 include 'header.php'; 
 ?>
 
 <!-- ==============================================
      HERO SECTION (Google/Microsoft Style Slider - 7 Slides)
      ============================================== -->
-<section class="pt-32 pb-20 lg:pt-32 lg:pb-32 bg-white overflow-hidden border-b border-slate-100 relative min-h-[600px] lg:h-[700px] flex items-center">
+<section class="pt-32 pb-20 lg:pt-32 lg:pb-32 bg-white overflow-hidden border-b border-slate-100 relative min-h-[37.5rem] lg:h-[43.75rem] flex items-center">
     <div id="hero-slider" class="relative w-full max-w-7xl mx-auto h-full">
         
         <!-- Slide 1: Enterprise Solutions -->
@@ -15,34 +16,21 @@ include 'header.php';
                 <div class="max-w-2xl">
                     <div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-slate-100 border border-slate-200 mb-6">
                         <span class="w-2 h-2 rounded-full bg-brand-blue animate-pulse"></span>
-                        <span class="text-slate-600 text-xs font-semibold uppercase tracking-wide">Enterprise Solutions</span>
+                        <span class="text-slate-600 text-xs font-semibold uppercase tracking-wide">Enterprise Technology Partner</span>
                     </div>
                     <h1 class="text-5xl md:text-6xl font-extrabold text-slate-900 tracking-tight leading-[1.1] mb-6">
-                        Trusted Technology.<br>
-                        <span class="text-brand-blue">Intelligent Transformation.</span>
+                        Architecting Africa's<br>
+                        <span class="text-brand-blue">Digital Ecosystem.</span>
                     </h1>
                     <p class="text-lg text-slate-500 leading-relaxed mb-8">
-                        Empowering organizations across Africa to become smarter, safer, and more efficient. We deliver enterprise-grade AI, data, and cybersecurity solutions.
+                        E7 Technology Solutions delivers uncompromising cybersecurity, governed AI infrastructure, and scalable cloud applications. We engineer trust into every layer of your digital operations, ensuring your enterprise is smarter, safer, and infinitely scalable.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4">
-                        <a href="solutions.php" class="px-8 py-3 rounded bg-brand-blue text-white font-medium text-center hover:bg-blue-700 transition-colors shadow-sm">Explore Solutions</a>
+                        <a href="solutions" class="px-8 py-3 rounded bg-brand-blue text-white font-medium text-center hover:bg-blue-700 transition-colors shadow-sm">Explore Our Ecosystem</a>
                     </div>
                 </div>
                 <div class="relative hidden lg:flex items-center justify-center h-full">
-                    <div class="w-full max-w-lg bg-white rounded-xl shadow-[0_20px_50px_rgba(0,0,0,0.05)] border border-slate-200 overflow-hidden relative z-10 transform lg:translate-x-12">
-                        <div class="h-12 border-b border-slate-100 flex items-center px-4 gap-2 bg-slate-50">
-                            <div class="w-3 h-3 rounded-full bg-red-400"></div><div class="w-3 h-3 rounded-full bg-amber-400"></div><div class="w-3 h-3 rounded-full bg-green-400"></div>
-                        </div>
-                        <div class="p-6">
-                            <div class="flex justify-between items-center mb-6">
-                                <h3 class="font-semibold text-slate-800 text-sm">System Health</h3>
-                                <span class="px-2 py-1 bg-green-100 text-green-700 text-xs font-bold rounded">100% SECURE</span>
-                            </div>
-                            <div class="flex items-end gap-2 h-32 mb-6">
-                                <div class="w-full bg-brand-blue/20 rounded-t h-12"></div><div class="w-full bg-brand-blue/40 rounded-t h-16"></div><div class="w-full bg-brand-blue/60 rounded-t h-20"></div><div class="w-full bg-brand-blue/80 rounded-t h-24"></div><div class="w-full bg-brand-blue rounded-t h-32"></div>
-                            </div>
-                        </div>
-                    </div>
+                    <img src="assets/images/sliders/slide1.png" alt="Enterprise Solutions Dashboard" class="w-full max-w-lg rounded-xl shadow-[0_20px_50px_rgba(0,0,0,0.1)] relative z-10 transform lg:translate-x-12">
                     <div class="absolute top-10 right-0 w-64 h-64 bg-blue-50 rounded-full blur-3xl -z-10"></div>
                 </div>
             </div>
@@ -57,25 +45,18 @@ include 'header.php';
                         <span class="text-slate-600 text-xs font-semibold uppercase tracking-wide">E7Shield™ Architecture</span>
                     </div>
                     <h1 class="text-5xl md:text-6xl font-extrabold text-slate-900 tracking-tight leading-[1.1] mb-6">
-                        Zero Trust.<br>
-                        <span class="text-slate-700">Absolute Security.</span>
+                        Absolute Defense.<br>
+                        <span class="text-slate-700">Zero Compromise.</span>
                     </h1>
                     <p class="text-lg text-slate-500 leading-relaxed mb-8">
-                        Protect your digital assets with our comprehensive risk management and security frameworks. We don't just find vulnerabilities—we engineer resilience.
+                        Deploy military-grade risk management and threat mitigation frameworks. E7Shield™ secures your data assets across multi-cloud environments, ensuring regulatory compliance and operational continuity against evolving threat vectors.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4">
-                        <a href="solutions/e7shield.php" class="px-8 py-3 rounded bg-slate-800 text-white font-medium text-center hover:bg-slate-900 transition-colors shadow-sm">View Cybersecurity</a>
+                        <a href="solutions/e7shield" class="px-8 py-3 rounded bg-slate-800 text-white font-medium text-center hover:bg-slate-900 transition-colors shadow-sm">Review Security Protocols</a>
                     </div>
                 </div>
                 <div class="relative hidden lg:flex items-center justify-center h-full">
-                    <div class="w-full max-w-lg bg-white rounded-xl shadow-[0_20px_50px_rgba(0,0,0,0.05)] border border-slate-200 overflow-hidden relative z-10 transform lg:translate-x-12 flex flex-col items-center justify-center p-12">
-                        <i class="fas fa-lock text-6xl text-slate-800 mb-6"></i>
-                        <h3 class="font-bold text-slate-800 text-xl mb-2">Network Encrypted</h3>
-                        <p class="text-slate-500 text-sm text-center">AES-256 Multi-Layer Protection Active.</p>
-                        <div class="w-full h-2 bg-slate-100 rounded-full mt-6 overflow-hidden">
-                            <div class="h-full bg-green-500 w-[100%]"></div>
-                        </div>
-                    </div>
+                    <img src="assets/images/sliders/slide2.png" alt="Cybersecurity Architecture" class="w-full max-w-lg rounded-xl shadow-[0_20px_50px_rgba(0,0,0,0.1)] relative z-10 transform lg:translate-x-12">
                     <div class="absolute bottom-10 left-10 w-48 h-48 bg-slate-100 rounded-full blur-2xl -z-10"></div>
                 </div>
             </div>
@@ -90,32 +71,18 @@ include 'header.php';
                         <span class="text-brand-blue text-xs font-semibold uppercase tracking-wide">E7Insight™ Analytics</span>
                     </div>
                     <h1 class="text-5xl md:text-6xl font-extrabold text-slate-900 tracking-tight leading-[1.1] mb-6">
-                        Predict the future.<br>
-                        <span class="text-brand-blue">Control your data.</span>
+                        Predictive Intelligence.<br>
+                        <span class="text-brand-blue">Governed Data.</span>
                     </h1>
                     <p class="text-lg text-slate-500 leading-relaxed mb-8">
-                        Transform raw data into governed, decision-ready intelligence. Leverage enterprise dashboards and predictive AI models to scale your operations rapidly.
+                        Bridge the gap between raw data collection and executive decision-making. E7Insight™ deploys sophisticated machine learning pipelines and real-time visualization dashboards built strictly on responsible AI principles.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4">
-                        <a href="solutions/e7insight.php" class="px-8 py-3 rounded bg-brand-blue text-white font-medium text-center hover:bg-blue-700 transition-colors shadow-sm">View AI Solutions</a>
+                        <a href="solutions/e7insight" class="px-8 py-3 rounded bg-brand-blue text-white font-medium text-center hover:bg-blue-700 transition-colors shadow-sm">Architect Your Data</a>
                     </div>
                 </div>
                 <div class="relative hidden lg:flex items-center justify-center h-full">
-                    <div class="w-full max-w-lg bg-white rounded-xl shadow-[0_20px_50px_rgba(0,0,0,0.05)] border border-slate-200 overflow-hidden relative z-10 transform lg:translate-x-12 p-8">
-                        <div class="flex justify-between items-center mb-6">
-                            <h3 class="font-bold text-slate-800">Revenue Prediction Model</h3>
-                            <i class="fas fa-chart-line text-brand-blue"></i>
-                        </div>
-                        <div class="relative h-40 w-full mb-4">
-                            <svg class="w-full h-full" viewBox="0 0 100 40" preserveAspectRatio="none">
-                                <path d="M0 40 Q 20 30, 40 20 T 80 10 T 100 5 L 100 40 Z" fill="rgba(0, 82, 204, 0.1)"></path>
-                                <path d="M0 40 Q 20 30, 40 20 T 80 10 T 100 5" fill="none" stroke="#0052cc" stroke-width="2"></path>
-                            </svg>
-                        </div>
-                        <div class="flex justify-between text-xs font-bold text-slate-500">
-                            <span>Q1</span><span>Q2</span><span>Q3</span><span class="text-brand-blue">Q4 (Forecast)</span>
-                        </div>
-                    </div>
+                    <img src="assets/images/sliders/slide3.png" alt="AI & Data Analytics" class="w-full max-w-lg rounded-xl shadow-[0_20px_50px_rgba(0,0,0,0.1)] relative z-10 transform lg:translate-x-12">
                     <div class="absolute top-10 right-0 w-64 h-64 bg-blue-50 rounded-full blur-3xl -z-10"></div>
                 </div>
             </div>
@@ -130,34 +97,19 @@ include 'header.php';
                         <span class="text-slate-600 text-xs font-semibold uppercase tracking-wide">E7Build™ Engineering</span>
                     </div>
                     <h1 class="text-5xl md:text-6xl font-extrabold text-slate-900 tracking-tight leading-[1.1] mb-6">
-                        Build your<br>
-                        <span class="text-brand-blue">digital future.</span>
+                        Bespoke Software.<br>
+                        <span class="text-brand-blue">Enterprise Scale.</span>
                     </h1>
                     <p class="text-lg text-slate-500 leading-relaxed mb-8">
-                        Custom software development, seamless API integrations, and enterprise platform engineering built to solve complex operational challenges.
+                        Modernize legacy mainframes and deploy high-availability cloud applications. From deep API integrations to comprehensive full-stack product development, E7Build™ executes complex software engineering flawlessly.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4">
-                        <a href="solutions/e7build.php" class="px-8 py-3 rounded bg-slate-800 text-white font-medium text-center hover:bg-slate-900 transition-colors shadow-sm">View Software Engineering</a>
+                        <a href="solutions/e7build" class="px-8 py-3 rounded bg-slate-800 text-white font-medium text-center hover:bg-slate-900 transition-colors shadow-sm">Deploy Infrastructure</a>
                     </div>
                 </div>
                 <div class="relative hidden lg:flex items-center justify-center h-full">
-                    <div class="w-full max-w-lg bg-slate-900 rounded-xl shadow-[0_20px_50px_rgba(0,0,0,0.15)] overflow-hidden relative z-10 transform lg:translate-x-12">
-                        <div class="h-10 border-b border-slate-700 flex items-center px-4 gap-2 bg-slate-800">
-                            <div class="w-3 h-3 rounded-full bg-red-400"></div><div class="w-3 h-3 rounded-full bg-amber-400"></div><div class="w-3 h-3 rounded-full bg-green-400"></div>
-                            <span class="text-[10px] text-slate-400 ml-4 font-mono">app.ts - E7Build</span>
-                        </div>
-                        <div class="p-6 font-mono text-sm leading-relaxed">
-                            <div class="text-pink-400">import <span class="text-slate-300">{ EnterpriseApp }</span> from <span class="text-green-300">'@e7/core'</span>;</div>
-                            <br>
-                            <div class="text-brand-blue">const</div> <span class="text-blue-300">system</span> = <span class="text-brand-blue">new</span> <span class="text-yellow-200">EnterpriseApp</span>({<br>
-                            &nbsp;&nbsp;<span class="text-blue-300">scalable</span>: <span class="text-orange-300">true</span>,<br>
-                            &nbsp;&nbsp;<span class="text-blue-300">secure</span>: <span class="text-orange-300">true</span>,<br>
-                            &nbsp;&nbsp;<span class="text-blue-300">architecture</span>: <span class="text-green-300">'microservices'</span><br>
-                            });<br>
-                            <br>
-                            <span class="text-blue-300">system</span>.<span class="text-yellow-200">deploy</span>(); <span class="text-slate-500">// Deploying to production...</span>
-                        </div>
-                    </div>
+                    <img src="assets/images/sliders/slide4.png" alt="Custom Software Engineering" class="w-full max-w-lg rounded-xl shadow-[0_20px_50px_rgba(0,0,0,0.1)] relative z-10 transform lg:translate-x-12">
+                    <div class="absolute top-10 left-0 w-64 h-64 bg-blue-50 rounded-full blur-3xl -z-10"></div>
                 </div>
             </div>
         </div>
@@ -171,45 +123,18 @@ include 'header.php';
                         <span class="text-brand-blue text-xs font-semibold uppercase tracking-wide">Cloud Infrastructure</span>
                     </div>
                     <h1 class="text-5xl md:text-6xl font-extrabold text-slate-900 tracking-tight leading-[1.1] mb-6">
-                        Limitless Scale.<br>
-                        <span class="text-brand-blue">Infinite Reliability.</span>
+                        Serverless Agility.<br>
+                        <span class="text-brand-blue">Global Reach.</span>
                     </h1>
                     <p class="text-lg text-slate-500 leading-relaxed mb-8">
-                        Modernize your infrastructure with seamless cloud migration, secure hosting, and scalable DevOps architecture designed for maximum uptime.
+                        Transition from rigid on-premise hardware to elastic cloud architecture. We orchestrate AWS and Azure environments using advanced Infrastructure-as-Code (IaC) to guarantee high availability and automated failover.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4">
-                        <a href="solutions.php" class="px-8 py-3 rounded bg-brand-blue text-white font-medium text-center hover:bg-blue-700 transition-colors shadow-sm">Explore Cloud Services</a>
+                        <a href="solutions" class="px-8 py-3 rounded bg-brand-blue text-white font-medium text-center hover:bg-blue-700 transition-colors shadow-sm">Scale Your Systems</a>
                     </div>
                 </div>
                 <div class="relative hidden lg:flex items-center justify-center h-full">
-                    <div class="w-full max-w-lg bg-white rounded-xl shadow-[0_20px_50px_rgba(0,0,0,0.05)] border border-slate-200 p-8 relative z-10 transform lg:translate-x-12">
-                        <div class="flex flex-col gap-4">
-                            <!-- Server Block 1 -->
-                            <div class="bg-slate-50 border border-slate-200 rounded-lg p-4 flex justify-between items-center">
-                                <div class="flex items-center gap-4">
-                                    <i class="fas fa-server text-slate-400 text-2xl"></i>
-                                    <div><div class="font-bold text-slate-700 text-sm">Node cluster_alpha</div><div class="text-xs text-slate-500">us-east-1</div></div>
-                                </div>
-                                <div class="w-3 h-3 rounded-full bg-green-500 animate-pulse"></div>
-                            </div>
-                            <!-- Server Block 2 -->
-                            <div class="bg-slate-50 border border-slate-200 rounded-lg p-4 flex justify-between items-center">
-                                <div class="flex items-center gap-4">
-                                    <i class="fas fa-database text-slate-400 text-2xl"></i>
-                                    <div><div class="font-bold text-slate-700 text-sm">Main Database DB_01</div><div class="text-xs text-slate-500">us-east-1</div></div>
-                                </div>
-                                <div class="w-3 h-3 rounded-full bg-green-500 animate-pulse"></div>
-                            </div>
-                            <!-- Server Block 3 -->
-                            <div class="bg-slate-50 border border-slate-200 rounded-lg p-4 flex justify-between items-center">
-                                <div class="flex items-center gap-4">
-                                    <i class="fas fa-network-wired text-slate-400 text-2xl"></i>
-                                    <div><div class="font-bold text-slate-700 text-sm">Load Balancer (Active)</div><div class="text-xs text-slate-500">Global</div></div>
-                                </div>
-                                <div class="w-3 h-3 rounded-full bg-green-500 animate-pulse"></div>
-                            </div>
-                        </div>
-                    </div>
+                    <img src="assets/images/sliders/slide5.png" alt="Cloud Infrastructure" class="w-full max-w-lg rounded-xl shadow-[0_20px_50px_rgba(0,0,0,0.1)] relative z-10 transform lg:translate-x-12">
                     <div class="absolute bottom-10 right-10 w-64 h-64 bg-blue-50 rounded-full blur-3xl -z-10"></div>
                 </div>
             </div>
@@ -221,32 +146,22 @@ include 'header.php';
                 <div class="max-w-2xl">
                     <div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-slate-100 border border-slate-200 mb-6">
                         <i class="fas fa-lightbulb text-slate-600 text-xs"></i>
-                        <span class="text-slate-600 text-xs font-semibold uppercase tracking-wide">IT Consulting</span>
+                        <span class="text-slate-600 text-xs font-semibold uppercase tracking-wide">Strategic Advisory</span>
                     </div>
                     <h1 class="text-5xl md:text-6xl font-extrabold text-slate-900 tracking-tight leading-[1.1] mb-6">
-                        Strategic Vision.<br>
-                        <span class="text-slate-700">Flawless Execution.</span>
+                        Boardroom Vision.<br>
+                        <span class="text-slate-700">Engineering Precision.</span>
                     </h1>
                     <p class="text-lg text-slate-500 leading-relaxed mb-8">
-                        Our experts guide your organization through comprehensive digital transformation, aligning technology investments with core business objectives.
+                        Technology investments must map directly to business ROI. Our principal consultants audit your technical debt, define your technology roadmap, and orchestrate organization-wide digital adoption with minimal operational friction.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4">
-                        <a href="contact.php" class="px-8 py-3 rounded bg-slate-800 text-white font-medium text-center hover:bg-slate-900 transition-colors shadow-sm">Talk to an Expert</a>
+                        <a href="contact" class="px-8 py-3 rounded bg-slate-800 text-white font-medium text-center hover:bg-slate-900 transition-colors shadow-sm">Consult Leadership</a>
                     </div>
                 </div>
                 <div class="relative hidden lg:flex items-center justify-center h-full">
-                    <div class="w-full max-w-lg bg-white rounded-xl shadow-[0_20px_50px_rgba(0,0,0,0.05)] border border-slate-200 p-8 relative z-10 transform lg:translate-x-12">
-                        <!-- Simple Flowchart Mockup -->
-                        <div class="flex flex-col items-center gap-4">
-                            <div class="px-6 py-3 bg-brand-blue text-white rounded-lg font-bold shadow-sm w-48 text-center">Assess Phase</div>
-                            <div class="h-6 border-l-2 border-slate-300 border-dashed"></div>
-                            <div class="px-6 py-3 bg-blue-50 border border-brand-blue text-brand-blue rounded-lg font-bold w-48 text-center">Design Architecture</div>
-                            <div class="h-6 border-l-2 border-slate-300 border-dashed"></div>
-                            <div class="px-6 py-3 bg-slate-100 border border-slate-300 text-slate-700 rounded-lg font-bold w-48 text-center">Implementation</div>
-                            <div class="h-6 border-l-2 border-slate-300 border-dashed"></div>
-                            <div class="px-6 py-3 bg-green-500 text-white rounded-lg font-bold shadow-sm w-48 text-center"><i class="fas fa-check-circle mr-2"></i>Go Live</div>
-                        </div>
-                    </div>
+                    <img src="assets/images/sliders/slide6.png" alt="IT Consulting" class="w-full max-w-lg rounded-xl shadow-[0_20px_50px_rgba(0,0,0,0.1)] relative z-10 transform lg:translate-x-12">
+                    <div class="absolute top-10 left-10 w-64 h-64 bg-blue-50 rounded-full blur-3xl -z-10"></div>
                 </div>
             </div>
         </div>
@@ -260,29 +175,18 @@ include 'header.php';
                         <span class="text-brand-blue text-xs font-semibold uppercase tracking-wide">E7 Academy</span>
                     </div>
                     <h1 class="text-5xl md:text-6xl font-extrabold text-slate-900 tracking-tight leading-[1.1] mb-6">
-                        Empowering Talent.<br>
-                        <span class="text-brand-blue">Building Capacity.</span>
+                        Elite Talent.<br>
+                        <span class="text-brand-blue">Sovereign Capability.</span>
                     </h1>
                     <p class="text-lg text-slate-500 leading-relaxed mb-8">
-                        World-class technology training programs designed to upskill your workforce in AI, cybersecurity, and modern software engineering.
+                        We don't just build software; we build the engineers of tomorrow. E7 Academy delivers rigorous, project-based upskilling programs designed to produce globally competitive AI, cloud, and cybersecurity professionals.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4">
-                        <a href="academy.php" class="px-8 py-3 rounded bg-brand-blue text-white font-medium text-center hover:bg-blue-700 transition-colors shadow-sm">View Training Programs</a>
+                        <a href="academy" class="px-8 py-3 rounded bg-brand-blue text-white font-medium text-center hover:bg-blue-700 transition-colors shadow-sm">View Curriculum</a>
                     </div>
                 </div>
                 <div class="relative hidden lg:flex items-center justify-center h-full">
-                    <div class="w-full max-w-lg bg-white rounded-xl shadow-[0_20px_50px_rgba(0,0,0,0.05)] border border-slate-200 p-8 relative z-10 transform lg:translate-x-12 text-center">
-                        <div class="w-20 h-20 mx-auto bg-blue-50 rounded-full flex items-center justify-center mb-6">
-                            <i class="fas fa-certificate text-4xl text-brand-blue"></i>
-                        </div>
-                        <h3 class="text-2xl font-serif font-bold text-slate-800 mb-2">Certificate of Excellence</h3>
-                        <p class="text-slate-500 text-sm mb-6 pb-6 border-b border-slate-100">Awarded for mastery in Full-Stack Engineering</p>
-                        <div class="flex justify-between items-center px-8">
-                            <div class="w-24 h-1 bg-slate-200 rounded"></div>
-                            <img src="assets/images/E7_Technology_Solutions_logo1.jpeg" alt="Logo" class="h-6 grayscale opacity-50">
-                            <div class="w-24 h-1 bg-slate-200 rounded"></div>
-                        </div>
-                    </div>
+                    <img src="assets/images/sliders/slide7.png" alt="E7 Academy" class="w-full max-w-lg rounded-xl shadow-[0_20px_50px_rgba(0,0,0,0.1)] relative z-10 transform lg:translate-x-12">
                     <div class="absolute top-0 right-10 w-48 h-48 bg-cyan-50 rounded-full blur-2xl -z-10"></div>
                 </div>
             </div>
@@ -339,17 +243,67 @@ include 'header.php';
 </script>
 
 <!-- ==============================================
-     CLIENT LOGOS (Social Proof)
+     CLIENT LOGOS (Social Proof Marquee)
      ============================================== -->
-<section class="py-10 bg-slate-50 border-b border-slate-200">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <p class="text-sm font-semibold text-slate-500 uppercase tracking-wider mb-6">Trusted by innovative organizations</p>
-        <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-50 grayscale">
-            <!-- Placeholders for client logos -->
-            <div class="text-xl font-bold font-serif">Enterprise<span class="text-brand-blue">Corp</span></div>
-            <div class="text-xl font-bold">Global<span class="font-light">Tech</span></div>
-            <div class="text-xl font-bold tracking-tighter">FINANCE<span class="text-brand-blue">PRO</span></div>
-            <div class="text-xl font-bold italic">Edu<span class="not-italic">Systems</span></div>
+<style>
+@keyframes infinite-scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+.animate-infinite-scroll {
+    animation: infinite-scroll 40s linear infinite;
+    width: max-content;
+}
+.animate-infinite-scroll:hover {
+    animation-play-state: paused;
+}
+</style>
+<section class="py-16 bg-white border-b border-slate-200 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-12">
+        <p class="text-sm font-semibold text-slate-500 uppercase tracking-wider">Trusted by innovative enterprise organizations</p>
+    </div>
+    
+    <div class="relative w-full overflow-hidden">
+        <div class="flex w-max animate-infinite-scroll">
+            
+            <!-- ================= HALF 1 ================= -->
+            <div class="flex items-center gap-16 md:gap-24 pr-16 md:pr-24">
+                <!-- Group A -->
+                <img src="assets/images/logos/cardinal%20business.webp" alt="Cardinal Business" class="h-14 md:h-24 object-contain">
+                <img src="assets/images/logos/cardinal%20security.webp" alt="Cardinal Security" class="h-14 md:h-24 object-contain">
+                <img src="assets/images/logos/cce%20consut.png" alt="CCE Consult" class="h-14 md:h-24 object-contain">
+                <img src="assets/images/logos/cce.webp" alt="CCE" class="h-14 md:h-24 object-contain">
+                <img src="assets/images/logos/salba.webp" alt="Salba" class="h-14 md:h-24 object-contain">
+                <img src="assets/images/logos/dnr.webp" alt="DNR" class="h-14 md:h-24 object-contain">
+                
+                <!-- Group B -->
+                <img src="assets/images/logos/cardinal%20business.webp" alt="Cardinal Business" class="h-14 md:h-24 object-contain">
+                <img src="assets/images/logos/cardinal%20security.webp" alt="Cardinal Security" class="h-14 md:h-24 object-contain">
+                <img src="assets/images/logos/cce%20consut.png" alt="CCE Consult" class="h-14 md:h-24 object-contain">
+                <img src="assets/images/logos/cce.webp" alt="CCE" class="h-14 md:h-24 object-contain">
+                <img src="assets/images/logos/salba.webp" alt="Salba" class="h-14 md:h-24 object-contain">
+                <img src="assets/images/logos/dnr.webp" alt="DNR" class="h-14 md:h-24 object-contain">
+            </div>
+
+            <!-- ================= HALF 2 (Exact Duplicate) ================= -->
+            <div class="flex items-center gap-16 md:gap-24 pr-16 md:pr-24">
+                <!-- Group A -->
+                <img src="assets/images/logos/cardinal%20business.webp" alt="Cardinal Business" class="h-14 md:h-24 object-contain">
+                <img src="assets/images/logos/cardinal%20security.webp" alt="Cardinal Security" class="h-14 md:h-24 object-contain">
+                <img src="assets/images/logos/cce%20consut.png" alt="CCE Consult" class="h-14 md:h-24 object-contain">
+                <img src="assets/images/logos/cce.webp" alt="CCE" class="h-14 md:h-24 object-contain">
+                <img src="assets/images/logos/salba.webp" alt="Salba" class="h-14 md:h-24 object-contain">
+                <img src="assets/images/logos/dnr.webp" alt="DNR" class="h-14 md:h-24 object-contain">
+                
+                <!-- Group B -->
+                <img src="assets/images/logos/cardinal%20business.webp" alt="Cardinal Business" class="h-14 md:h-24 object-contain">
+                <img src="assets/images/logos/cardinal%20security.webp" alt="Cardinal Security" class="h-14 md:h-24 object-contain">
+                <img src="assets/images/logos/cce%20consut.png" alt="CCE Consult" class="h-14 md:h-24 object-contain">
+                <img src="assets/images/logos/cce.webp" alt="CCE" class="h-14 md:h-24 object-contain">
+                <img src="assets/images/logos/salba.webp" alt="Salba" class="h-14 md:h-24 object-contain">
+                <img src="assets/images/logos/dnr.webp" alt="DNR" class="h-14 md:h-24 object-contain">
+            </div>
+            
         </div>
     </div>
 </section>
@@ -361,7 +315,7 @@ include 'header.php';
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center max-w-3xl mx-auto mb-16">
             <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 mb-4">Three platforms. Infinite possibilities.</h2>
-            <p class="text-lg text-slate-500">Comprehensive solutions engineered to protect your assets, analyze your data, and build your digital infrastructure.</p>
+            <p class="text-lg text-slate-500">A cohesive ecosystem of solutions engineered to protect your perimeter, govern your data, and scale your digital operations flawlessly.</p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -372,12 +326,12 @@ include 'header.php';
                     <i class="fas fa-shield-alt text-xl text-slate-700"></i>
                 </div>
                 <h3 class="text-xl font-bold text-slate-900 mb-2">E7Shield™</h3>
-                <p class="text-slate-500 text-sm mb-6 flex-1">Protect your digital world with enterprise-grade cybersecurity, risk management, and zero-trust architecture.</p>
+                <p class="text-slate-500 text-sm mb-6 flex-1">Enterprise-grade cybersecurity architecture, holistic risk assessment, and zero-trust identity management for absolute perimeter defense.</p>
                 
-                <img src="assets/images/SecureShieldHero.png" alt="E7Shield" class="w-full h-32 object-cover rounded mb-6 border border-slate-100">
+                <img src="assets/images/solutions/SecureShieldHero.png" alt="E7Shield" class="w-full h-32 object-cover rounded mb-6 border border-slate-100">
                 
-                <a href="solutions/e7shield.php" class="text-brand-blue font-medium text-sm hover:underline flex items-center gap-1">
-                    Explore E7Shield <i class="fas fa-arrow-right text-[10px]"></i>
+                <a href="solutions/e7shield" class="text-brand-blue font-medium text-sm hover:underline flex items-center gap-1">
+                    Explore E7Shield <i class="fas fa-arrow-right text-[0.625rem]"></i>
                 </a>
             </div>
 
@@ -388,12 +342,12 @@ include 'header.php';
                     <i class="fas fa-brain text-xl text-white"></i>
                 </div>
                 <h3 class="text-xl font-bold text-white mb-2">E7Insight™</h3>
-                <p class="text-blue-100 text-sm mb-6 flex-1">Turn data into intelligent decisions. Advanced AI, predictive analytics, and enterprise data architecture.</p>
+                <p class="text-blue-100 text-sm mb-6 flex-1">Turn fragmented data into decisive intelligence. Deploy sophisticated predictive analytics and structured data pipelines governed by responsible AI.</p>
                 
-                <img src="assets/images/InsightAIPageHero.png" alt="E7Insight" class="w-full h-32 object-cover rounded mb-6 border border-white/20">
+                <img src="assets/images/solutions/InsightAIPageHero.png" alt="E7Insight" class="w-full h-32 object-cover rounded mb-6 border border-white/20">
                 
-                <a href="solutions/e7insight.php" class="text-white font-medium text-sm hover:underline flex items-center gap-1">
-                    Explore E7Insight <i class="fas fa-arrow-right text-[10px]"></i>
+                <a href="solutions/e7insight" class="text-white font-medium text-sm hover:underline flex items-center gap-1">
+                    Explore E7Insight <i class="fas fa-arrow-right text-[0.625rem]"></i>
                 </a>
             </div>
 
@@ -403,12 +357,12 @@ include 'header.php';
                     <i class="fas fa-cogs text-xl text-slate-700"></i>
                 </div>
                 <h3 class="text-xl font-bold text-slate-900 mb-2">E7Build™</h3>
-                <p class="text-slate-500 text-sm mb-6 flex-1">Build your digital future. Custom software development, cloud systems integration, and enterprise platforms.</p>
+                <p class="text-slate-500 text-sm mb-6 flex-1">Design, deploy, and scale robust digital platforms. Specializing in legacy mainframe modernization and cloud-native software engineering.</p>
                 
-                <img src="assets/images/SecureCorePageHero.png" alt="E7Build" class="w-full h-32 object-cover rounded mb-6 border border-slate-100">
+                <img src="assets/images/solutions/SecureCorePageHero.png" alt="E7Build" class="w-full h-32 object-cover rounded mb-6 border border-slate-100">
                 
-                <a href="solutions/e7build.php" class="text-brand-blue font-medium text-sm hover:underline flex items-center gap-1">
-                    Explore E7Build <i class="fas fa-arrow-right text-[10px]"></i>
+                <a href="solutions/e7build" class="text-brand-blue font-medium text-sm hover:underline flex items-center gap-1">
+                    Explore E7Build <i class="fas fa-arrow-right text-[0.625rem]"></i>
                 </a>
             </div>
             
@@ -446,20 +400,20 @@ include 'header.php';
             <div>
                 <h2 class="text-3xl font-extrabold text-slate-900 mb-6">Expertise across the entire digital spectrum.</h2>
                 <p class="text-slate-500 mb-8 leading-relaxed">
-                    We don't operate in silos. E7 Technology Solutions brings together specialized engineering teams to build cohesive, secure, and intelligent systems that scale with your ambitions.
+                    E7 Technology Solutions transcends traditional IT delivery. By converging specialized disciplines—cybersecurity protocol, algorithmic data science, and cloud architecture—we build unified, impenetrable systems that execute your strategic business vision without friction.
                 </p>
                 <ul class="space-y-4">
                     <li class="flex items-start gap-3">
                         <i class="fas fa-check text-brand-blue mt-1"></i>
-                        <span class="text-slate-700 font-medium">End-to-End Security Architecture</span>
+                        <span class="text-slate-700 font-medium">End-to-End Cryptographic Security Architecture</span>
                     </li>
                     <li class="flex items-start gap-3">
                         <i class="fas fa-check text-brand-blue mt-1"></i>
-                        <span class="text-slate-700 font-medium">Predictive AI & Machine Learning Models</span>
+                        <span class="text-slate-700 font-medium">Production-Ready AI & ML Deployments</span>
                     </li>
                     <li class="flex items-start gap-3">
                         <i class="fas fa-check text-brand-blue mt-1"></i>
-                        <span class="text-slate-700 font-medium">Scalable Enterprise Software Development</span>
+                        <span class="text-slate-700 font-medium">High-Availability Cloud Infrastructure Engineering</span>
                     </li>
                 </ul>
             </div>
@@ -472,11 +426,13 @@ include 'header.php';
      ============================================== -->
 <section class="py-20 bg-white border-t border-slate-200 text-center">
     <div class="max-w-3xl mx-auto px-4">
-        <h2 class="text-3xl font-extrabold text-slate-900 mb-6">Ready to upgrade your infrastructure?</h2>
-        <a href="contact.php" class="inline-block px-8 py-3 rounded bg-brand-blue text-white font-medium hover:bg-blue-700 transition-colors shadow-sm">
-            Contact Our Team
+        <h2 class="text-3xl font-extrabold text-slate-900 mb-6">Ready to architect your digital transformation?</h2>
+        <a href="contact" class="inline-block px-8 py-3 rounded bg-brand-blue text-white font-medium hover:bg-blue-700 transition-colors shadow-sm">
+            Consult a Lead Architect
         </a>
     </div>
 </section>
 
 <?php include 'footer.php'; ?>
+
+

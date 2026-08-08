@@ -9,3 +9,5 @@ return array(
     'PHPMailer\\PHPMailer\\' => array($vendorDir . '/phpmailer/phpmailer/src'),
     'E7\\Billing\\' => array($baseDir . '/includes'),
 );
+
+

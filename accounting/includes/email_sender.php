@@ -265,3 +265,5 @@ function sendReceiptEmail($receiptId, $recipientEmail = null) {
         throw new Exception("Email could not be sent. Error: {$mail->ErrorInfo}");
     }
 }
+
+

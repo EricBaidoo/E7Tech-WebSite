@@ -27,3 +27,4 @@ try {
     header('HTTP/1.1 404 Not Found');
     echo "Error: " . htmlspecialchars($e->getMessage());
 }
+

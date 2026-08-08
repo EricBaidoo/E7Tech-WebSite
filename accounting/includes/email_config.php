@@ -20,3 +20,5 @@ return [
     'enable_email' => false,  // DISABLED for local development - set to true in production
     'debug_mode' => false,
 ];
+
+

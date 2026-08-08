@@ -23,3 +23,5 @@ if ($issues) {
         'Composer detected issues in your platform: ' . implode(' ', $issues)
     );
 }
+
+

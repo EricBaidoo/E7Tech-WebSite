@@ -164,3 +164,5 @@ function generateReceiptNumber($pdo) {
     
     return sprintf("RCPT-%s-%03d", $year, $num);
 }
+
+
