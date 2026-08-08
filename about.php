@@ -31,9 +31,9 @@ include 'header.php';
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
             <!-- Visual -->
-            <div class="relative sticky top-32" data-aos="fade-right" data-aos-delay="100">
+            <div class="relative lg:sticky lg:top-32" data-aos="fade-right" data-aos-delay="100">
                 <div class="rounded-2xl overflow-hidden shadow-2xl border border-slate-200">
-                    <img src="assets/images/about/about_hero.png" alt="E7 Engineering Operations" class="w-full h-[37.5rem] object-cover">
+                    <img src="assets/images/about/about_hero.png" alt="E7 Engineering Operations" class="w-full h-64 md:h-96 lg:h-[37.5rem] object-cover">
                 </div>
                 <!-- Float Stat -->
                 <div class="absolute -bottom-8 -right-8 w-56 bg-brand-blue rounded-2xl p-8 hidden md:flex flex-col justify-center items-center shadow-xl border-4 border-white">
