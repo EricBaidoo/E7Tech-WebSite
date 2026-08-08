@@ -14,11 +14,6 @@ include('../header.php');
             <i class="fas fa-chalkboard-teacher"></i>
         </div>
 
-        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-100 text-slate-500 text-[10px] font-bold uppercase tracking-[0.2em] mb-8 border border-slate-200">
-            <span class="w-1.5 h-1.5 rounded-full bg-brand-blue animate-pulse"></span>
-            Coming Soon — E7Build Platform
-        </div>
-
         <h1 class="text-5xl md:text-6xl font-black text-slate-900 tracking-tighter mb-6 leading-[1.1]">
             E7 LMS™
         </h1>

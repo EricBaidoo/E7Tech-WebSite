@@ -97,9 +97,9 @@ if (!isset($navBasePath)) {
    rel="noopener noreferrer"
    id="whatsapp-float"
    aria-label="Chat with us on WhatsApp"
-   class="fixed bottom-8 left-8 z-50 flex items-center gap-3 bg-[#25D366] text-white pl-4 pr-5 py-3 rounded-full shadow-[0_8px_30px_rgba(37,211,102,0.4)] hover:shadow-[0_12px_40px_rgba(37,211,102,0.55)] hover:-translate-y-1 transition-all duration-300 group">
-    <i class="fab fa-whatsapp text-2xl"></i>
-    <span class="text-sm font-semibold tracking-tight max-w-0 overflow-hidden group-hover:max-w-[120px] transition-all duration-300 whitespace-nowrap">Chat with us</span>
+   class="fixed bottom-8 left-8 z-50 flex items-center justify-center w-14 h-14 bg-[#25D366] text-white rounded-full shadow-[0_8px_30px_rgba(37,211,102,0.4)] hover:shadow-[0_12px_40px_rgba(37,211,102,0.55)] hover:-translate-y-1 transition-all duration-300 group">
+    <i class="fab fa-whatsapp text-3xl"></i>
+    <span class="absolute left-16 bg-slate-900 text-white text-xs font-semibold py-1.5 px-3 rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 whitespace-nowrap pointer-events-none before:content-[''] before:absolute before:right-[100%] before:top-1/2 before:-translate-y-1/2 before:border-[5px] before:border-transparent before:border-r-slate-900">Chat with us</span>
 </a>
 
 <!-- Minimalist Back to Top -->

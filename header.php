@@ -8,8 +8,76 @@ $navBasePath = (strpos($_SERVER['PHP_SELF'], '/solutions/') !== false || strpos(
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo isset($page_title) ? $page_title . ' | E7 Technology Solutions' : 'E7 Technology Solutions - Trusted AI, Data & Security Solutions'; ?></title>
-    <meta name="description" content="<?php echo isset($meta_description) ? $meta_description : 'E7 Technology Solutions provides cutting-edge cybersecurity, cloud computing, AI/ML, and technology consulting services across Africa.'; ?>">
+<?php
+    // SEO Helper Logic
+    $base_title = "E7 Technology Solutions";
+    
+    // Check if $page_title already contains the branding to prevent duplicates
+    if (isset($page_title)) {
+        $clean_title = trim(str_replace(['| E7 Technology Solutions', '| E7 Technology', '| E7 Tech'], '', $page_title));
+        if ($clean_title === $base_title) {
+            $final_title = $base_title;
+        } else {
+            $final_title = $clean_title . ' | ' . $base_title;
+        }
+    } else {
+        $final_title = 'E7 Technology Solutions - Trusted AI, Data & Security Solutions';
+    }
+
+    $final_description = isset($meta_description) ? $meta_description : 'E7 Technology Solutions provides cutting-edge cybersecurity, cloud computing, AI/ML, and technology consulting services across Africa.';
+    
+    // Dynamic URL for Canonical & Open Graph
+    $http_protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http";
+    $current_url = $http_protocol . "://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+    // Remove query strings for clean canonical
+    $canonical_url = strtok($current_url, '?');
+    
+    // Default OG Image (fallback)
+    // In production, host should be replaced with the actual domain if running on localhost for OG to work, but we'll use dynamic for now
+    $og_image = isset($og_image_custom) ? $og_image_custom : $http_protocol . "://" . $_SERVER['HTTP_HOST'] . "/" . $assetBasePath . "/images/logos/E7_Technology_Solutions_logo1.jpeg";
+?>
+    <title><?php echo $final_title; ?></title>
+    <meta name="description" content="<?php echo htmlspecialchars($final_description); ?>">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="<?php echo htmlspecialchars($canonical_url); ?>">
+    
+    <!-- Open Graph / LinkedIn / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="<?php echo htmlspecialchars($canonical_url); ?>">
+    <meta property="og:title" content="<?php echo htmlspecialchars($final_title); ?>">
+    <meta property="og:description" content="<?php echo htmlspecialchars($final_description); ?>">
+    <meta property="og:image" content="<?php echo htmlspecialchars($og_image); ?>">
+    <meta property="og:site_name" content="E7 Technology Solutions">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="<?php echo htmlspecialchars($canonical_url); ?>">
+    <meta name="twitter:title" content="<?php echo htmlspecialchars($final_title); ?>">
+    <meta name="twitter:description" content="<?php echo htmlspecialchars($final_description); ?>">
+    <meta name="twitter:image" content="<?php echo htmlspecialchars($og_image); ?>">
+
+    <!-- Schema.org Organization Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "E7 Technology Solutions",
+      "url": "https://e7world.tech",
+      "logo": "https://e7world.tech/assets/images/logos/E7_Technology_Solutions_logo1.jpeg",
+      "description": "Africa's trusted technology partner specializing in Cybersecurity, Artificial Intelligence, and Enterprise Software.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Accra",
+        "addressCountry": "GH"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+233-243-838-490",
+        "contactType": "Customer Support"
+      }
+    }
+    </script>
     
     <!-- Favicon -->
     <link rel="icon" type="image/jpeg" href="<?php echo $assetBasePath; ?>/images/logos/E7_Technology_Solutions_logo1.jpeg">

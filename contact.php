@@ -7,30 +7,26 @@ include('header.php');
 ?>
 
 <!-- HERO SECTION -->
-<section class="pt-40 pb-24 bg-white border-b border-slate-100 text-center">
+<section class="pt-24 md:pt-40 pb-16 md:pb-24 bg-white border-b border-slate-100 text-center">
     <div class="max-w-4xl mx-auto px-4">
-        <div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-slate-100 border border-slate-200 mb-8">
-            <i class="fas fa-paper-plane text-brand-blue text-xs"></i>
-            <span class="text-slate-600 text-xs font-semibold uppercase tracking-wide">Get In Touch</span>
-        </div>
         
-        <h1 class="text-5xl md:text-7xl font-extrabold text-slate-900 tracking-tight mb-6">
+        <h1 class="text-4xl md:text-7xl font-extrabold text-slate-900 tracking-tight mb-6">
             Let's build something <span class="text-brand-blue">great.</span>
         </h1>
         
-        <p class="text-xl text-slate-500 leading-relaxed max-w-2xl mx-auto">
+        <p class="text-lg md:text-xl text-slate-500 leading-relaxed max-w-2xl mx-auto">
             Have a project in mind? Our team is ready to help you transform your vision into reality with cutting-edge technology solutions.
         </p>
     </div>
 </section>
 
 <!-- CONTACT SECTION -->
-<section class="py-24 bg-slate-50 border-b border-slate-200">
+<section class="py-16 md:py-24 bg-slate-50 border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
             
             <!-- Contact Form -->
-            <div class="bg-white p-8 md:p-12 rounded-2xl shadow-sm border border-slate-200">
+            <div class="bg-white p-6 md:p-12 rounded-2xl shadow-sm border border-slate-200">
                 <div class="mb-8">
                     <h2 class="text-3xl font-extrabold text-slate-900 mb-2">Send Us a Message</h2>
                     <p class="text-slate-500">Fill out the form below and we'll get back to you within 24 hours.</p>

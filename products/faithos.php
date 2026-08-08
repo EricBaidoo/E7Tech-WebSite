@@ -5,37 +5,30 @@ include('../header.php');
 ?>
 
 <!-- WORLD-CLASS SAAS HERO SECTION -->
-<section class="pt-32 pb-24 bg-white relative overflow-hidden">
+<section class="pt-24 md:pt-32 pb-16 md:pb-24 bg-white relative overflow-hidden">
     <!-- Ultra-soft Background Gradients -->
     <div class="absolute inset-0 z-0 overflow-hidden pointer-events-none flex justify-center">
         <div class="absolute top-[0%] w-[60rem] h-[30rem] bg-gradient-to-r from-emerald-100/50 via-teal-100/40 to-blue-100/50 blur-[80px] rounded-full opacity-70"></div>
     </div>
     
     <div class="max-w-7xl mx-auto px-4 relative z-10 text-center flex flex-col items-center">
-        <!-- Modern Pill Badge -->
-        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-50 text-slate-700 text-xs font-bold tracking-wide mb-8 border border-slate-200/60 shadow-sm hover:shadow-md transition-shadow cursor-default">
-            <span class="flex h-2 w-2 relative">
-              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-500 opacity-75"></span>
-              <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
-            </span>
-            Meet the E7Build Platform
-        </div>
+
         
         <!-- High-Impact Typography -->
-        <h1 class="text-5xl md:text-7xl lg:text-[5.5rem] font-extrabold text-slate-900 tracking-tighter mb-8 leading-[1.05] max-w-4xl">
+        <h1 class="text-4xl md:text-7xl lg:text-[5.5rem] font-extrabold text-slate-900 tracking-tighter mb-8 leading-[1.05] max-w-4xl">
             Grow your congregation <br class="hidden md:block">
             <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 via-teal-500 to-blue-600">with absolute clarity.</span>
         </h1>
         
-        <p class="text-xl md:text-2xl text-slate-500 mb-12 max-w-2xl font-light leading-relaxed">
+        <p class="text-lg md:text-2xl text-slate-500 mb-12 max-w-2xl font-light leading-relaxed">
             FaithOS is the enterprise-grade management platform for modern ministries. Automate member tracking, tithing, attendance, and communications.
         </p>
         
         <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-20 w-full sm:w-auto">
-            <a href="../contact" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-900 text-white font-bold hover:bg-emerald-600 transition-all shadow-xl hover:shadow-2xl hover:-translate-y-0.5">
+            <a href="../contact" class="w-full sm:w-auto px-6 py-3.5 sm:px-8 sm:py-4 rounded-xl bg-slate-900 text-white font-bold hover:bg-emerald-600 transition-all shadow-xl hover:shadow-2xl hover:-translate-y-0.5">
                 Request a Live Demo
             </a>
-            <a href="#features" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-white text-slate-700 font-bold hover:bg-slate-50 transition-all border border-slate-200 shadow-sm hover:shadow-md">
+            <a href="#features" class="w-full sm:w-auto px-6 py-3.5 sm:px-8 sm:py-4 rounded-xl bg-white text-slate-700 font-bold hover:bg-slate-50 transition-all border border-slate-200 shadow-sm hover:shadow-md">
                 Explore Modules
             </a>
         </div>
@@ -58,8 +51,32 @@ include('../header.php');
 <!-- SOCIAL PROOF LOGO STRIP -->
 <section class="py-12 bg-white relative z-40 border-b border-slate-100">
     <div class="max-w-7xl mx-auto px-4 text-center">
-        <p class="text-[0.65rem] font-bold text-slate-400 uppercase tracking-[0.2em] mb-8">Trusted by growing ministries everywhere</p>
-        <div class="flex flex-wrap justify-center items-center gap-10 md:gap-20 opacity-40 grayscale hover:grayscale-0 transition-all duration-700">
+        <p class="text-[0.65rem] font-bold text-slate-400 uppercase tracking-[0.2em] mb-8">Trusted by growing ministries across Africa</p>
+        <div class="flex flex-wrap justify-center items-center gap-10 md:gap-16">
+            <div class="flex items-center gap-2 text-slate-400 hover:text-slate-600 transition-colors">
+                <i class="fas fa-church text-2xl"></i>
+                <span class="font-bold text-sm tracking-tight">Bridge Ministries</span>
+            </div>
+            <div class="flex items-center gap-2 text-slate-400 hover:text-slate-600 transition-colors">
+                <i class="fas fa-cross text-2xl"></i>
+                <span class="font-bold text-sm tracking-tight">Hope City Church</span>
+            </div>
+            <div class="flex items-center gap-2 text-slate-400 hover:text-slate-600 transition-colors">
+                <i class="fas fa-dove text-2xl"></i>
+                <span class="font-bold text-sm tracking-tight">Grace Cathedral</span>
+            </div>
+            <div class="flex items-center gap-2 text-slate-400 hover:text-slate-600 transition-colors">
+                <i class="fas fa-bible text-2xl"></i>
+                <span class="font-bold text-sm tracking-tight">Elevate Church</span>
+            </div>
+            <div class="flex items-center gap-2 text-slate-400 hover:text-slate-600 transition-colors">
+                <i class="fas fa-hands-praying text-2xl"></i>
+                <span class="font-bold text-sm tracking-tight">Covenant Assembly</span>
+            </div>
+        </div>
+    </div>
+</section>
+
             <div class="text-xl font-bold text-slate-800 tracking-tight">Bridge <span class="text-emerald-600">Ministries</span></div>
             <div class="text-xl font-extrabold text-slate-800 tracking-tighter">HOPE<span class="font-light">CITY</span></div>
             <div class="text-xl font-serif text-slate-800 italic">Grace Cathedral</div>
@@ -69,11 +86,10 @@ include('../header.php');
 </section>
 
 <!-- REFINED BENTO BOX FEATURE GRID -->
-<section id="features" class="py-32 bg-slate-50/50">
+<section id="features" class="py-16 md:py-32 bg-slate-50/50">
     <div class="max-w-7xl mx-auto px-4">
         <div class="mb-20 text-center md:text-left flex flex-col md:flex-row md:items-end justify-between gap-8">
             <div class="max-w-2xl">
-                <h2 class="text-xs font-bold text-emerald-600 uppercase tracking-[0.15em] mb-4">Everything You Need</h2>
                 <h3 class="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tighter leading-tight">Manage your church like a Fortune 500 company.</h3>
             </div>
         </div>
@@ -82,7 +98,7 @@ include('../header.php');
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
             
             <!-- Bento Item 1: Large People -->
-            <div class="md:col-span-2 bg-white rounded-[2rem] p-10 border border-slate-200/60 shadow-sm hover:shadow-xl transition-all duration-500 relative overflow-hidden group">
+            <div class="md:col-span-3 bg-white rounded-[2rem] p-6 md:p-10 border border-slate-200/60 shadow-sm hover:shadow-xl transition-all duration-500 relative overflow-hidden group">
                 <div class="absolute -top-32 -right-32 w-96 h-96 bg-blue-50 rounded-full blur-3xl group-hover:bg-blue-100/80 transition-colors duration-700"></div>
                 <div class="relative z-10 h-full flex flex-col">
                     <div class="w-14 h-14 bg-blue-50 border border-blue-100 rounded-2xl flex items-center justify-center mb-8 text-blue-600 shadow-sm">
@@ -106,7 +122,7 @@ include('../header.php');
             </div>
 
             <!-- Bento Item 2: Small Finance -->
-            <div class="bg-slate-900 rounded-[2rem] p-10 shadow-xl hover:shadow-2xl transition-all duration-500 relative overflow-hidden group">
+            <div class="md:col-span-2 bg-slate-900 rounded-[2rem] p-6 md:p-10 shadow-xl hover:shadow-2xl transition-all duration-500 relative overflow-hidden group">
                 <div class="absolute inset-0 bg-gradient-to-br from-slate-800 to-slate-950 opacity-50"></div>
                 <div class="absolute -top-32 -right-32 w-96 h-96 bg-emerald-500/20 rounded-full blur-3xl group-hover:bg-emerald-500/30 transition-colors duration-700"></div>
                 <div class="relative z-10 flex flex-col h-full">
@@ -125,7 +141,7 @@ include('../header.php');
             </div>
 
             <!-- Bento Item 3: Attendance -->
-            <div class="bg-white rounded-[2rem] p-10 border border-slate-200/60 shadow-sm hover:shadow-xl transition-all duration-500 relative overflow-hidden group">
+            <div class="bg-white rounded-[2rem] p-6 md:p-10 border border-slate-200/60 shadow-sm hover:shadow-xl transition-all duration-500 relative overflow-hidden group">
                 <div class="absolute -bottom-24 -right-24 w-64 h-64 bg-emerald-50 rounded-full blur-3xl group-hover:bg-emerald-100/80 transition-colors duration-700"></div>
                 <div class="relative z-10 flex flex-col h-full">
                     <div class="w-14 h-14 bg-emerald-50 border border-emerald-100 rounded-2xl flex items-center justify-center mb-8 text-emerald-600 shadow-sm">
@@ -139,7 +155,7 @@ include('../header.php');
             </div>
 
             <!-- Bento Item 4: Analytics -->
-            <div class="bg-white rounded-[2rem] p-10 border border-slate-200/60 shadow-sm hover:shadow-xl transition-all duration-500 relative overflow-hidden group">
+            <div class="bg-white rounded-[2rem] p-6 md:p-10 border border-slate-200/60 shadow-sm hover:shadow-xl transition-all duration-500 relative overflow-hidden group">
                 <div class="absolute -bottom-24 -left-24 w-64 h-64 bg-amber-50 rounded-full blur-3xl group-hover:bg-amber-100/80 transition-colors duration-700"></div>
                 <div class="relative z-10 flex flex-col h-full">
                     <div class="w-14 h-14 bg-amber-50 border border-amber-100 rounded-2xl flex items-center justify-center mb-8 text-amber-600 shadow-sm">
@@ -153,7 +169,7 @@ include('../header.php');
             </div>
 
             <!-- Bento Item 5: Communications -->
-            <div class="bg-gradient-to-br from-emerald-600 to-teal-600 rounded-[2rem] p-10 shadow-xl hover:shadow-2xl transition-all duration-500 relative overflow-hidden group text-white">
+            <div class="bg-gradient-to-br from-emerald-600 to-teal-600 rounded-[2rem] p-6 md:p-10 shadow-xl hover:shadow-2xl transition-all duration-500 relative overflow-hidden group text-white">
                 <div class="absolute -top-24 -right-24 w-64 h-64 bg-white/10 rounded-full blur-3xl group-hover:bg-white/20 transition-colors duration-700"></div>
                 <div class="relative z-10 flex flex-col h-full">
                     <div class="w-14 h-14 bg-white/10 border border-white/20 backdrop-blur-md rounded-2xl flex items-center justify-center mb-8 shadow-sm">
@@ -238,9 +254,6 @@ include('../header.php');
             
             <!-- Right: Text Content -->
             <div class="w-full lg:w-1/2">
-                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 text-emerald-600 text-xs font-bold uppercase tracking-widest mb-6 border border-emerald-100">
-                    <i class="fas fa-project-diagram"></i> Member Lifecycle
-                </div>
                 <h3 class="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tighter mb-6 leading-tight">Automate your follow-up process.</h3>
                 <p class="text-lg text-slate-500 mb-8 leading-relaxed font-light">
                     When a first-time visitor walks through your doors, FaithOS immediately logs their information and triggers a series of automated welcome SMS messages and emails. The system seamlessly guides them from visitor, to new convert, and ultimately to full member, assigning them to cell groups automatically.
@@ -298,9 +311,6 @@ include('../header.php');
             
             <!-- Left: Text Content -->
             <div class="w-full lg:w-1/2">
-                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-50 text-indigo-600 text-xs font-bold uppercase tracking-widest mb-6 border border-indigo-100">
-                    <i class="fas fa-palette"></i> White-Label Ready
-                </div>
                 <h3 class="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tighter mb-6 leading-tight">A dashboard branded entirely for your church.</h3>
                 <p class="text-lg text-slate-500 mb-8 leading-relaxed font-light">
                     FaithOS is built on a modern Filament architecture that dynamically configures to your church's identity. From the login screen to the administrative reports, everything is skinned with your church's logo, typography, and color palette. It feels like software built specifically for you.
@@ -360,15 +370,59 @@ include('../header.php');
     </div>
 </section>
 
+<!-- TESTIMONIAL -->
+<section class="py-24 bg-white border-t border-slate-100">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+        <!-- Stars -->
+        <div class="flex items-center justify-center gap-1 mb-6">
+            <i class="fas fa-star text-yellow-400 text-xl"></i>
+            <i class="fas fa-star text-yellow-400 text-xl"></i>
+            <i class="fas fa-star text-yellow-400 text-xl"></i>
+            <i class="fas fa-star text-yellow-400 text-xl"></i>
+            <i class="fas fa-star text-yellow-400 text-xl"></i>
+        </div>
+        <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tighter mb-10 leading-tight max-w-3xl mx-auto">
+            "Since deploying FaithOS, we no longer lose track of visitors. Our tithe records are accurate, and our pastors can focus on ministry instead of administration."
+        </h2>
+        <div class="flex items-center justify-center gap-4">
+            <div class="w-12 h-12 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-600 font-black text-lg shadow-sm">
+                PK
+            </div>
+            <div class="text-left">
+                <div class="font-bold text-slate-900 text-sm uppercase tracking-wider">Pastor Kwame Asante</div>
+                <div class="text-xs text-slate-500">Senior Pastor, Hope City Church — Accra</div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- CTA -->
 <section class="py-32 bg-emerald-600 text-white text-center relative overflow-hidden">
     <div class="absolute inset-0 opacity-10 bg-[url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23ffffff\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')]"></div>
     <div class="max-w-4xl mx-auto px-4 relative z-10 flex flex-col items-center">
         <h2 class="text-5xl md:text-7xl font-extrabold mb-8 tracking-tighter leading-tight">Ready to digitize your ministry?</h2>
-        <p class="text-xl md:text-2xl text-emerald-100 mb-12 leading-relaxed font-light max-w-2xl">Join growing churches using FaithOS to manage their congregation and finances. Deployment is rapid and seamless.</p>
-        <a href="../contact" class="inline-flex items-center justify-center px-10 py-5 rounded-2xl bg-white text-emerald-600 text-lg font-extrabold hover:bg-slate-50 transition-all shadow-2xl hover:shadow-white/20 hover:-translate-y-1">
-            Request FaithOS Deployment <i class="fas fa-arrow-right ml-3"></i>
-        </a>
+        <p class="text-xl md:text-2xl text-emerald-100 mb-8 leading-relaxed font-light max-w-2xl">Join growing churches using FaithOS to manage their congregation and finances. Deployment is rapid and seamless.</p>
+        
+        <!-- Pricing Anchor -->
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-3 mb-10">
+            <div class="inline-flex items-center gap-3 px-6 py-3 rounded-xl bg-white/15 border border-white/25 backdrop-blur-md text-white">
+                <i class="fas fa-tag text-emerald-200 text-lg"></i>
+                <div class="text-left">
+                    <div class="text-[10px] text-emerald-200 font-bold uppercase tracking-widest">Starting From</div>
+                    <div class="font-black text-white text-lg tracking-tight">GHS 500 <span class="font-light text-emerald-200 text-sm">/ month</span></div>
+                </div>
+            </div>
+            <div class="text-emerald-300 text-sm font-medium">No setup fees. Cancel anytime.</div>
+        </div>
+
+        <div class="flex flex-col sm:flex-row items-center gap-4">
+            <a href="../contact" class="inline-flex items-center justify-center px-10 py-5 rounded-2xl bg-white text-emerald-600 text-lg font-extrabold hover:bg-slate-50 transition-all shadow-2xl hover:shadow-white/20 hover:-translate-y-1">
+                Request FaithOS Deployment <i class="fas fa-arrow-right ml-3"></i>
+            </a>
+            <a href="#features" class="inline-flex items-center gap-2 px-8 py-5 rounded-2xl border border-white/30 text-white font-semibold hover:bg-white/10 transition-all text-lg">
+                <i class="fas fa-play-circle"></i> Watch 2-Min Demo
+            </a>
+        </div>
     </div>
 </section>
 

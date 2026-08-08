@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Block admin or private directories if they exist in the future
+Disallow: /admin/
+Disallow: /private/
+
+# Sitemap location
+Sitemap: https://e7world.tech/sitemap.xml

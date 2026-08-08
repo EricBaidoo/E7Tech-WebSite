@@ -75,32 +75,28 @@ document.addEventListener('DOMContentLoaded', function() {
 <!-- ==============================================
      1. THE CINEMATIC HERO
      ============================================== -->
-<section class="pt-40 pb-0 bg-white relative overflow-hidden z-0">
+<section class="pt-24 md:pt-40 pb-0 bg-white relative overflow-hidden z-0">
     <!-- Ambient Background Lighting -->
     <div class="absolute top-[-10%] left-1/2 -translate-x-1/2 w-full max-w-[1000px] h-[500px] bg-brand-blue/10 blur-[100px] rounded-full -z-10 pointer-events-none"></div>
 
     <div class="max-w-6xl mx-auto px-4 relative z-10 text-center flex flex-col items-center">
-        <!-- Minimal Pill Badge -->
-        <div class="reveal-up inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-50 text-slate-500 text-[10px] font-bold tracking-[0.2em] uppercase mb-8 border border-slate-200 shadow-sm">
-            <span class="w-1.5 h-1.5 rounded-full bg-brand-blue animate-pulse"></span>
-            EduCore OS v2.0
-        </div>
+
         
         <!-- Hero Headline -->
-        <h1 class="reveal-up delay-100 text-[4rem] md:text-[6.5rem] font-black text-slate-900 tracking-tighter mb-6 leading-[1] max-w-5xl">
+        <h1 class="reveal-up delay-100 text-5xl md:text-[6.5rem] font-black text-slate-900 tracking-tighter mb-6 leading-[1] max-w-5xl">
             Run your entire school. <br class="hidden md:block">
             <span class="text-transparent bg-clip-text bg-gradient-to-r from-slate-400 to-slate-900">Beautifully.</span>
         </h1>
         
-        <p class="reveal-up delay-200 text-xl md:text-2xl text-slate-500 mb-12 max-w-2xl font-light leading-relaxed tracking-tight">
+        <p class="reveal-up delay-200 text-lg md:text-2xl text-slate-500 mb-12 max-w-2xl font-light leading-relaxed tracking-tight">
             The enterprise-grade operating system for modern African institutions. Finance, academics, and logistics, unified perfectly.
         </p>
         
         <div class="reveal-up delay-300 flex flex-col sm:flex-row items-center justify-center gap-4 mb-20 w-full sm:w-auto">
-            <a href="../contact" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-900 text-white font-semibold tracking-tight hover:bg-slate-800 transition-all shadow-[0_10px_40px_rgba(0,0,0,0.2)] hover:shadow-[0_15px_50px_rgba(0,0,0,0.3)] hover:-translate-y-0.5">
+            <a href="../contact" class="w-full sm:w-auto px-6 py-3.5 sm:px-8 sm:py-4 rounded-xl bg-slate-900 text-white font-semibold tracking-tight hover:bg-slate-800 transition-all shadow-[0_10px_40px_rgba(0,0,0,0.2)] hover:shadow-[0_15px_50px_rgba(0,0,0,0.3)] hover:-translate-y-0.5">
                 Request a Live Demo
             </a>
-            <a href="#ecosystem" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-white text-slate-700 font-semibold tracking-tight hover:bg-slate-50 transition-all border border-slate-200 shadow-sm hover:shadow-md">
+            <a href="#ecosystem" class="w-full sm:w-auto px-6 py-3.5 sm:px-8 sm:py-4 rounded-xl bg-white text-slate-700 font-semibold tracking-tight hover:bg-slate-50 transition-all border border-slate-200 shadow-sm hover:shadow-md">
                 Explore the Platform
             </a>
         </div>
@@ -137,12 +133,11 @@ document.addEventListener('DOMContentLoaded', function() {
 <!-- ==============================================
      3. THE ECOSYSTEM (True Bento Grid) Moved UP!
      ============================================== -->
-<section id="ecosystem" class="py-32 bg-[#FAFAFA] relative">
+<section id="ecosystem" class="py-16 md:py-32 bg-[#FAFAFA] relative">
     <div class="max-w-7xl mx-auto px-4">
-        <div class="text-center mb-20">
-            <div class="inline-block px-3 py-1 rounded-full bg-slate-200 text-slate-600 text-[10px] font-bold uppercase tracking-[0.2em] mb-6">The Platform</div>
-            <h2 class="text-4xl md:text-5xl font-black mb-6 tracking-tighter text-slate-900">11 Modules. 1 Subscription.</h2>
-            <p class="text-slate-500 text-xl max-w-2xl mx-auto leading-relaxed font-light tracking-tight">
+        <div class="text-center mb-16 md:mb-20">
+            <h2 class="text-3xl md:text-5xl font-black mb-6 tracking-tighter text-slate-900">11 Modules. 1 Subscription.</h2>
+            <p class="text-lg md:text-xl text-slate-500 max-w-2xl mx-auto leading-relaxed font-light tracking-tight">
                 Stop juggling 5 different subscriptions. EduCore is a true Enterprise Resource Planning (ERP) platform built to run every single aspect of your institution seamlessly.
             </p>
         </div>
@@ -323,9 +318,6 @@ document.addEventListener('DOMContentLoaded', function() {
             
             <!-- Left: High Impact Typography -->
             <div>
-                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-900/50 text-emerald-400 text-[10px] font-bold uppercase tracking-[0.2em] mb-8 border border-emerald-500/30">
-                    The Revenue Engine
-                </div>
                 <h3 class="text-5xl md:text-6xl font-black tracking-tighter mb-8 leading-[1.1]">Absolute control <br>over every penny.</h3>
                 <p class="text-xl text-slate-400 mb-10 leading-relaxed font-light tracking-tight">
                     Say goodbye to messy Excel ledgers. EduCore tracks fixed fees, class-based fees, and special categorizations automatically. Generate 1,000+ invoices in a single click, and allow students to make cashless purchases.
@@ -393,9 +385,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
             <!-- Right: Typography -->
             <div class="order-1 lg:order-2">
-                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-50 text-indigo-600 text-[10px] font-bold uppercase tracking-[0.2em] mb-8 border border-indigo-100">
-                    The Academic Engine
-                </div>
                 <h3 class="text-5xl md:text-6xl font-black tracking-tighter text-slate-900 mb-8 leading-[1.1]">Generate 500 reports <br>in 1 second.</h3>
                 <p class="text-xl text-slate-500 mb-10 leading-relaxed font-light tracking-tight">
                     Transform the classroom. Teachers submit digital lesson plans for Headmaster approval. When the term ends, they simply input continuous assessment scores; EduCore calculates positions, assigns remarks, and prints perfectly formatted PDF report cards.
@@ -420,9 +409,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
             <!-- Left: Typography -->
             <div class="scroll-reveal-left">
-                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-brand-blue text-[10px] font-bold uppercase tracking-[0.2em] mb-8 border border-blue-100">
-                    The Logistics Engine
-                </div>
                 <h3 class="text-5xl md:text-6xl font-black tracking-tighter text-slate-900 mb-8 leading-[1.1]">Total visibility. <br>Happy parents.</h3>
                 <p class="text-xl text-slate-500 mb-10 leading-relaxed font-light tracking-tight">
                     Stop the endless phone calls to the receptionist. EduCore integrates directly with the WhatsApp Business API to send automated alerts — from live bus locations to instant PDF report card delivery.
@@ -538,8 +524,8 @@ document.addEventListener('DOMContentLoaded', function() {
         <h2 class="text-5xl md:text-7xl font-black mb-8 tracking-tighter leading-tight">Ready to upgrade your institution?</h2>
         <p class="text-xl md:text-2xl text-slate-400 mb-10 leading-relaxed font-light max-w-2xl tracking-tight">Join the most innovative schools across the continent. Deployment is rapid, training is included, and the transition is seamless.</p>
         
-        <div class="inline-flex items-center justify-center gap-2 px-6 py-2 rounded-full bg-emerald-900/30 border border-emerald-500/30 text-emerald-400 text-sm font-bold tracking-widest uppercase mb-12">
-            <i class="fas fa-bolt"></i> Guaranteed ROI in Term 1
+        <div class="mb-12 text-emerald-400 text-sm font-bold tracking-widest uppercase">
+            Guaranteed ROI in Term 1
         </div>
         
         <!-- Pricing Anchor -->

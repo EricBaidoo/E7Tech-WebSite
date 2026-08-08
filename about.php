@@ -7,19 +7,15 @@ include 'header.php';
 <!-- ==============================================
      HERO SECTION
      ============================================== -->
-<section class="pt-32 pb-20 lg:pt-40 lg:pb-32 bg-slate-900 border-b border-slate-100 text-center relative overflow-hidden">
+<section class="pt-24 pb-16 md:pt-32 md:pb-20 lg:pt-40 lg:pb-32 bg-slate-900 border-b border-slate-100 text-center relative overflow-hidden">
     <div class="absolute inset-0 z-0">
         <img src="assets/images/about_hero_image_1786197741233.png" alt="E7 Tech Global" class="w-full h-full object-cover opacity-20 mix-blend-luminosity">
         <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/80 to-slate-900/40"></div>
     </div>
 
     <div class="max-w-4xl mx-auto px-4 relative z-10">
-        <div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-white/10 border border-white/20 mb-8 backdrop-blur-sm">
-            <i class="fas fa-globe-africa text-brand-blue text-xs"></i>
-            <span class="text-white text-xs font-semibold uppercase tracking-wide">Corporate Profile</span>
-        </div>
         
-        <h1 class="text-5xl md:text-7xl font-extrabold text-white tracking-tight mb-8 leading-[1.1]">
+        <h1 class="text-4xl md:text-7xl font-extrabold text-white tracking-tight mb-8 leading-[1.1]">
             Architecting <span class="text-brand-blue">Africa's</span> Digital Sovereignty.
         </h1>
         <p class="text-xl text-slate-300 leading-relaxed max-w-3xl mx-auto font-light">
@@ -113,25 +109,25 @@ include 'header.php';
 <!-- ==============================================
      STATS & SCALE
      ============================================== -->
-<section class="py-24 bg-slate-900 border-y border-slate-800 relative overflow-hidden">
+<section class="py-16 md:py-24 bg-slate-900 border-y border-slate-800 relative overflow-hidden">
     <div class="absolute inset-0 bg-[url('assets/images/sliders/slide5.png')] opacity-10 bg-cover bg-center mix-blend-overlay"></div>
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-12 text-center divide-x divide-slate-800">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 text-center">
             <div>
-                <div class="text-5xl font-extrabold text-white mb-3">100<span class="text-brand-blue">%</span></div>
-                <div class="text-xs font-bold text-slate-400 uppercase tracking-widest">Data Sovereignty</div>
+                <div class="text-4xl md:text-5xl font-extrabold text-white mb-3">100<span class="text-brand-blue">%</span></div>
+                <div class="text-[10px] md:text-xs font-bold text-slate-400 uppercase tracking-widest">Data Sovereignty</div>
             </div>
             <div>
-                <div class="text-5xl font-extrabold text-white mb-3">250<span class="text-brand-blue">+</span></div>
-                <div class="text-xs font-bold text-slate-400 uppercase tracking-widest">Enterprise Deployments</div>
+                <div class="text-4xl md:text-5xl font-extrabold text-white mb-3">250<span class="text-brand-blue">+</span></div>
+                <div class="text-[10px] md:text-xs font-bold text-slate-400 uppercase tracking-widest">Enterprise Deployments</div>
             </div>
             <div>
-                <div class="text-5xl font-extrabold text-white mb-3">0<span class="text-brand-blue"></span></div>
-                <div class="text-xs font-bold text-slate-400 uppercase tracking-widest">Security Breaches</div>
+                <div class="text-4xl md:text-5xl font-extrabold text-white mb-3">0<span class="text-brand-blue"></span></div>
+                <div class="text-[10px] md:text-xs font-bold text-slate-400 uppercase tracking-widest">Security Breaches</div>
             </div>
             <div>
-                <div class="text-5xl font-extrabold text-white mb-3">99.9<span class="text-brand-blue">%</span></div>
-                <div class="text-xs font-bold text-slate-400 uppercase tracking-widest">SLA Uptime</div>
+                <div class="text-4xl md:text-5xl font-extrabold text-white mb-3">99.9<span class="text-brand-blue">%</span></div>
+                <div class="text-[10px] md:text-xs font-bold text-slate-400 uppercase tracking-widest">SLA Uptime</div>
             </div>
         </div>
     </div>
@@ -234,16 +230,16 @@ include 'header.php';
     </div>
 </section>
 
-<section class="py-32 bg-slate-950 text-white text-center relative overflow-hidden">
+<section class="py-20 md:py-32 bg-slate-950 text-white text-center relative overflow-hidden">
     <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] bg-brand-blue/25 rounded-[100%] blur-[100px] pointer-events-none"></div>
     <div class="max-w-4xl mx-auto px-4 relative z-10 flex flex-col items-center">
         <h2 class="text-4xl md:text-6xl font-black mb-6 tracking-tighter leading-tight">Ready to solve your biggest technology challenge?</h2>
-        <p class="text-xl text-slate-400 mb-12 font-light max-w-2xl tracking-tight leading-relaxed">Let's build something extraordinary together. Our team is ready to architect, secure, and scale your next digital initiative.</p>
-        <div class="flex flex-col sm:flex-row gap-4 items-center">
-            <a href="contact" class="inline-flex items-center gap-3 px-10 py-5 rounded-2xl bg-white text-slate-950 text-lg font-bold hover:bg-slate-100 transition-all tracking-tight shadow-[0_0_40px_rgba(255,255,255,0.08)]">
+        <p class="text-lg md:text-xl text-slate-400 mb-12 font-light max-w-2xl tracking-tight leading-relaxed">Let's build something extraordinary together. Our team is ready to architect, secure, and scale your next digital initiative.</p>
+        <div class="flex flex-col sm:flex-row gap-4 items-center w-full sm:w-auto">
+            <a href="contact" class="w-full sm:w-auto justify-center inline-flex items-center gap-3 px-6 py-4 md:px-10 md:py-5 rounded-2xl bg-white text-slate-950 text-lg font-bold hover:bg-slate-100 transition-all tracking-tight shadow-[0_0_40px_rgba(255,255,255,0.08)]">
                 Start a Conversation <i class="fas fa-arrow-right text-brand-blue"></i>
             </a>
-            <a href="solutions" class="inline-flex items-center gap-3 px-8 py-5 rounded-2xl border border-white/20 text-white font-semibold hover:bg-white/10 transition-all tracking-tight text-lg">
+            <a href="solutions" class="w-full sm:w-auto justify-center inline-flex items-center gap-3 px-6 py-4 md:px-8 md:py-5 rounded-2xl border border-white/20 text-white font-semibold hover:bg-white/10 transition-all tracking-tight text-base md:text-lg">
                 Explore Our Solutions
             </a>
         </div>
