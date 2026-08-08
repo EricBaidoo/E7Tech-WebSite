@@ -164,9 +164,9 @@ $navBasePath = (strpos($_SERVER['PHP_SELF'], '/solutions/') !== false || strpos(
                     
                     <!-- Solutions Mega Menu -->
                     <div class="relative group h-[4.5rem] flex items-center">
-                        <a href="<?php echo $navBasePath; ?>solutions" class="text-slate-700 font-medium hover:text-brand-blue transition-colors flex items-center gap-1 cursor-pointer text-sm">
+                        <span class="text-slate-700 font-medium hover:text-brand-blue transition-colors flex items-center gap-1 cursor-default select-none text-sm">
                             Solutions <i class="fas fa-chevron-down text-[0.625rem] text-slate-400 transition-transform group-hover:rotate-180"></i>
-                        </a>
+                        </span>
                         <div class="mega-menu absolute top-[4.5rem] -left-[6.25rem] w-[43.75rem] bg-white rounded-lg shadow-xl border border-slate-100 p-4 flex gap-4">
                             <div class="flex-1">
                                 <div class="text-[0.625rem] font-bold text-slate-400 uppercase tracking-wider mb-2 px-2">Core Platforms</div>
