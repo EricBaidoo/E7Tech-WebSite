@@ -83,6 +83,18 @@ include('header.php');
                         <span>Send Message</span>
                         <i class="fas fa-paper-plane"></i>
                     </button>
+                    <!-- Trust Signals -->
+                    <div class="flex flex-col sm:flex-row items-center justify-between gap-3 pt-2">
+                        <div class="flex items-center gap-2 text-slate-400 text-xs font-medium">
+                            <i class="fas fa-clock text-emerald-500"></i>
+                            We respond within <strong class="text-slate-600 ml-1">24 hours</strong>
+                        </div>
+                        <a href="https://wa.me/233243838490?text=Hi%2C%20I'd%20like%20to%20discuss%20a%20project%20with%20E7%20Technology."
+                           target="_blank" rel="noopener noreferrer"
+                           class="flex items-center gap-2 text-[#25D366] text-xs font-bold hover:underline transition-all">
+                            <i class="fab fa-whatsapp text-base"></i> Or chat on WhatsApp →
+                        </a>
+                    </div>
                 </form>
             </div>
 

@@ -209,17 +209,47 @@ include 'header.php';
 </section>
 
 <!-- ==============================================
-     CTA
+     IMPACT STATS + CTA
      ============================================== -->
-<section class="py-24 bg-white border-t border-slate-200 text-center">
-    <div class="max-w-3xl mx-auto px-4">
-        <h2 class="text-4xl font-extrabold text-slate-900 mb-6">Require enterprise architecture?</h2>
-        <p class="text-xl text-slate-500 mb-10">Schedule a confidential technical review with our principal engineering team.</p>
-        <a href="contact" class="inline-block px-10 py-4 rounded bg-slate-900 text-white font-bold text-lg hover:bg-brand-blue transition-colors shadow-sm">
-            Engage E7 Leadership
-        </a>
+<section class="py-20 bg-slate-50 border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-0 divide-x divide-slate-200 border border-slate-200 rounded-2xl bg-white shadow-sm overflow-hidden mb-0">
+            <div class="px-8 py-8 text-center">
+                <div class="text-4xl font-black text-slate-900 tracking-tighter mb-1">50+</div>
+                <div class="text-xs font-bold text-slate-500 uppercase tracking-[0.15em]">Organizations Served</div>
+            </div>
+            <div class="px-8 py-8 text-center">
+                <div class="text-4xl font-black text-brand-blue tracking-tighter mb-1">3</div>
+                <div class="text-xs font-bold text-slate-500 uppercase tracking-[0.15em]">Flagship Platforms</div>
+            </div>
+            <div class="px-8 py-8 text-center">
+                <div class="text-4xl font-black text-slate-900 tracking-tighter mb-1">5+</div>
+                <div class="text-xs font-bold text-slate-500 uppercase tracking-[0.15em]">Years in Africa</div>
+            </div>
+            <div class="px-8 py-8 text-center">
+                <div class="text-4xl font-black text-slate-900 tracking-tighter mb-1">100%</div>
+                <div class="text-xs font-bold text-slate-500 uppercase tracking-[0.15em]">Client Retention</div>
+            </div>
+        </div>
     </div>
 </section>
+
+<section class="py-32 bg-slate-950 text-white text-center relative overflow-hidden">
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] bg-brand-blue/25 rounded-[100%] blur-[100px] pointer-events-none"></div>
+    <div class="max-w-4xl mx-auto px-4 relative z-10 flex flex-col items-center">
+        <h2 class="text-4xl md:text-6xl font-black mb-6 tracking-tighter leading-tight">Ready to solve your biggest technology challenge?</h2>
+        <p class="text-xl text-slate-400 mb-12 font-light max-w-2xl tracking-tight leading-relaxed">Let's build something extraordinary together. Our team is ready to architect, secure, and scale your next digital initiative.</p>
+        <div class="flex flex-col sm:flex-row gap-4 items-center">
+            <a href="contact" class="inline-flex items-center gap-3 px-10 py-5 rounded-2xl bg-white text-slate-950 text-lg font-bold hover:bg-slate-100 transition-all tracking-tight shadow-[0_0_40px_rgba(255,255,255,0.08)]">
+                Start a Conversation <i class="fas fa-arrow-right text-brand-blue"></i>
+            </a>
+            <a href="solutions" class="inline-flex items-center gap-3 px-8 py-5 rounded-2xl border border-white/20 text-white font-semibold hover:bg-white/10 transition-all tracking-tight text-lg">
+                Explore Our Solutions
+            </a>
+        </div>
+    </div>
+</section>
+
 
 <?php include 'footer.php'; ?>
 

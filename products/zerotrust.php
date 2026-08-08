@@ -1,46 +1,54 @@
 <?php
-$page_title = "ZeroTrust - Cybersecurity Defense | E7 Technology";
-$meta_description = "ZeroTrust is E7's flagship cybersecurity defense platform.";
+$page_title = "ZeroTrust Access - Network Security | E7 Technology";
+$meta_description = "ZeroTrust Access by E7Shield is an enterprise network security product. Coming soon from E7 Technology Solutions.";
 include('../header.php');
 ?>
 
-<!-- MODERN SAAS HERO SECTION -->
-<section class="pt-32 pb-32 bg-slate-50 relative overflow-hidden border-b border-slate-200">
-    <!-- Abstract Glowing Orbs -->
-    <div class="absolute inset-0 z-0 overflow-hidden pointer-events-none">
-        <div class="absolute top-[-10%] right-[-5%] w-[40rem] h-[40rem] bg-rose-500/10 rounded-full blur-[100px]"></div>
-        <div class="absolute bottom-[-20%] left-[-10%] w-[50rem] h-[50rem] bg-slate-500/10 rounded-full blur-[120px]"></div>
-    </div>
-    
-    <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-        <!-- Badge -->
-        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white text-rose-600 text-[0.625rem] font-bold uppercase tracking-widest mb-8 border border-slate-200 shadow-sm">
-            <span class="relative flex h-2 w-2 mr-1">
-              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-rose-500 opacity-75"></span>
-              <span class="relative inline-flex rounded-full h-2 w-2 bg-rose-500"></span>
-            </span>
-            E7Shield Platform
+<!-- COMING SOON PAGE -->
+<section class="min-h-screen bg-white flex items-center justify-center relative overflow-hidden pt-24 pb-20">
+    <div class="absolute top-[-5%] right-[-5%] w-[50rem] h-[50rem] bg-slate-900/5 rounded-full blur-[120px] pointer-events-none"></div>
+    <div class="absolute bottom-[-10%] left-[-5%] w-[40rem] h-[40rem] bg-red-500/5 rounded-full blur-[100px] pointer-events-none"></div>
+
+    <div class="max-w-2xl mx-auto px-4 text-center relative z-10">
+        <div class="w-20 h-20 rounded-3xl bg-slate-100 border border-slate-200 flex items-center justify-center mx-auto mb-8 text-slate-700 text-4xl shadow-sm">
+            <i class="fas fa-lock"></i>
         </div>
-        
-        <!-- Headline -->
-        <h1 class="text-5xl md:text-7xl font-extrabold text-slate-900 tracking-tight mb-6 leading-[1.1]">
-            Trust nothing. <br class="hidden md:block">
-            <span class="text-transparent bg-clip-text bg-gradient-to-r from-rose-600 to-red-600">Verify everything.</span>
+
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-100 text-slate-500 text-[10px] font-bold uppercase tracking-[0.2em] mb-8 border border-slate-200">
+            <span class="w-1.5 h-1.5 rounded-full bg-slate-700 animate-pulse"></span>
+            Coming Soon — E7Shield™ Platform
+        </div>
+
+        <h1 class="text-5xl md:text-6xl font-black text-slate-900 tracking-tighter mb-6 leading-[1.1]">
+            ZeroTrust Access™
         </h1>
-        
-        <p class="text-xl text-slate-500 mb-10 max-w-2xl mx-auto">
-            ZeroTrust is our enterprise cybersecurity defense software. Deep dive content and interactive product mockups are currently being designed.
+        <p class="text-xl text-slate-500 font-light leading-relaxed mb-4 tracking-tight">
+            Never trust, always verify. A ready-to-deploy Zero Trust network security product that secures your organization's systems, users, and data with military-grade access controls.
         </p>
-        
-        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a href="../contact" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-900 text-white font-bold hover:bg-rose-600 transition-colors shadow-lg hover:shadow-rose-600/30">
-                Contact Sales
-            </a>
-            <a href="../e7shield" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-white text-slate-700 font-bold hover:bg-slate-50 transition-colors border border-slate-200 shadow-sm">
-                Back to E7Shield
-            </a>
-        </div>
+        <p class="text-base text-slate-400 mb-12 font-medium">This product is currently in final security testing. Register your interest below.</p>
+
+        <form class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto mb-10" onsubmit="handleSubmit(event)">
+            <input type="email" required placeholder="your@company.com"
+                class="flex-grow px-5 py-4 rounded-xl border border-slate-200 bg-slate-50 text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-slate-700 focus:border-transparent text-sm font-medium tracking-tight">
+            <button type="submit"
+                class="px-6 py-4 bg-slate-900 text-white font-bold rounded-xl hover:bg-slate-800 transition-all shadow-lg text-sm tracking-tight whitespace-nowrap">
+                Register Interest
+            </button>
+        </form>
+        <div id="success-msg" class="hidden text-emerald-600 font-semibold text-sm mb-6">✅ You're on the list! We'll be in touch.</div>
+
+        <a href="../solutions/e7shield" class="inline-flex items-center gap-2 text-slate-400 hover:text-slate-700 font-medium text-sm transition-colors">
+            <i class="fas fa-arrow-left text-xs"></i> Back to E7Shield™
+        </a>
     </div>
 </section>
+
+<script>
+function handleSubmit(e) {
+    e.preventDefault();
+    document.getElementById('success-msg').classList.remove('hidden');
+    e.target.reset();
+}
+</script>
 
 <?php include('../footer.php'); ?>

@@ -4,62 +4,128 @@ $meta_description = "EduCore is a comprehensive, cloud-based School Operating Sy
 include('../header.php');
 ?>
 
-<!-- WORLD-CLASS SAAS HERO SECTION -->
-<section class="pt-32 pb-24 bg-white relative overflow-hidden">
-    <!-- Ultra-soft Background Gradients -->
-    <div class="absolute inset-0 z-0 overflow-hidden pointer-events-none flex justify-center">
-        <div class="absolute top-[0%] w-[60rem] h-[30rem] bg-gradient-to-r from-blue-100/50 via-indigo-100/40 to-purple-100/50 blur-[80px] rounded-full opacity-70"></div>
-    </div>
-    
-    <div class="max-w-7xl mx-auto px-4 relative z-10 text-center flex flex-col items-center">
-        <!-- Modern Pill Badge -->
-        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-50 text-slate-700 text-xs font-bold tracking-wide mb-8 border border-slate-200/60 shadow-sm hover:shadow-md transition-shadow cursor-default">
-            <span class="flex h-2 w-2 relative">
-              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-blue opacity-75"></span>
-              <span class="relative inline-flex rounded-full h-2 w-2 bg-brand-blue"></span>
-            </span>
-            Meet the E7Build Platform
+<style>
+/* Modern Cinematic Animations */
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeZoom {
+    from { opacity: 0; transform: scale(0.95) translateY(20px); }
+    to { opacity: 1; transform: scale(1) translateY(0); }
+}
+.reveal-up { opacity: 0; animation: fadeUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+.reveal-zoom { opacity: 0; animation: fadeZoom 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+.delay-100 { animation-delay: 100ms; }
+.delay-200 { animation-delay: 200ms; }
+.delay-300 { animation-delay: 300ms; }
+.delay-500 { animation-delay: 500ms; }
+
+/* Custom Scrollbar for Bento Box (if needed on mobile) */
+.hide-scrollbar::-webkit-scrollbar { display: none; }
+.hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* Scroll-triggered reveal */
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.scroll-reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.scroll-reveal-left {
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1), transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.scroll-reveal-left.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+.scroll-reveal-right {
+    opacity: 0;
+    transform: translateX(30px);
+    transition: opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1), transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.scroll-reveal-right.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const revealEls = document.querySelectorAll('.scroll-reveal, .scroll-reveal-left, .scroll-reveal-right');
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry, i) => {
+            if (entry.isIntersecting) {
+                // Stagger children within same parent
+                const delay = entry.target.dataset.delay || 0;
+                setTimeout(() => entry.target.classList.add('visible'), parseInt(delay));
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.12 });
+    revealEls.forEach(el => observer.observe(el));
+});
+</script>
+
+<!-- ==============================================
+     1. THE CINEMATIC HERO
+     ============================================== -->
+<section class="pt-40 pb-0 bg-white relative overflow-hidden z-0">
+    <!-- Ambient Background Lighting -->
+    <div class="absolute top-[-10%] left-1/2 -translate-x-1/2 w-full max-w-[1000px] h-[500px] bg-brand-blue/10 blur-[100px] rounded-full -z-10 pointer-events-none"></div>
+
+    <div class="max-w-6xl mx-auto px-4 relative z-10 text-center flex flex-col items-center">
+        <!-- Minimal Pill Badge -->
+        <div class="reveal-up inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-50 text-slate-500 text-[10px] font-bold tracking-[0.2em] uppercase mb-8 border border-slate-200 shadow-sm">
+            <span class="w-1.5 h-1.5 rounded-full bg-brand-blue animate-pulse"></span>
+            EduCore OS v2.0
         </div>
         
-        <!-- High-Impact Typography -->
-        <h1 class="text-5xl md:text-7xl lg:text-[5.5rem] font-extrabold text-slate-900 tracking-tighter mb-8 leading-[1.05] max-w-4xl">
-            Run your entire school <br class="hidden md:block">
-            <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-blue via-indigo-600 to-purple-600">from a single dashboard.</span>
+        <!-- Hero Headline -->
+        <h1 class="reveal-up delay-100 text-[4rem] md:text-[6.5rem] font-black text-slate-900 tracking-tighter mb-6 leading-[1] max-w-5xl">
+            Run your entire school. <br class="hidden md:block">
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-slate-400 to-slate-900">Beautifully.</span>
         </h1>
         
-        <p class="text-xl md:text-2xl text-slate-500 mb-12 max-w-2xl font-light leading-relaxed">
-            EduCore is the enterprise-grade operating system for modern African institutions. Automate finance, academics, and HR instantly.
+        <p class="reveal-up delay-200 text-xl md:text-2xl text-slate-500 mb-12 max-w-2xl font-light leading-relaxed tracking-tight">
+            The enterprise-grade operating system for modern African institutions. Finance, academics, and logistics, unified perfectly.
         </p>
         
-        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-20 w-full sm:w-auto">
-            <a href="../contact" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-900 text-white font-bold hover:bg-slate-800 transition-all shadow-xl hover:shadow-2xl hover:-translate-y-0.5">
+        <div class="reveal-up delay-300 flex flex-col sm:flex-row items-center justify-center gap-4 mb-20 w-full sm:w-auto">
+            <a href="../contact" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-900 text-white font-semibold tracking-tight hover:bg-slate-800 transition-all shadow-[0_10px_40px_rgba(0,0,0,0.2)] hover:shadow-[0_15px_50px_rgba(0,0,0,0.3)] hover:-translate-y-0.5">
                 Request a Live Demo
             </a>
-            <a href="#features" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-white text-slate-700 font-bold hover:bg-slate-50 transition-all border border-slate-200 shadow-sm hover:shadow-md">
-                Explore Modules
+            <a href="#ecosystem" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-white text-slate-700 font-semibold tracking-tight hover:bg-slate-50 transition-all border border-slate-200 shadow-sm hover:shadow-md">
+                Explore the Platform
             </a>
         </div>
 
-        <!-- Seamless Dashboard Image Mockup -->
-        <div class="relative w-full max-w-5xl mx-auto">
+        <!-- Bleeding Dashboard Mockup -->
+        <div class="relative w-full max-w-5xl mx-auto reveal-zoom delay-500">
             <!-- Glow behind image -->
-            <div class="absolute inset-0 bg-gradient-to-b from-brand-blue/20 to-transparent blur-3xl opacity-50 rounded-[3rem]"></div>
+            <div class="absolute inset-0 bg-brand-blue/20 blur-[80px] rounded-full scale-90 -z-10 transform translate-y-10"></div>
             
-            <div class="relative z-20">
-                <img src="<?php echo $assetBasePath; ?>/images/products/educore_dashboard.png" alt="EduCore Dashboard Mockup" class="w-full h-auto rounded-2xl shadow-2xl border border-slate-200/50">
+            <div class="relative z-20 overflow-hidden rounded-t-3xl border-t border-l border-r border-slate-200/80 shadow-[0_-20px_80px_-20px_rgba(0,0,0,0.15)] bg-white/50 backdrop-blur-3xl p-2 md:p-3 pb-0">
+                <img src="<?php echo $assetBasePath; ?>/images/products/educore_dashboard.png" alt="EduCore Dashboard" class="w-full h-auto rounded-t-[1rem] shadow-inner border border-slate-200">
+                <!-- Fade out bottom into the next section -->
+                <div class="absolute bottom-0 left-0 right-0 h-48 bg-gradient-to-t from-white via-white/80 to-transparent z-30"></div>
             </div>
-            
-            <!-- Fade out bottom of image into the next section -->
-            <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent z-30"></div>
         </div>
     </div>
 </section>
 
-<!-- SOCIAL PROOF LOGO STRIP -->
+<!-- ==============================================
+     2. IMMEDIATE SOCIAL PROOF
+     ============================================== -->
 <section class="py-12 bg-white relative z-40 border-b border-slate-100">
     <div class="max-w-7xl mx-auto px-4 text-center">
-        <p class="text-[0.65rem] font-bold text-slate-400 uppercase tracking-[0.2em] mb-8">Trusted by innovative schools across Africa</p>
-        <div class="flex flex-wrap justify-center items-center gap-10 md:gap-20 opacity-40 grayscale hover:grayscale-0 transition-all duration-700">
+        <p class="text-[9px] font-bold text-slate-400 uppercase tracking-[0.3em] mb-8">Trusted by Africa's most innovative institutions</p>
+        <div class="flex flex-wrap justify-center items-center gap-10 md:gap-20 opacity-40 grayscale transition-all duration-700">
             <div class="text-xl font-bold text-slate-800 tracking-tight">Crescent <span class="text-brand-blue">Academy</span></div>
             <div class="text-xl font-extrabold text-slate-800 tracking-tighter">OAK<span class="font-light">INTERNATIONAL</span></div>
             <div class="text-xl font-serif text-slate-800 italic">St. Peters College</div>
@@ -68,304 +134,435 @@ include('../header.php');
     </div>
 </section>
 
-<!-- REFINED BENTO BOX FEATURE GRID -->
-<section id="features" class="py-32 bg-slate-50/50">
+<!-- ==============================================
+     3. THE ECOSYSTEM (True Bento Grid) Moved UP!
+     ============================================== -->
+<section id="ecosystem" class="py-32 bg-[#FAFAFA] relative">
     <div class="max-w-7xl mx-auto px-4">
-        <div class="mb-20 text-center md:text-left flex flex-col md:flex-row md:items-end justify-between gap-8">
-            <div class="max-w-2xl">
-                <h2 class="text-xs font-bold text-brand-blue uppercase tracking-[0.15em] mb-4">Everything You Need</h2>
-                <h3 class="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tighter leading-tight">Stop juggling 5 different apps. Meet the unified OS.</h3>
-            </div>
+        <div class="text-center mb-20">
+            <div class="inline-block px-3 py-1 rounded-full bg-slate-200 text-slate-600 text-[10px] font-bold uppercase tracking-[0.2em] mb-6">The Platform</div>
+            <h2 class="text-4xl md:text-5xl font-black mb-6 tracking-tighter text-slate-900">11 Modules. 1 Subscription.</h2>
+            <p class="text-slate-500 text-xl max-w-2xl mx-auto leading-relaxed font-light tracking-tight">
+                Stop juggling 5 different subscriptions. EduCore is a true Enterprise Resource Planning (ERP) platform built to run every single aspect of your institution seamlessly.
+            </p>
         </div>
-
-        <!-- The Bento Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            
-            <!-- Bento Item 1: Large Finance -->
-            <div class="md:col-span-2 bg-white rounded-[2rem] p-10 border border-slate-200/60 shadow-sm hover:shadow-xl transition-all duration-500 relative overflow-hidden group">
-                <div class="absolute -top-32 -right-32 w-96 h-96 bg-green-50 rounded-full blur-3xl group-hover:bg-green-100/80 transition-colors duration-700"></div>
-                <div class="relative z-10 h-full flex flex-col">
-                    <div class="w-14 h-14 bg-green-50 border border-green-100 rounded-2xl flex items-center justify-center mb-8 text-green-600 shadow-sm">
-                        <i class="fas fa-file-invoice-dollar text-2xl"></i>
-                    </div>
-                    <h4 class="text-3xl font-bold text-slate-900 tracking-tight mb-4">Enterprise Bursary & Finance</h4>
-                    <p class="text-slate-500 text-base leading-relaxed mb-8 max-w-lg flex-grow">
-                        Eliminate manual ledgers. Generate invoices instantly, track fixed vs class-based fees, manage term budgets, and record payments with zero friction.
-                    </p>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-auto">
-                        <div class="flex items-center gap-3 bg-slate-50 px-4 py-3 rounded-xl border border-slate-100">
-                            <i class="fas fa-check-circle text-green-500"></i>
-                            <span class="text-sm font-semibold text-slate-700">Digital Receipts</span>
-                        </div>
-                        <div class="flex items-center gap-3 bg-slate-50 px-4 py-3 rounded-xl border border-slate-100">
-                            <i class="fas fa-check-circle text-green-500"></i>
-                            <span class="text-sm font-semibold text-slate-700">Expense Ledgers</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Bento Item 2: Small Attendance -->
-            <div class="bg-slate-900 rounded-[2rem] p-10 shadow-xl hover:shadow-2xl transition-all duration-500 relative overflow-hidden group">
-                <div class="absolute inset-0 bg-gradient-to-br from-slate-800 to-slate-950 opacity-50"></div>
-                <div class="absolute -top-32 -right-32 w-96 h-96 bg-brand-blue/20 rounded-full blur-3xl group-hover:bg-brand-blue/30 transition-colors duration-700"></div>
-                <div class="relative z-10 flex flex-col h-full">
-                    <div class="w-14 h-14 bg-white/10 border border-white/10 rounded-2xl flex items-center justify-center mb-8 text-white backdrop-blur-md">
-                        <i class="fas fa-clock text-2xl"></i>
-                    </div>
-                    <h4 class="text-2xl font-bold text-white tracking-tight mb-4">Smart Attendance</h4>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-8 flex-grow">
-                        Track exact check-in/out times with device location tracking and hardware integrations.
-                    </p>
-                    <div class="flex flex-col gap-3 mt-auto">
-                        <span class="inline-flex items-center text-xs font-bold text-blue-300 uppercase tracking-wider"><i class="fas fa-fingerprint mr-2 text-brand-blue"></i> RFID Ready</span>
-                        <span class="inline-flex items-center text-xs font-bold text-blue-300 uppercase tracking-wider"><i class="fas fa-map-marker-alt mr-2 text-brand-blue"></i> GPS Clock-ins</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Bento Item 3: Academics -->
-            <div class="bg-white rounded-[2rem] p-10 border border-slate-200/60 shadow-sm hover:shadow-xl transition-all duration-500 relative overflow-hidden group">
-                <div class="absolute -bottom-24 -right-24 w-64 h-64 bg-blue-50 rounded-full blur-3xl group-hover:bg-blue-100/80 transition-colors duration-700"></div>
-                <div class="relative z-10 flex flex-col h-full">
-                    <div class="w-14 h-14 bg-blue-50 border border-blue-100 rounded-2xl flex items-center justify-center mb-8 text-brand-blue shadow-sm">
-                        <i class="fas fa-book-open text-2xl"></i>
-                    </div>
-                    <h4 class="text-2xl font-bold text-slate-900 tracking-tight mb-4">Digital Academics</h4>
-                    <p class="text-slate-500 text-sm leading-relaxed mb-4">
-                        Empower teachers with digital grading, lesson plans, and automated terminal report generation.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Bento Item 4: HR & Payroll -->
-            <div class="bg-white rounded-[2rem] p-10 border border-slate-200/60 shadow-sm hover:shadow-xl transition-all duration-500 relative overflow-hidden group">
-                <div class="absolute -bottom-24 -left-24 w-64 h-64 bg-purple-50 rounded-full blur-3xl group-hover:bg-purple-100/80 transition-colors duration-700"></div>
-                <div class="relative z-10 flex flex-col h-full">
-                    <div class="w-14 h-14 bg-purple-50 border border-purple-100 rounded-2xl flex items-center justify-center mb-8 text-purple-600 shadow-sm">
-                        <i class="fas fa-users-cog text-2xl"></i>
-                    </div>
-                    <h4 class="text-2xl font-bold text-slate-900 tracking-tight mb-4">HR & Payroll</h4>
-                    <p class="text-slate-500 text-sm leading-relaxed mb-4">
-                        Run monthly payroll, track allowances, and conduct structured performance appraisals.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Bento Item 5: Cashless Campus -->
-            <div class="bg-gradient-to-br from-brand-blue to-indigo-600 rounded-[2rem] p-10 shadow-xl hover:shadow-2xl transition-all duration-500 relative overflow-hidden group text-white">
-                <div class="absolute -top-24 -right-24 w-64 h-64 bg-white/10 rounded-full blur-3xl group-hover:bg-white/20 transition-colors duration-700"></div>
-                <div class="relative z-10 flex flex-col h-full">
-                    <div class="w-14 h-14 bg-white/10 border border-white/20 backdrop-blur-md rounded-2xl flex items-center justify-center mb-8 shadow-sm">
-                        <i class="fas fa-wallet text-2xl"></i>
-                    </div>
-                    <h4 class="text-2xl font-bold tracking-tight mb-4">The Cashless Campus</h4>
-                    <p class="text-blue-100 text-sm leading-relaxed mb-4">
-                        Parents top up a digital wallet. Students buy food with NFC wristbands. Zero cash theft.
-                    </p>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<!-- RICH MICRO-UI DEEP DIVE SECTION -->
-<section class="py-32 bg-white overflow-hidden">
-    <div class="max-w-7xl mx-auto px-4">
         
-        <!-- Feature 1 -->
-        <div class="flex flex-col lg:flex-row items-center gap-16 lg:gap-24 mb-40">
-            <!-- Left: Micro-UI Graphic -->
-            <div class="w-full lg:w-1/2 relative">
-                <div class="absolute inset-0 bg-gradient-to-tr from-green-100 to-emerald-50 rounded-[3rem] transform -rotate-3 scale-105 opacity-50 blur-xl"></div>
-                <div class="bg-gradient-to-br from-slate-50 to-slate-100 rounded-[2rem] border border-slate-200 p-8 md:p-12 relative shadow-2xl overflow-hidden group">
-                    <!-- Decorative Background elements -->
-                    <div class="absolute -right-10 -top-10 text-green-500/10 text-[10rem] transform rotate-12 transition-transform duration-700 group-hover:rotate-45"><i class="fas fa-file-invoice"></i></div>
-                    
-                    <!-- CSS Mini Invoice UI -->
-                    <div class="bg-white rounded-xl shadow-xl border border-slate-100 p-6 relative z-10 transform transition-transform duration-500 group-hover:-translate-y-2">
-                        <div class="flex justify-between items-center mb-6 border-b border-slate-50 pb-4">
-                            <div class="flex items-center gap-3">
-                                <div class="w-8 h-8 rounded-full bg-green-100 flex items-center justify-center text-green-600 text-xs"><i class="fas fa-check"></i></div>
-                                <div>
-                                    <div class="text-sm font-bold text-slate-800">Invoice #INV-2024-001</div>
-                                    <div class="text-[10px] text-slate-400">Paid on May 12, 2024</div>
-                                </div>
-                            </div>
-                            <span class="px-2 py-1 bg-green-50 text-green-600 rounded text-[10px] font-bold uppercase tracking-wider">Paid</span>
-                        </div>
-                        <div class="space-y-3 mb-6">
-                            <div class="flex justify-between items-center text-xs">
-                                <span class="text-slate-500">First Term Tuition Fee</span>
-                                <span class="font-bold text-slate-800">GHS 1,200.00</span>
-                            </div>
-                            <div class="flex justify-between items-center text-xs">
-                                <span class="text-slate-500">PTA Dues</span>
-                                <span class="font-bold text-slate-800">GHS 50.00</span>
-                            </div>
-                            <div class="flex justify-between items-center text-xs">
-                                <span class="text-slate-500">Bus Fee</span>
-                                <span class="font-bold text-slate-800">GHS 300.00</span>
-                            </div>
-                        </div>
-                        <div class="pt-4 border-t border-slate-100 flex justify-between items-center">
-                            <span class="text-sm font-bold text-slate-400">Total Amount</span>
-                            <span class="text-lg font-extrabold text-green-600">GHS 1,550.00</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Right: Text Content -->
-            <div class="w-full lg:w-1/2">
-                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-green-50 text-green-600 text-xs font-bold uppercase tracking-widest mb-6 border border-green-100">
-                    <i class="fas fa-chart-pie"></i> Stop Revenue Leakage
-                </div>
-                <h3 class="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tighter mb-6 leading-tight">Absolute control over every penny.</h3>
-                <p class="text-lg text-slate-500 mb-8 leading-relaxed font-light">
-                    Say goodbye to messy Excel sheets. EduCore tracks fixed fees, class-based fees, and special categorizations automatically. Instantly see which students owe money, and generate digital receipts that are securely logged in our immutable audit trail.
-                </p>
-                <a href="../contact" class="inline-flex items-center font-bold text-green-600 hover:text-green-700 transition-colors group">
-                    Learn about our billing engine 
-                    <i class="fas fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform"></i>
-                </a>
-            </div>
-        </div>
+        <!-- The Asymmetrical Bento Grid — Fixed Layout -->
+        <style>
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: auto;
+            gap: 1rem;
+        }
+        @media (max-width: 1023px) { .bento-grid { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 767px)  { .bento-grid { grid-template-columns: 1fr; } }
 
-        <!-- Feature 2 -->
-        <div class="flex flex-col lg:flex-row-reverse items-center gap-16 lg:gap-24">
-            <!-- Right: Micro-UI Graphic -->
-            <div class="w-full lg:w-1/2 relative">
-                <div class="absolute inset-0 bg-gradient-to-tl from-purple-100 to-indigo-50 rounded-[3rem] transform rotate-3 scale-105 opacity-50 blur-xl"></div>
-                <div class="bg-gradient-to-bl from-slate-50 to-slate-100 rounded-[2rem] border border-slate-200 p-8 md:p-12 relative shadow-2xl overflow-hidden group">
-                    <!-- Decorative Background elements -->
-                    <div class="absolute -left-10 -bottom-10 text-purple-500/10 text-[10rem] transform -rotate-12 transition-transform duration-700 group-hover:-rotate-45"><i class="fas fa-graduation-cap"></i></div>
-                    
-                    <!-- CSS Mini Report Card UI -->
-                    <div class="bg-white rounded-xl shadow-xl border border-slate-100 p-6 relative z-10 transform transition-transform duration-500 group-hover:-translate-y-2">
-                        <div class="flex items-center gap-4 mb-6 border-b border-slate-50 pb-4">
-                            <div class="w-12 h-12 rounded-full bg-slate-100 flex items-center justify-center text-slate-400 text-lg"><i class="fas fa-user"></i></div>
-                            <div>
-                                <div class="text-base font-bold text-slate-800">David Mensah</div>
-                                <div class="text-xs text-slate-400">Class: Basic 6 • Term 3</div>
-                            </div>
-                            <div class="ml-auto text-right">
-                                <div class="text-2xl font-black text-purple-600">A</div>
-                                <div class="text-[10px] text-slate-400 font-bold uppercase tracking-wider">Overall</div>
-                            </div>
-                        </div>
-                        
-                        <!-- Grading Grid -->
-                        <div class="space-y-2">
-                            <div class="flex items-center justify-between p-2 rounded-lg bg-slate-50 text-xs">
-                                <span class="font-bold text-slate-700 w-24">Mathematics</span>
-                                <div class="flex-grow mx-4 h-1.5 bg-slate-200 rounded-full overflow-hidden"><div class="h-full bg-purple-500 w-[95%] rounded-full"></div></div>
-                                <span class="font-bold text-slate-900 w-8 text-right">95%</span>
-                            </div>
-                            <div class="flex items-center justify-between p-2 rounded-lg bg-slate-50 text-xs">
-                                <span class="font-bold text-slate-700 w-24">Science</span>
-                                <div class="flex-grow mx-4 h-1.5 bg-slate-200 rounded-full overflow-hidden"><div class="h-full bg-brand-blue w-[88%] rounded-full"></div></div>
-                                <span class="font-bold text-slate-900 w-8 text-right">88%</span>
-                            </div>
-                            <div class="flex items-center justify-between p-2 rounded-lg bg-slate-50 text-xs">
-                                <span class="font-bold text-slate-700 w-24">English</span>
-                                <div class="flex-grow mx-4 h-1.5 bg-slate-200 rounded-full overflow-hidden"><div class="h-full bg-teal-500 w-[92%] rounded-full"></div></div>
-                                <span class="font-bold text-slate-900 w-8 text-right">92%</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Left: Text Content -->
-            <div class="w-full lg:w-1/2">
-                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-50 text-purple-600 text-xs font-bold uppercase tracking-widest mb-6 border border-purple-100">
-                    <i class="fas fa-magic"></i> The Teacher's Best Friend
-                </div>
-                <h3 class="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tighter mb-6 leading-tight">Generate 500 report cards in 1 second.</h3>
-                <p class="text-lg text-slate-500 mb-8 leading-relaxed font-light">
-                    Teachers input their continuous assessment scores and exam results. EduCore does the rest. It calculates positions, generates remarks, and prints perfectly formatted terminal report cards for the entire school with a single click.
-                </p>
-                <a href="../contact" class="inline-flex items-center font-bold text-purple-600 hover:text-purple-700 transition-colors group">
-                    See how much time you save
-                    <i class="fas fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform"></i>
-                </a>
-            </div>
-        </div>
+        .bento-card {
+            background: white;
+            border-radius: 1.5rem;
+            padding: 1.75rem;
+            border: 1px solid #e2e8f0;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            transition: box-shadow 0.3s, transform 0.3s;
+            min-height: 180px;
+        }
+        .bento-card:hover { box-shadow: 0 10px 40px -10px rgba(0,0,0,0.12); transform: translateY(-2px); }
+        .bento-icon {
+            width: 3rem; height: 3rem;
+            border-radius: 0.875rem;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1.2rem;
+            border: 1px solid rgba(0,0,0,0.06);
+            flex-shrink: 0;
+        }
+        .bento-label { font-weight: 700; font-size: 1rem; tracking: -0.025em; color: #0f172a; }
+        .bento-desc  { font-size: 0.8rem; color: #64748b; line-height: 1.5; font-weight: 500; }
 
+        /* === FEATURE CARDS (col-span-2) === */
+        .bento-finance  { grid-column: span 2; background: linear-gradient(135deg, #ecfdf5, #d1fae5); border-color: #a7f3d0; }
+        .bento-comms    { grid-column: span 2; background: #0f172a; border-color: #1e293b; }
+        .bento-library  { grid-column: span 2; background: linear-gradient(135deg, #f1f5f9, #e2e8f0); border-color: #cbd5e1; }
+        .bento-academics { grid-row: span 2; }
+
+        @media (max-width: 1023px) {
+            .bento-finance, .bento-comms, .bento-library { grid-column: span 2; }
+            .bento-academics { grid-row: span 1; }
+        }
+        @media (max-width: 767px) {
+            .bento-finance, .bento-comms, .bento-library, .bento-academics { grid-column: span 1; grid-row: span 1; }
+        }
+        </style>
+
+        <div class="bento-grid">
+
+            <!-- 1: Admissions -->
+            <div class="bento-card">
+                <div class="bento-icon bg-slate-100 text-slate-600"><i class="fas fa-user-plus"></i></div>
+                <div>
+                    <div class="bento-label">Admissions</div>
+                    <div class="bento-desc">Digital enrollment funnels, document uploads & student profiling.</div>
+                </div>
+            </div>
+
+            <!-- 2: Finance (spans 2 cols) -->
+            <div class="bento-card bento-finance relative overflow-hidden">
+                <div class="absolute right-[-10%] bottom-[-20%] text-emerald-200 text-[130px] opacity-25 -rotate-12 pointer-events-none"><i class="fas fa-wallet"></i></div>
+                <div class="bento-icon bg-white text-emerald-600 shadow-sm relative z-10"><i class="fas fa-file-invoice-dollar"></i></div>
+                <div class="relative z-10">
+                    <div class="bento-label text-emerald-900">Finance & Bursary</div>
+                    <div class="bento-desc text-emerald-700">Automated invoicing, fee structures, receipts, and expense ledgers. Absolute control over every penny of revenue.</div>
+                </div>
+            </div>
+
+            <!-- 3: AI Timetable -->
+            <div class="bento-card">
+                <div class="bento-icon bg-slate-100 text-slate-600"><i class="fas fa-calendar-alt"></i></div>
+                <div>
+                    <div class="bento-label">AI Timetable</div>
+                    <div class="bento-desc">Automated, clash-free scheduling algorithms for all classes and teachers.</div>
+                </div>
+            </div>
+
+            <!-- 4: Academics (spans 2 rows) -->
+            <div class="bento-card bento-academics">
+                <div class="bento-icon bg-indigo-50 text-indigo-600"><i class="fas fa-graduation-cap"></i></div>
+                <!-- Abstract score bar UI -->
+                <div class="flex-grow bg-slate-50 rounded-xl border border-slate-100 flex flex-col justify-center px-4 gap-3 py-4">
+                    <div class="w-full h-2 bg-slate-200 rounded-full overflow-hidden"><div class="w-[92%] h-full bg-indigo-500 rounded-full"></div></div>
+                    <div class="w-full h-2 bg-slate-200 rounded-full overflow-hidden"><div class="w-[74%] h-full bg-indigo-400 rounded-full"></div></div>
+                    <div class="w-full h-2 bg-slate-200 rounded-full overflow-hidden"><div class="w-[88%] h-full bg-indigo-300 rounded-full"></div></div>
+                    <div class="w-full h-2 bg-slate-200 rounded-full overflow-hidden"><div class="w-[60%] h-full bg-indigo-200 rounded-full"></div></div>
+                </div>
+                <div>
+                    <div class="bento-label">Digital Academics</div>
+                    <div class="bento-desc">Continuous assessments, grading scales, and PDF report cards generated in one click.</div>
+                </div>
+            </div>
+
+            <!-- 5: WhatsApp Comms (spans 2 cols, dark) -->
+            <div class="bento-card bento-comms relative overflow-hidden group">
+                <div class="absolute inset-0 bg-gradient-to-br from-blue-600/15 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl"></div>
+                <div class="bento-icon bg-white/10 border border-white/20 text-white relative z-10"><i class="fab fa-whatsapp"></i></div>
+                <div class="relative z-10">
+                    <div class="bento-label text-white">Unified Communications</div>
+                    <div class="bento-desc text-slate-400">Deep WhatsApp Business API integration. Instantly send PDF report cards and bus alerts. Goodbye expensive SMS.</div>
+                </div>
+            </div>
+
+            <!-- 6: HR & Payroll -->
+            <div class="bento-card">
+                <div class="bento-icon bg-cyan-50 text-cyan-600"><i class="fas fa-users-cog"></i></div>
+                <div>
+                    <div class="bento-label">HR & Payroll</div>
+                    <div class="bento-desc">Staff records, GPS clock-ins, and automated PAYE/SSNIT deductions.</div>
+                </div>
+            </div>
+
+            <!-- 7: Fleet Tracking -->
+            <div class="bento-card">
+                <div class="bento-icon bg-yellow-50 text-yellow-600"><i class="fas fa-bus"></i></div>
+                <div>
+                    <div class="bento-label">Fleet Tracking</div>
+                    <div class="bento-desc">Live GPS bus routes, zones, and vehicle maintenance logs.</div>
+                </div>
+            </div>
+
+            <!-- 8: Inventory POS -->
+            <div class="bento-card">
+                <div class="bento-icon bg-orange-50 text-orange-600"><i class="fas fa-store"></i></div>
+                <div>
+                    <div class="bento-label">Inventory (POS)</div>
+                    <div class="bento-desc">Stationery store & uniform sales with cashless NFC wristbands.</div>
+                </div>
+            </div>
+
+            <!-- 9: Smart Attendance -->
+            <div class="bento-card">
+                <div class="bento-icon bg-blue-50 text-brand-blue"><i class="fas fa-fingerprint"></i></div>
+                <div>
+                    <div class="bento-label">Smart Attendance</div>
+                    <div class="bento-desc">Biometric RFID integrations with automated absentee parent alerts.</div>
+                </div>
+            </div>
+
+            <!-- 10: Hostel Management -->
+            <div class="bento-card">
+                <div class="bento-icon bg-purple-50 text-purple-600"><i class="fas fa-bed"></i></div>
+                <div>
+                    <div class="bento-label">Hostel Mgt</div>
+                    <div class="bento-desc">Boarding room allocation, fees, and digital exeat passes.</div>
+                </div>
+            </div>
+
+            <!-- 11: Library (spans 2 cols) -->
+            <div class="bento-card bento-library relative overflow-hidden">
+                <div class="absolute right-[-5%] bottom-[-10%] text-slate-300 text-[110px] opacity-30 -rotate-12 pointer-events-none"><i class="fas fa-book-open"></i></div>
+                <div class="bento-icon bg-white text-teal-600 shadow-sm relative z-10"><i class="fas fa-book"></i></div>
+                <div class="relative z-10">
+                    <div class="bento-label text-slate-800">Library Management</div>
+                    <div class="bento-desc">Barcode book cataloging, checkout tracking, late return reminders, and automated fine collection.</div>
+                </div>
+            </div>
+
+        </div>
     </div>
 </section>
 
-<!-- THE COMPLETE ECOSYSTEM MARKETING CALLOUT -->
-<section class="py-32 bg-slate-900 text-white relative overflow-hidden">
-    <!-- Abstract Tech Background -->
-    <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(circle at 2px 2px, rgba(255,255,255,0.15) 1px, transparent 0); background-size: 32px 32px;"></div>
+<!-- ==============================================
+     4. DEEP DIVE: REVENUE (Cinematic Dark Theme)
+     ============================================== -->
+<section class="py-32 bg-slate-950 text-white relative overflow-hidden">
+    <!-- Glowing background elements -->
+    <div class="absolute top-0 right-0 w-[800px] h-[800px] bg-emerald-500/10 blur-[120px] rounded-full pointer-events-none transform translate-x-1/3 -translate-y-1/3"></div>
+
+    <div class="max-w-7xl mx-auto px-4 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+            
+            <!-- Left: High Impact Typography -->
+            <div>
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-900/50 text-emerald-400 text-[10px] font-bold uppercase tracking-[0.2em] mb-8 border border-emerald-500/30">
+                    The Revenue Engine
+                </div>
+                <h3 class="text-5xl md:text-6xl font-black tracking-tighter mb-8 leading-[1.1]">Absolute control <br>over every penny.</h3>
+                <p class="text-xl text-slate-400 mb-10 leading-relaxed font-light tracking-tight">
+                    Say goodbye to messy Excel ledgers. EduCore tracks fixed fees, class-based fees, and special categorizations automatically. Generate 1,000+ invoices in a single click, and allow students to make cashless purchases.
+                </p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div class="bg-slate-900/50 p-6 rounded-2xl border border-slate-800">
+                        <i class="fas fa-file-invoice-dollar text-emerald-500 text-2xl mb-4"></i>
+                        <h4 class="font-bold text-lg mb-2">Automated Billing</h4>
+                        <p class="text-slate-500 text-sm">Instant digital receipts and bulk invoicing.</p>
+                    </div>
+                    <div class="bg-slate-900/50 p-6 rounded-2xl border border-slate-800">
+                        <i class="fas fa-wifi text-emerald-500 text-2xl mb-4"></i>
+                        <h4 class="font-bold text-lg mb-2">Cashless Campus</h4>
+                        <p class="text-slate-500 text-sm">NFC wristbands tied to parent digital wallets.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: Abstract / Clean UI representation -->
+            <div class="relative w-full h-[500px] bg-slate-900 rounded-[2rem] border border-slate-800 shadow-2xl flex items-center justify-center overflow-hidden">
+                <!-- Data Visualization Concept -->
+                <div class="absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-t from-emerald-900/40 to-transparent"></div>
+                <div class="w-64 bg-slate-950/80 backdrop-blur border border-slate-800 p-6 rounded-2xl shadow-2xl relative z-10 transform -rotate-6 transition-transform hover:rotate-0 duration-500">
+                    <div class="text-[10px] text-slate-500 font-bold uppercase tracking-widest mb-1">Total Revenue Collected</div>
+                    <div class="text-3xl font-black text-white tracking-tighter mb-4">GHS 485,200</div>
+                    <div class="h-2 w-full bg-slate-800 rounded-full overflow-hidden mb-2">
+                        <div class="h-full bg-emerald-500 w-[75%] rounded-full"></div>
+                    </div>
+                    <div class="flex justify-between text-[9px] text-slate-500 font-bold uppercase">
+                        <span>75% Collected</span>
+                        <span>Term 3</span>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<!-- ==============================================
+     5. DEEP DIVE: ACADEMICS (Pristine White)
+     ============================================== -->
+<section class="py-32 bg-white relative overflow-hidden border-b border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+            
+            <!-- Left: Abstract UI -->
+            <div class="order-2 lg:order-1 relative w-full h-[500px] bg-slate-50 rounded-[2rem] border border-slate-200 shadow-sm flex items-center justify-center p-8">
+                <!-- Report Card Concept Stack -->
+                <div class="w-full max-w-sm relative">
+                    <div class="absolute inset-0 bg-indigo-200 rounded-2xl transform rotate-6 scale-95 opacity-50 blur-sm"></div>
+                    <div class="absolute inset-0 bg-indigo-100 rounded-2xl transform rotate-3 scale-100 shadow-sm"></div>
+                    <div class="bg-white border border-slate-200 p-8 rounded-2xl shadow-xl relative z-10">
+                        <div class="w-12 h-12 bg-indigo-50 text-indigo-600 rounded-full flex items-center justify-center text-xl mb-6"><i class="fas fa-file-pdf"></i></div>
+                        <h4 class="font-black text-2xl text-slate-900 tracking-tighter mb-2">Terminal Report</h4>
+                        <p class="text-slate-500 text-sm mb-6">Generated instantly for 500+ students. 100% accurate.</p>
+                        <div class="space-y-3">
+                            <div class="h-3 w-full bg-slate-100 rounded-full"></div>
+                            <div class="h-3 w-5/6 bg-slate-100 rounded-full"></div>
+                            <div class="h-3 w-4/6 bg-slate-100 rounded-full"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: Typography -->
+            <div class="order-1 lg:order-2">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-50 text-indigo-600 text-[10px] font-bold uppercase tracking-[0.2em] mb-8 border border-indigo-100">
+                    The Academic Engine
+                </div>
+                <h3 class="text-5xl md:text-6xl font-black tracking-tighter text-slate-900 mb-8 leading-[1.1]">Generate 500 reports <br>in 1 second.</h3>
+                <p class="text-xl text-slate-500 mb-10 leading-relaxed font-light tracking-tight">
+                    Transform the classroom. Teachers submit digital lesson plans for Headmaster approval. When the term ends, they simply input continuous assessment scores; EduCore calculates positions, assigns remarks, and prints perfectly formatted PDF report cards.
+                </p>
+                <ul class="space-y-4">
+                    <li class="flex items-center gap-4 text-slate-700 font-medium text-lg"><i class="fas fa-check text-indigo-500"></i> Digital Lesson Plans & Approvals</li>
+                    <li class="flex items-center gap-4 text-slate-700 font-medium text-lg"><i class="fas fa-check text-indigo-500"></i> Automated Grading & Positioning</li>
+                    <li class="flex items-center gap-4 text-slate-700 font-medium text-lg"><i class="fas fa-check text-indigo-500"></i> Immutable Grade Security (Anti-Bribery)</li>
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<!-- ==============================================
+     5b. DEEP DIVE: LOGISTICS & COMMUNICATION (Brand Blue)
+     ============================================== -->
+<section class="py-32 bg-white relative overflow-hidden border-t border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+
+            <!-- Left: Typography -->
+            <div class="scroll-reveal-left">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-brand-blue text-[10px] font-bold uppercase tracking-[0.2em] mb-8 border border-blue-100">
+                    The Logistics Engine
+                </div>
+                <h3 class="text-5xl md:text-6xl font-black tracking-tighter text-slate-900 mb-8 leading-[1.1]">Total visibility. <br>Happy parents.</h3>
+                <p class="text-xl text-slate-500 mb-10 leading-relaxed font-light tracking-tight">
+                    Stop the endless phone calls to the receptionist. EduCore integrates directly with the WhatsApp Business API to send automated alerts — from live bus locations to instant PDF report card delivery.
+                </p>
+                <ul class="space-y-4">
+                    <li class="flex items-center gap-4 text-slate-700 font-medium text-lg"><i class="fas fa-check-circle text-brand-blue text-xl"></i> Live GPS School Bus Tracking</li>
+                    <li class="flex items-center gap-4 text-slate-700 font-medium text-lg"><i class="fas fa-check-circle text-brand-blue text-xl"></i> Automated WhatsApp Alerts & Notifications</li>
+                    <li class="flex items-center gap-4 text-slate-700 font-medium text-lg"><i class="fas fa-check-circle text-brand-blue text-xl"></i> PDF Report Cards delivered to WhatsApp</li>
+                    <li class="flex items-center gap-4 text-slate-700 font-medium text-lg"><i class="fas fa-check-circle text-brand-blue text-xl"></i> Canteen Cashless Ordering via Wristband</li>
+                </ul>
+            </div>
+
+            <!-- Right: Feature Cards -->  
+            <div class="scroll-reveal-right grid grid-cols-2 gap-4">
+                <div class="bg-brand-blue/5 border border-brand-blue/15 rounded-3xl p-6 hover:shadow-lg hover:bg-brand-blue/10 transition-all">
+                    <i class="fab fa-whatsapp text-green-500 text-3xl mb-4"></i>
+                    <h4 class="font-bold text-slate-900 text-base mb-2 tracking-tight">WhatsApp API</h4>
+                    <p class="text-slate-500 text-xs leading-relaxed">Zero-cost messaging directly to parents. No extra SMS bundle.</p>
+                </div>
+                <div class="bg-slate-50 border border-slate-200 rounded-3xl p-6 hover:shadow-lg transition-all">
+                    <i class="fas fa-bus text-yellow-500 text-3xl mb-4"></i>
+                    <h4 class="font-bold text-slate-900 text-base mb-2 tracking-tight">Live Bus GPS</h4>
+                    <p class="text-slate-500 text-xs leading-relaxed">Parents track the school bus in real-time on their phones.</p>
+                </div>
+                <div class="bg-slate-50 border border-slate-200 rounded-3xl p-6 hover:shadow-lg transition-all">
+                    <i class="fas fa-brain text-purple-500 text-3xl mb-4"></i>
+                    <h4 class="font-bold text-slate-900 text-base mb-2 tracking-tight">AI Predictions</h4>
+                    <p class="text-slate-500 text-xs leading-relaxed">Flags at-risk students weeks before exams using performance trends.</p>
+                </div>
+                <div class="bg-brand-blue/5 border border-brand-blue/15 rounded-3xl p-6 hover:shadow-lg hover:bg-brand-blue/10 transition-all">
+                    <i class="fas fa-bell text-brand-blue text-3xl mb-4"></i>
+                    <h4 class="font-bold text-slate-900 text-base mb-2 tracking-tight">Smart Alerts</h4>
+                    <p class="text-slate-500 text-xs leading-relaxed">Automate absence reports, fee reminders, and emergency broadcasts.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ==============================================
+     6. TRANSITION WITH CONFIDENCE (Objection Handling)
+     ============================================== -->
+<section class="py-32 bg-[#FAFAFA] border-b border-slate-200/60">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center mb-20 scroll-reveal">
+            <h2 class="text-4xl md:text-5xl font-black text-slate-900 tracking-tighter mb-6">Transition with Confidence.</h2>
+            <p class="text-slate-500 text-xl max-w-2xl mx-auto font-light tracking-tight">We understand that changing software is scary. That's why we engineered our onboarding process to eliminate all risk.</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="scroll-reveal bg-white p-8 rounded-3xl border border-slate-200 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all" data-delay="0">
+                <div class="w-12 h-12 rounded-2xl bg-blue-50 text-brand-blue flex items-center justify-center text-xl mb-6"><i class="fas fa-database"></i></div>
+                <h3 class="font-bold text-slate-900 text-xl mb-3 tracking-tight">White-Glove Migration</h3>
+                <p class="text-slate-500 text-sm leading-relaxed">Our team handles the entire migration from your old Excel sheets. You go live in 7 days with zero data lost.</p>
+            </div>
+            <div class="scroll-reveal bg-white p-8 rounded-3xl border border-slate-200 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all" data-delay="100">
+                <div class="w-12 h-12 rounded-2xl bg-blue-50 text-brand-blue flex items-center justify-center text-xl mb-6"><i class="fas fa-lock"></i></div>
+                <h3 class="font-bold text-slate-900 text-xl mb-3 tracking-tight">Your Data. Only Yours.</h3>
+                <p class="text-slate-500 text-sm leading-relaxed">Your school's data lives in its own private, isolated database — never shared or mixed with any other institution. Ever.</p>
+            </div>
+            <div class="scroll-reveal bg-white p-8 rounded-3xl border border-slate-200 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all" data-delay="200">
+                <div class="w-12 h-12 rounded-2xl bg-blue-50 text-brand-blue flex items-center justify-center text-xl mb-6"><i class="fas fa-chalkboard-teacher"></i></div>
+                <h3 class="font-bold text-slate-900 text-xl mb-3 tracking-tight">Guaranteed Adoption</h3>
+                <p class="text-slate-500 text-sm leading-relaxed">As easy to use as WhatsApp. We provide comprehensive on-site training for all teachers and staff on day one.</p>
+            </div>
+            <div class="scroll-reveal bg-white p-8 rounded-3xl border border-slate-200 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all" data-delay="300">
+                <div class="w-12 h-12 rounded-2xl bg-blue-50 text-brand-blue flex items-center justify-center text-xl mb-6"><i class="fas fa-cloud"></i></div>
+                <h3 class="font-bold text-slate-900 text-xl mb-3 tracking-tight">99.9% Uptime</h3>
+                <p class="text-slate-500 text-sm leading-relaxed">Hosted on world-class, globally redundant cloud infrastructure. Your school stays operational 24/7. Zero crashes.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==============================================
+     7. TESTIMONIAL
+     ============================================== -->
+<section class="py-24 bg-white">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+        <!-- Star Rating -->
+        <div class="flex items-center justify-center gap-1 mb-6">
+            <i class="fas fa-star text-yellow-400 text-xl"></i>
+            <i class="fas fa-star text-yellow-400 text-xl"></i>
+            <i class="fas fa-star text-yellow-400 text-xl"></i>
+            <i class="fas fa-star text-yellow-400 text-xl"></i>
+            <i class="fas fa-star text-yellow-400 text-xl"></i>
+        </div>
+        <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tighter mb-10 leading-tight">
+            "EduCore completely transformed our operations. We eliminated cash theft at the canteen, and our parents are thrilled that they can track the school bus live on their phones."
+        </h2>
+        <div class="flex items-center justify-center gap-4">
+            <div class="w-12 h-12 bg-slate-200 rounded-full overflow-hidden shadow-sm">
+                <img src="<?php echo $assetBasePath; ?>/images/testimonials/dr_osei.png" alt="Dr. Emmanuel Osei" class="w-full h-full object-cover">
+            </div>
+            <div class="text-left">
+                <div class="font-bold text-slate-900 text-sm uppercase tracking-wider">Dr. Emmanuel Osei</div>
+                <div class="text-xs text-slate-500">Proprietor, Oak International Academy</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ==============================================
+     8. FINAL CTA (Cinematic Dark)
+     ============================================== -->
+<section class="py-32 bg-slate-950 text-white text-center relative overflow-hidden">
+    <!-- Ambient glow -->
+    <div class="absolute bottom-[-200px] left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-brand-blue/30 rounded-[100%] blur-[100px] pointer-events-none"></div>
     
-    <div class="max-w-7xl mx-auto px-4 relative z-10 text-center">
-        <h2 class="text-4xl md:text-5xl font-extrabold mb-6 tracking-tighter">The Complete Ecosystem</h2>
-        <p class="text-slate-400 text-xl mb-16 max-w-3xl mx-auto leading-relaxed">
-            EduCore is not just a school management system. It is a true Enterprise Resource Planning (ERP) platform featuring 11 massive modules built to run every aspect of your institution.
-        </p>
-        
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-left">
-            <div class="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-sm hover:bg-brand-blue/20 hover:border-brand-blue/50 transition-all cursor-default">
-                <h4 class="font-bold text-base mb-1">1. Admissions</h4>
-                <p class="text-slate-400 text-xs">Digital enrollment & tracking.</p>
-            </div>
-            <div class="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-sm hover:bg-brand-blue/20 hover:border-brand-blue/50 transition-all cursor-default">
-                <h4 class="font-bold text-base mb-1">2. Finance & Bursary</h4>
-                <p class="text-slate-400 text-xs">Invoicing, receipts & ledgers.</p>
-            </div>
-            <div class="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-sm hover:bg-brand-blue/20 hover:border-brand-blue/50 transition-all cursor-default">
-                <h4 class="font-bold text-base mb-1">3. Digital Academics</h4>
-                <p class="text-slate-400 text-xs">C.A., grading & report cards.</p>
-            </div>
-            <div class="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-sm hover:bg-brand-blue/20 hover:border-brand-blue/50 transition-all cursor-default">
-                <h4 class="font-bold text-base mb-1">4. Smart Attendance</h4>
-                <p class="text-slate-400 text-xs">Biometrics & absentee SMS.</p>
-            </div>
-            <div class="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-sm hover:bg-brand-blue/20 hover:border-brand-blue/50 transition-all cursor-default">
-                <h4 class="font-bold text-base mb-1">5. Fleet Management</h4>
-                <p class="text-slate-400 text-xs">Live bus tracking & routes.</p>
-            </div>
-            <div class="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-sm hover:bg-brand-blue/20 hover:border-brand-blue/50 transition-all cursor-default">
-                <h4 class="font-bold text-base mb-1">6. Inventory (POS)</h4>
-                <p class="text-slate-400 text-xs">Stationery & uniform sales.</p>
-            </div>
-            <div class="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-sm hover:bg-brand-blue/20 hover:border-brand-blue/50 transition-all cursor-default">
-                <h4 class="font-bold text-base mb-1">7. Hostel Management</h4>
-                <p class="text-slate-400 text-xs">Room allocation & exeats.</p>
-            </div>
-            <div class="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-sm hover:bg-brand-blue/20 hover:border-brand-blue/50 transition-all cursor-default">
-                <h4 class="font-bold text-base mb-1">8. Library Center</h4>
-                <p class="text-slate-400 text-xs">Book cataloging & fines.</p>
-            </div>
-            <div class="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-sm hover:bg-brand-blue/20 hover:border-brand-blue/50 transition-all cursor-default">
-                <h4 class="font-bold text-base mb-1">9. AI Timetable</h4>
-                <p class="text-slate-400 text-xs">Automated clash-free scheduling.</p>
-            </div>
-            <div class="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-sm hover:bg-brand-blue/20 hover:border-brand-blue/50 transition-all cursor-default">
-                <h4 class="font-bold text-base mb-1">10. HR & Payroll</h4>
-                <p class="text-slate-400 text-xs">Staff records & PAYE taxes.</p>
-            </div>
-            <div class="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-sm hover:bg-brand-blue/20 hover:border-brand-blue/50 transition-all cursor-default col-span-2 md:col-span-2">
-                <h4 class="font-bold text-base mb-1">11. Unified Communications (WhatsApp API)</h4>
-                <p class="text-slate-400 text-xs">Instantly send PDF reports directly to parents via WhatsApp.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- CTA -->
-<section class="py-32 bg-brand-blue text-white text-center relative overflow-hidden">
-    <div class="absolute inset-0 opacity-10 bg-[url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23ffffff\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')]"></div>
     <div class="max-w-4xl mx-auto px-4 relative z-10 flex flex-col items-center">
-        <h2 class="text-5xl md:text-7xl font-extrabold mb-8 tracking-tighter leading-tight">Ready to upgrade your institution?</h2>
-        <p class="text-xl md:text-2xl text-blue-100 mb-12 leading-relaxed font-light max-w-2xl">Join the most innovative schools across the continent. Deployment is rapid, training is included, and the transition is seamless.</p>
-        <a href="../contact" class="inline-flex items-center justify-center px-10 py-5 rounded-2xl bg-white text-brand-blue text-lg font-extrabold hover:bg-slate-50 transition-all shadow-2xl hover:shadow-white/20 hover:-translate-y-1">
-            Request EduCore Deployment <i class="fas fa-arrow-right ml-3"></i>
-        </a>
+        <h2 class="text-5xl md:text-7xl font-black mb-8 tracking-tighter leading-tight">Ready to upgrade your institution?</h2>
+        <p class="text-xl md:text-2xl text-slate-400 mb-10 leading-relaxed font-light max-w-2xl tracking-tight">Join the most innovative schools across the continent. Deployment is rapid, training is included, and the transition is seamless.</p>
+        
+        <div class="inline-flex items-center justify-center gap-2 px-6 py-2 rounded-full bg-emerald-900/30 border border-emerald-500/30 text-emerald-400 text-sm font-bold tracking-widest uppercase mb-12">
+            <i class="fas fa-bolt"></i> Guaranteed ROI in Term 1
+        </div>
+        
+        <!-- Pricing Anchor -->
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-3 mb-10">
+            <div class="inline-flex items-center gap-3 px-6 py-3 rounded-xl bg-white/10 border border-white/20 backdrop-blur-md text-white">
+                <i class="fas fa-tag text-emerald-400 text-lg"></i>
+                <div class="text-left">
+                    <div class="text-[10px] text-slate-400 font-bold uppercase tracking-widest">Starting From</div>
+                    <div class="font-black text-white text-lg tracking-tight">GHS 800 <span class="font-light text-slate-400 text-sm">/ term</span></div>
+                </div>
+            </div>
+            <div class="text-slate-600 text-sm font-medium hidden sm:block">·</div>
+            <div class="text-slate-400 text-sm font-medium">No setup fees. No long-term lock-in.</div>
+        </div>
+
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a href="../contact" class="inline-flex items-center justify-center px-10 py-5 rounded-2xl bg-white text-slate-950 text-xl font-bold hover:bg-slate-100 transition-all shadow-[0_0_40px_rgba(255,255,255,0.1)] hover:shadow-[0_0_60px_rgba(255,255,255,0.2)] tracking-tight">
+                Request EduCore Deployment <i class="fas fa-arrow-right ml-4"></i>
+            </a>
+            <a href="#ecosystem" class="inline-flex items-center gap-2 px-8 py-5 rounded-2xl border border-white/20 text-white font-semibold hover:bg-white/10 transition-all tracking-tight text-lg">
+                <i class="fas fa-play-circle text-brand-blue"></i> Watch 2-Min Overview
+            </a>
+        </div>
     </div>
 </section>
 

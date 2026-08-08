@@ -91,6 +91,17 @@ if (!isset($navBasePath)) {
     </div>
 </footer>
 
+<!-- WhatsApp Floating Button (Global) -->
+<a href="https://wa.me/233243838490?text=Hi%2C%20I'd%20like%20to%20learn%20more%20about%20E7%20Technology%20Solutions."
+   target="_blank"
+   rel="noopener noreferrer"
+   id="whatsapp-float"
+   aria-label="Chat with us on WhatsApp"
+   class="fixed bottom-8 left-8 z-50 flex items-center gap-3 bg-[#25D366] text-white pl-4 pr-5 py-3 rounded-full shadow-[0_8px_30px_rgba(37,211,102,0.4)] hover:shadow-[0_12px_40px_rgba(37,211,102,0.55)] hover:-translate-y-1 transition-all duration-300 group">
+    <i class="fab fa-whatsapp text-2xl"></i>
+    <span class="text-sm font-semibold tracking-tight max-w-0 overflow-hidden group-hover:max-w-[120px] transition-all duration-300 whitespace-nowrap">Chat with us</span>
+</a>
+
 <!-- Minimalist Back to Top -->
 <button id="backToTop" class="fixed bottom-8 right-8 w-10 h-10 rounded bg-white text-slate-600 border border-slate-200 flex items-center justify-center shadow-sm opacity-0 invisible transition-all duration-200 hover:bg-slate-50 hover:text-brand-blue z-50">
     <i class="fas fa-chevron-up text-sm"></i>
