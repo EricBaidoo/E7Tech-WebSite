@@ -18,7 +18,7 @@ include('../header.php');
             ZeroTrust Access™
         </h1>
         <p class="text-xl text-slate-500 font-light leading-relaxed mb-4 tracking-tight">
-            Never trust, always verify. A ready-to-deploy Zero Trust network security product that secures your organization's systems, users, and data with military-grade access controls.
+            Never trust, always verify. A ready-to-deploy Zero Trust network security product that secures your organization's systems, users, and data. Built by leaders in Enterprise Cybersecurity Solutions Africa.
         </p>
         <p class="text-base text-slate-400 mb-12 font-medium">This product is currently in final security testing. Register your interest below.</p>
 

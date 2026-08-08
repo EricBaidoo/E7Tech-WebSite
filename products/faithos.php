@@ -21,7 +21,7 @@ include('../header.php');
         </h1>
         
         <p class="text-lg md:text-2xl text-slate-500 mb-12 max-w-2xl font-light leading-relaxed">
-            FaithOS is the enterprise-grade management platform for modern ministries. Automate member tracking, tithing, attendance, and communications.
+            FaithOS is the enterprise-grade Church Management Software (ChMS) for modern ministries. Automate member tracking, tithing, attendance, and communications.
         </p>
         
         <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-20 w-full sm:w-auto">

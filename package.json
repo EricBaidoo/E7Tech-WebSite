@@ -1,0 +1,26 @@
+{
+  "name": "e7-tech",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i assets/css/input.css -o assets/css/style.css --minify",
+    "watch": "tailwindcss -i assets/css/input.css -o assets/css/style.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EricBaidoo/https---github.com-EricBaidoo-E7Tech-WebSite.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/EricBaidoo/https---github.com-EricBaidoo-E7Tech-WebSite/issues"
+  },
+  "homepage": "https://github.com/EricBaidoo/https---github.com-EricBaidoo-E7Tech-WebSite#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.4.19"
+  }
+}

@@ -1,10 +1,51 @@
 <?php
 $page_title = "Contact Us";
-$meta_description = "Connect with the E7 Technology Solutions engineering team. Schedule an architecture review or discuss your enterprise technology requirements.";
+$meta_description = "Connect with the E7 Technology Solutions engineering team in Accra, Ghana. Schedule an architecture review or discuss your enterprise technology requirements.";
 $assetBasePath = 'assets';
 $navBasePath = '';
 include('header.php');
 ?>
+
+<!-- LocalBusiness Schema for Contact Page -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "E7 Technology Solutions",
+  "image": "https://e7world.tech/assets/images/logos/E7_Technology_Solutions_logo1.jpeg",
+  "url": "https://e7world.tech",
+  "telephone": "+233-243-838-490",
+  "email": "connect@e7world.tech",
+  "description": "Africa's trusted AI, Cybersecurity, and enterprise software company headquartered in Accra, Ghana.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Accra",
+    "addressLocality": "Accra",
+    "addressRegion": "Greater Accra",
+    "addressCountry": "GH"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 5.6037,
+    "longitude": -0.1870
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "08:00",
+      "closes": "18:00"
+    }
+  ],
+  "sameAs": [
+    "https://www.linkedin.com/company/93869752/",
+    "https://web.facebook.com/profile.php?id=61564106101270",
+    "https://x.com/E7Technologies",
+    "https://www.instagram.com/e7_technology_solutions/"
+  ]
+}
+</script>
+
 
 <!-- HERO SECTION -->
 <section class="pt-24 md:pt-40 pb-16 md:pb-24 bg-white border-b border-slate-100 text-center">

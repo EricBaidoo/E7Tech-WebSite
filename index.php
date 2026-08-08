@@ -35,7 +35,7 @@ include 'header.php';
 
         <!-- Subtext -->
         <p class="hero-reveal hero-delay-2 text-lg md:text-2xl text-slate-500 mb-12 max-w-2xl font-light leading-relaxed tracking-tight">
-            E7 Technology Solutions helps organizations across Africa transform with AI, Cybersecurity, and enterprise-grade software platforms — built for the real world.
+            E7 Technology Solutions helps organizations across Africa transform with advanced AI, Enterprise Cybersecurity, and Custom Software Development — built for the real world.
         </p>
 
         <!-- Dual CTAs -->

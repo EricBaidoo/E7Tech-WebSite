@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', function() {
         </h1>
         
         <p class="reveal-up delay-200 text-lg md:text-2xl text-slate-500 mb-12 max-w-2xl font-light leading-relaxed tracking-tight">
-            The enterprise-grade operating system for modern African institutions. Finance, academics, and logistics, unified perfectly.
+            The enterprise-grade School Management System for modern African institutions. Finance, academics, and logistics, unified perfectly in a secure Cloud ERP.
         </p>
         
         <div class="reveal-up delay-300 flex flex-col sm:flex-row items-center justify-center gap-4 mb-20 w-full sm:w-auto">

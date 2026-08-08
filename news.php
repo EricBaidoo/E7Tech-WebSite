@@ -1,6 +1,6 @@
 <?php
-$page_title = "News & Insights";
-$meta_description = "Executive insights, ecosystem announcements, and engineering breakthroughs from the forefront of Africa's digital transformation.";
+$page_title = "Engineering Insights & Research";
+$meta_description = "Technical research, cybersecurity briefs, and AI engineering insights from E7 Technology Solutions — Africa's leading enterprise technology company in Accra, Ghana.";
 $assetBasePath = 'assets';
 $navBasePath = '';
 include('header.php');
@@ -30,37 +30,79 @@ $recentUpdates = [
 // Data Array for Latest Research & Articles (Grid)
 $articles = [
     [
-        'type' => 'Whitepaper',
-        'type_color' => 'bg-brand-blue',
-        'title' => 'The Future of AI in African Healthcare Diagnostics',
-        'excerpt' => 'Examining how localized machine learning models are fundamentally transforming diagnostic accuracy across fragmented healthcare systems.',
-        'image' => 'solutions/InsightAIPageHero.png',
+        'type' => 'Zero Trust Security',
+        'type_color' => 'bg-slate-800',
+        'title' => 'Implementing Zero Trust Architecture in African Financial Institutions',
+        'excerpt' => 'A technical deep-dive into deploying identity-first, Zero Trust network access for banks and fintechs across Ghana and Nigeria — covering IAM, microsegmentation, and continuous verification.',
+        'image' => 'sliders/slide2.png',
         'date' => 'Dec 12, 2025',
+        'read_time' => '10 Min Read',
+        'link' => '#'
+    ],
+    [
+        'type' => 'AI Engineering',
+        'type_color' => 'bg-brand-blue',
+        'title' => 'Scaling AI Data Pipelines for Low-Bandwidth African Markets',
+        'excerpt' => 'How E7Insight™ optimizes ML model training and inference in connectivity-constrained environments — edge inference, model compression, and efficient data ingestion patterns.',
+        'image' => 'sliders/slide5.png',
+        'date' => 'Dec 8, 2025',
         'read_time' => '8 Min Read',
         'link' => '#'
     ],
     [
-        'type' => 'Security',
-        'type_color' => 'bg-slate-800',
-        'title' => 'Ransomware Mitigation: Why Backups Are No Longer Enough',
-        'excerpt' => 'As double-extortion tactics rise, we break down why perimeter defense and zero-trust identity layers are the only viable defense mechanisms.',
-        'image' => 'solutions/SecureShieldHero.png',
-        'date' => 'Dec 8, 2025',
-        'read_time' => '5 Min Read',
-        'link' => '#'
-    ],
-    [
-        'type' => 'Cloud Infrastructure',
+        'type' => 'Enterprise Software',
         'type_color' => 'bg-blue-500',
-        'title' => 'Serverless Architecture vs. Containerization',
-        'excerpt' => 'Our Lead Cloud Architects debate the financial and operational trade-offs of AWS Lambda versus managed Kubernetes (EKS) for enterprise workloads.',
-        'image' => 'sliders/slide5.png',
+        'title' => 'The ROI of a School Management System: EduCore Case Study',
+        'excerpt' => 'Quantifying the operational and financial impact of deploying a cloud-based School Management System versus legacy on-premise solutions across 10 Ghanaian institutions.',
+        'image' => 'sliders/slide3.png',
         'date' => 'Dec 1, 2025',
-        'read_time' => '12 Min Read',
+        'read_time' => '7 Min Read',
         'link' => '#'
     ]
 ];
 ?>
+
+<!-- Article JSON-LD Structured Data -->
+<script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Implementing Zero Trust Architecture in African Financial Institutions",
+    "description": "A technical deep-dive into deploying identity-first, Zero Trust network access for banks and fintechs across Ghana and Nigeria.",
+    "datePublished": "2025-12-12",
+    "publisher": {
+      "@type": "Organization",
+      "name": "E7 Technology Solutions",
+      "logo": "https://e7world.tech/assets/images/logos/E7_Technology_Solutions_logo1.jpeg"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Scaling AI Data Pipelines for Low-Bandwidth African Markets",
+    "description": "How E7Insight™ optimizes ML model training and inference in connectivity-constrained environments.",
+    "datePublished": "2025-12-08",
+    "publisher": {
+      "@type": "Organization",
+      "name": "E7 Technology Solutions",
+      "logo": "https://e7world.tech/assets/images/logos/E7_Technology_Solutions_logo1.jpeg"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "The ROI of a School Management System: EduCore Case Study",
+    "description": "Quantifying the operational and financial impact of deploying a cloud-based School Management System versus legacy on-premise solutions.",
+    "datePublished": "2025-12-01",
+    "publisher": {
+      "@type": "Organization",
+      "name": "E7 Technology Solutions",
+      "logo": "https://e7world.tech/assets/images/logos/E7_Technology_Solutions_logo1.jpeg"
+    }
+  }
+]
+</script>
 
 <!-- HERO SECTION -->
 <section class="pt-32 pb-20 lg:pt-32 lg:pb-32 bg-slate-900 overflow-hidden relative min-h-[31.25rem] flex items-center">
@@ -75,12 +117,12 @@ $articles = [
             <span class="text-white text-xs font-semibold uppercase tracking-wide">News & Insights</span>
         </div>
         
-        <h1 class="text-5xl md:text-7xl font-extrabold text-white tracking-tight leading-[1.1] mb-6">
-            The pulse of <span class="text-brand-blue">African Tech.</span>
+        <h1 class="text-4xl md:text-7xl font-extrabold text-white tracking-tight leading-[1.1] mb-6">
+            Engineering Insights &amp; <span class="text-brand-blue">Research.</span>
         </h1>
         
-        <p class="text-xl text-slate-300 leading-relaxed max-w-2xl mx-auto">
-            Executive insights, ecosystem announcements, and engineering breakthroughs from the forefront of Africa's digital transformation.
+        <p class="text-lg md:text-xl text-slate-300 leading-relaxed max-w-2xl mx-auto">
+            Technical research, cybersecurity briefs, and AI engineering deep-dives from E7 Technology Solutions — Africa's leading enterprise technology company.
         </p>
     </div>
 </section>

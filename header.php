@@ -94,33 +94,8 @@ $navBasePath = (strpos($_SERVER['PHP_SELF'], '/solutions/') !== false || strpos(
     <!-- AOS CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <!-- Tailwind CSS (CDN) -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        navy: {
-                            800: '#16224A',
-                            900: '#0A1128',
-                        },
-                        cyan: {
-                            400: '#4FACFE',
-                            500: '#00F2FE',
-                        },
-                        brand: {
-                            blue: '#0052cc',
-                            light: '#FAFAFA'
-                        }
-                    },
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                    }
-                }
-            }
-        }
-    </script>
+    <!-- Tailwind Compiled CSS -->
+    <link rel="stylesheet" href="<?php echo $assetBasePath; ?>/css/style.css">
     
     <style>
         /* Essential utility CSS for transitions that Tailwind can't handle purely in HTML without Alpine.js */
