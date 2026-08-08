@@ -243,6 +243,24 @@ $navBasePath = (strpos($_SERVER['PHP_SELF'], '/solutions/') !== false || strpos(
                                             <div class="text-[0.625rem] text-slate-500">E7Shield™ Security Platform</div>
                                         </div>
                                     </a>
+                                    <a href="<?php echo $navBasePath; ?>products/lms" class="flex items-center gap-3 group/prod">
+                                        <div class="w-6 h-6 rounded bg-white border border-slate-200 flex items-center justify-center flex-shrink-0 group-hover/prod:border-brand-blue transition-colors">
+                                            <span class="text-xs">📚</span>
+                                        </div>
+                                        <div>
+                                            <div class="text-sm font-semibold text-slate-800 group-hover/prod:text-brand-blue transition-colors">E7 LMS</div>
+                                            <div class="text-[0.625rem] text-slate-500">Learning Management System</div>
+                                        </div>
+                                    </a>
+                                    <a href="<?php echo $navBasePath; ?>products/frauddetect" class="flex items-center gap-3 group/prod">
+                                        <div class="w-6 h-6 rounded bg-white border border-slate-200 flex items-center justify-center flex-shrink-0 group-hover/prod:border-brand-blue transition-colors">
+                                            <span class="text-xs">🔍</span>
+                                        </div>
+                                        <div>
+                                            <div class="text-sm font-semibold text-slate-800 group-hover/prod:text-brand-blue transition-colors">FraudDetect</div>
+                                            <div class="text-[0.625rem] text-slate-500">AI Fraud Detection Engine</div>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -289,6 +307,30 @@ $navBasePath = (strpos($_SERVER['PHP_SELF'], '/solutions/') !== false || strpos(
                         </a>
                         <a href="<?php echo $navBasePath; ?>solutions/e7build" class="flex items-center gap-3 text-slate-600 hover:text-brand-blue py-3">
                             <i class="fas fa-cogs text-slate-400 w-5"></i> E7Build™
+                        </a>
+                    </div>
+                </div>
+
+                <div class="pt-2">
+                    <div class="text-slate-400 text-xs uppercase tracking-wider mb-2">Our Products</div>
+                    <div class="flex flex-col gap-2 pl-4 border-l-2 border-slate-100">
+                        <a href="<?php echo $navBasePath; ?>products/educore" class="flex items-center gap-3 text-slate-600 hover:text-brand-blue py-2">
+                            <span class="text-xs">🎓</span> EduCore
+                        </a>
+                        <a href="<?php echo $navBasePath; ?>products/faithos" class="flex items-center gap-3 text-slate-600 hover:text-brand-blue py-2">
+                            <span class="text-xs">⛪</span> FaithOS
+                        </a>
+                        <a href="<?php echo $navBasePath; ?>products/luke7" class="flex items-center gap-3 text-slate-600 hover:text-brand-blue py-2">
+                            <span class="text-xs">📽️</span> Luke7
+                        </a>
+                        <a href="<?php echo $navBasePath; ?>products/zerotrust" class="flex items-center gap-3 text-slate-600 hover:text-brand-blue py-2">
+                            <span class="text-xs">🛡️</span> ZeroTrust Access
+                        </a>
+                        <a href="<?php echo $navBasePath; ?>products/lms" class="flex items-center gap-3 text-slate-600 hover:text-brand-blue py-2">
+                            <span class="text-xs">📚</span> E7 LMS
+                        </a>
+                        <a href="<?php echo $navBasePath; ?>products/frauddetect" class="flex items-center gap-3 text-slate-600 hover:text-brand-blue py-2">
+                            <span class="text-xs">🔍</span> FraudDetect
                         </a>
                     </div>
                 </div>
